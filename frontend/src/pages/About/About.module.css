@@ -1,0 +1,163 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+  color: #333;
+  background-color: whitesmoke;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 1.5rem 0 1rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgb(52, 52, 51);
+  max-width: 800px;
+  margin: 0.5rem auto;
+  text-align: center;
+}
+
+.authorStamp {
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: rgb(52, 52, 51);
+  max-width: 800px;
+  margin: 0.5rem auto 0 auto;
+  text-align: center;
+}
+
+.description strong {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.table {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 2rem;
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.table li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  cursor: pointer; /* Indicates interactivity */
+}
+
+.table li:hover {
+  transform: scale(1.03); /* Slight scale-up effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow */
+  background: #f8f9fa; /* Subtle background color change */
+  color: #2c3e50; /* Darker text on hover for contrast */
+}
+
+.table li strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: none;
+  color: darkorange;
+}
+
+a:visited {
+  text-decoration: none;
+  color: purple;
+}
+
+a:active {
+  text-decoration: none;
+  color: darkred;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .about {
+    padding: 2.5rem 1rem; /* Reduced horizontal padding for margins */
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    max-width: 90%; /* Creates side margins */
+    text-align: center;
+  }
+
+  .authorStamp {
+    font-size: 0.6rem;
+    max-width: 90%; /* Creates side margins */
+    text-align: center;
+  }
+
+  .table {
+    max-width: 90%; /* Creates side margins */
+  }
+
+  .table li {
+    font-size: 1rem;
+    padding: 0.5rem;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 3rem 0.75rem;
+  }
+
+  .heading {
+    font-size: 1.25rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    max-width: 85%;
+  }
+
+  .authorStamp {
+    font-size: 0.6rem;
+    max-width: 85%;
+  }
+
+  .table {
+    max-width: 85%;
+  }
+
+  .table li {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+}

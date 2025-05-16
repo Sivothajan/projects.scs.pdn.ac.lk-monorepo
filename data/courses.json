@@ -1,0 +1,650 @@
+[
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Introduction to Computer Science and Programming",
+    "courseCode": "CSC1013",
+    "description": "Fundamentals of computer science and introductory programming concepts using a high-level language."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Object-oriented Programming",
+    "courseCode": "CSC1023",
+    "description": "Principles of object-oriented programming using languages like Java or C++."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Programming Laboratory I",
+    "courseCode": "CSC1041",
+    "description": "Hands-on programming practice to reinforce concepts from Introduction to Computer Science."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Programming Laboratory II",
+    "courseCode": "CSC1051",
+    "description": "Advanced programming exercises focusing on object-oriented techniques."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Data Structures",
+    "courseCode": "CSC2012",
+    "description": "Study of fundamental data structures like lists, stacks, queues, and trees."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Programming using Data Structures",
+    "courseCode": "CSC2021",
+    "description": "Practical implementation of data structures in programming projects."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Database Management Systems",
+    "courseCode": "CSC2032",
+    "description": "Concepts of database design, SQL, and management systems."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Programming using Database Management Systems",
+    "courseCode": "CSC2041",
+    "description": "Developing applications with database integration."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Computer Architecture",
+    "courseCode": "CSC2052",
+    "description": "Exploration of computer hardware, processors, and memory systems."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Web Programming I",
+    "courseCode": "CSC2102",
+    "description": "Introduction to web development using HTML, CSS, and JavaScript."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Introduction to Computer Networks",
+    "courseCode": "CSC2112",
+    "description": "Basics of networking, protocols, and communication systems."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Computing for Science I",
+    "courseCode": "CSC2312",
+    "description": "Computational techniques for scientific problem-solving."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Computing for Science Programming Laboratory I",
+    "courseCode": "CSC2321",
+    "description": "Lab-based programming for scientific applications."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Operating Systems Concepts",
+    "courseCode": "CSC3033",
+    "description": "Study of operating system design, processes, and resource management."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Computer Graphics",
+    "courseCode": "CSC3073",
+    "description": "Fundamentals of 2D and 3D graphics rendering and modeling."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Computer Graphics Programming",
+    "courseCode": "CSC3081",
+    "description": "Practical programming for graphics applications."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Object Oriented Analysis and Design",
+    "courseCode": "CSC3093",
+    "description": "Techniques for designing software using object-oriented principles."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Server Side Web Programming",
+    "courseCode": "CSC3103",
+    "description": "Server-side development with frameworks and databases."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Software Engineering",
+    "courseCode": "CSC3112",
+    "description": "Principles of software development lifecycle and team projects."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Human Computer Interaction Design",
+    "courseCode": "CSC3122",
+    "description": "Designing user-friendly interfaces and interaction systems."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Digital Image Processing",
+    "courseCode": "CSC3132",
+    "description": "Techniques for manipulating and analyzing digital images."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Image Processing Laboratory",
+    "courseCode": "CSC3141",
+    "description": "Hands-on lab for image processing techniques."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Design and Analysis of Algorithms",
+    "courseCode": "CSC3152",
+    "description": "Advanced algorithm design and complexity analysis."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Artificial Intelligence",
+    "courseCode": "CSC3173",
+    "description": "Introduction to AI concepts, search, and knowledge representation."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Advanced Computer Networks",
+    "courseCode": "CSC3182",
+    "description": "In-depth study of network protocols and architectures."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Project in Computer Science I",
+    "courseCode": "CSC3213",
+    "description": "Intermediate project applying software development skills."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Scientific Writing and Presentation",
+    "courseCode": "CSC3252",
+    "description": "Skills for writing and presenting technical research."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Computing for Science II",
+    "courseCode": "CSC3312",
+    "description": "Advanced computational methods for scientific research."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Computing for Science Programming Laboratory II",
+    "courseCode": "CSC3321",
+    "description": "Advanced lab for scientific programming projects."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Parallel Processing",
+    "courseCode": "CSC4043",
+    "description": "Concepts and programming for parallel computing systems."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Distributed Computing",
+    "courseCode": "CSC4063",
+    "description": "Design and implementation of distributed systems."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Computer Vision",
+    "courseCode": "CSC4082",
+    "description": "Techniques for image recognition and visual data analysis."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Neural Networks and Deep Learning",
+    "courseCode": "CSC4093",
+    "description": "Study of neural networks and deep learning frameworks."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Internet and Multimedia Systems",
+    "courseCode": "CSC4103",
+    "description": "Technologies for multimedia and internet applications."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Internet of Things",
+    "courseCode": "CSC4122",
+    "description": "Concepts and applications of IoT systems."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Information and Network Security",
+    "courseCode": "CSC4132",
+    "description": "Principles of securing networks and information systems."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Software Project Management",
+    "courseCode": "CSC4142",
+    "description": "Managing software development projects effectively."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Special Topics in Computer Science",
+    "courseCode": "CSC4162",
+    "description": "Exploration of emerging topics in computer science."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Machine Learning",
+    "courseCode": "CSC4173",
+    "description": "Algorithms and applications of machine learning."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Natural Language Processing",
+    "courseCode": "CSC4182",
+    "description": "Techniques for processing and understanding human language."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/CSC.webp",
+    "title": "Project in Computer Science II – Research Project",
+    "courseCode": "CSC4996",
+    "description": "Capstone research project in a specialized area of computer science."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/SCI.webp",
+    "title": "Industrial Training",
+    "courseCode": "SCI4003",
+    "description": "Practical experience in a professional computing environment."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Regression Analysis",
+    "courseCode": "DSC3013",
+    "description": "Statistical techniques for modeling relationships between variables."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Big Data Analytics I",
+    "courseCode": "DSC3023",
+    "description": "Introduction to processing and analyzing large-scale datasets."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Multivariate Methods I",
+    "courseCode": "DSC3032",
+    "description": "Statistical methods for analyzing multiple variables simultaneously."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Time Series Analysis",
+    "courseCode": "DSC3042",
+    "description": "Techniques for analyzing time-dependent data."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Data Visualization",
+    "courseCode": "DSC3052",
+    "description": "Creating effective visual representations of data."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Decision and Game Theory",
+    "courseCode": "DSC3063",
+    "description": "Mathematical models for decision-making and strategic interactions."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Non-parametric and Categorical Data Analysis",
+    "courseCode": "DSC3073",
+    "description": "Statistical methods for non-numeric and categorical data."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Statistical Simulation",
+    "courseCode": "DSC3083",
+    "description": "Using simulations to model statistical phenomena."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Advanced Statistics Applications I",
+    "courseCode": "DSC3091",
+    "description": "Practical applications of advanced statistical techniques."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Advanced Statistics Applications II",
+    "courseCode": "DSC3101",
+    "description": "Further exploration of advanced statistical methods."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Design and Analysis of Algorithms",
+    "courseCode": "DSC3152",
+    "description": "Advanced algorithm design and complexity analysis for data science."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Advanced Database Management Systems",
+    "courseCode": "DSC3163",
+    "description": "Advanced concepts in database design and management."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Artificial Intelligence",
+    "courseCode": "DSC3173",
+    "description": "AI techniques applied to data science problems."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Digital Image Processing",
+    "courseCode": "DSC3182",
+    "description": "Techniques for processing and analyzing digital images in data science."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Computing for Data Science",
+    "courseCode": "DSC3192",
+    "description": "Computational tools and techniques for data science applications."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Scientific Writing and Presentation",
+    "courseCode": "DSC3252",
+    "description": "Skills for communicating data science research effectively."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Independent Study in Data Science",
+    "courseCode": "DSC3263",
+    "description": "Self-directed study on a data science topic of interest."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Big Data Analytics II",
+    "courseCode": "DSC4013",
+    "description": "Advanced techniques for big data processing and analysis."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Data Mining Techniques",
+    "courseCode": "DSC4023",
+    "description": "Methods for extracting patterns and knowledge from data."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Multivariate Methods II",
+    "courseCode": "DSC4033",
+    "description": "Advanced multivariate statistical techniques."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Bayesian Statistics",
+    "courseCode": "DSC4043",
+    "description": "Bayesian approaches to statistical inference."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Advanced Time Series Analysis",
+    "courseCode": "DSC4052",
+    "description": "Advanced methods for time series modeling and forecasting."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Reliability Theory and Survival Analysis",
+    "courseCode": "DSC4063",
+    "description": "Statistical methods for reliability and survival data."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Advanced Topics in Algorithms and Optimization",
+    "courseCode": "DSC4162",
+    "description": "Cutting-edge algorithms and optimization techniques for data science."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Machine Learning",
+    "courseCode": "DSC4173",
+    "description": "Advanced machine learning algorithms for data analysis."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Natural Language Processing",
+    "courseCode": "DSC4182",
+    "description": "Techniques for analyzing and generating human language."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Internet of Things",
+    "courseCode": "DSC4193",
+    "description": "Applications of IoT in data science contexts."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Information Retrieval",
+    "courseCode": "DSC4202",
+    "description": "Techniques for retrieving and ranking information from large datasets."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Neural Networks and Deep Learning",
+    "courseCode": "DSC4213",
+    "description": "Advanced neural network models and deep learning applications."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Special Topics in Data Science",
+    "courseCode": "DSC4222",
+    "description": "Emerging topics and trends in data science."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Distributed Computing",
+    "courseCode": "DSC4243",
+    "description": "Distributed systems for large-scale data processing."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Computer Vision",
+    "courseCode": "DSC4252",
+    "description": "Advanced computer vision techniques for data science."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Project in Data Science",
+    "courseCode": "DSC4996",
+    "description": "Capstone research project applying data science techniques."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Introduction to Statistics",
+    "courseCode": "STA1013",
+    "description": "Basic concepts of statistics and data analysis."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Introduction to Probability Theory",
+    "courseCode": "STA1023",
+    "description": "Foundations of probability and its applications."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Statistics Applications I",
+    "courseCode": "STA1031",
+    "description": "Practical applications of introductory statistical methods."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Statistics Applications II",
+    "courseCode": "STA1041",
+    "description": "Further practical exercises in statistical analysis."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Mathematics for Operations Research",
+    "courseCode": "STA1073",
+    "description": "Mathematical foundations for operations research and statistics."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Probability Theory",
+    "courseCode": "STA2013",
+    "description": "Advanced study of probability distributions and theorems."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Theory of Statistics",
+    "courseCode": "STA2033",
+    "description": "Theoretical underpinnings of statistical inference."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Sampling Techniques",
+    "courseCode": "STA2042",
+    "description": "Methods for designing and analyzing statistical samples."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Statistical Quality Control",
+    "courseCode": "STA2102",
+    "description": "Techniques for monitoring and improving process quality."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Regression Analysis",
+    "courseCode": "STA3013",
+    "description": "Modeling relationships between variables using regression."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Design and Analysis of Experiments",
+    "courseCode": "STA3033",
+    "description": "Statistical methods for designing and interpreting experiments."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Multivariate Methods I",
+    "courseCode": "STA3052",
+    "description": "Introduction to multivariate statistical analysis."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Time Series Analysis",
+    "courseCode": "STA3072",
+    "description": "Analyzing and forecasting time series data."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Non-Parametric & Categorical Data Analysis",
+    "courseCode": "STA3093",
+    "description": "Statistical techniques for non-parametric and categorical data."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Statistical Simulation",
+    "courseCode": "STA3113",
+    "description": "Simulation-based approaches to statistical modeling."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Advanced Statistical Applications I",
+    "courseCode": "STA3131",
+    "description": "Practical applications of advanced statistical methods."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Advanced Statistical Applications II",
+    "courseCode": "STA3141",
+    "description": "Continued exploration of advanced statistical techniques."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Statistics for Scientists",
+    "courseCode": "STA3213",
+    "description": "Statistical tools tailored for scientific research."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Scientific Writing and Presentation",
+    "courseCode": "STA3252",
+    "description": "Skills for communicating statistical research effectively."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Actuarial Statistics",
+    "courseCode": "STA4012",
+    "description": "Statistical methods for insurance and risk assessment."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Statistical Data Mining",
+    "courseCode": "STA4023",
+    "description": "Extracting insights from large datasets using statistical methods."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Statistics for Bioinformatics",
+    "courseCode": "STA4033",
+    "description": "Statistical techniques for biological and genomic data."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Stochastic Processes",
+    "courseCode": "STA4043",
+    "description": "Modeling random processes in time or space."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Multivariate Methods II",
+    "courseCode": "STA4053",
+    "description": "Advanced multivariate statistical techniques."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Bayesian Statistics",
+    "courseCode": "STA4063",
+    "description": "Bayesian methods for statistical inference."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Linear Models",
+    "courseCode": "STA4073",
+    "description": "Theory and application of linear statistical models."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Reliability Theory and Survival Analysis",
+    "courseCode": "STA4083",
+    "description": "Statistical methods for reliability and survival data."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Advanced Probability Theory",
+    "courseCode": "STA4112",
+    "description": "Advanced concepts in probability theory."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Asymptotic Theory",
+    "courseCode": "STA4122",
+    "description": "Study of asymptotic behavior in statistical inference."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Medical Statistics",
+    "courseCode": "STA4203",
+    "description": "Statistical methods for medical and health research."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Spatial Statistics",
+    "courseCode": "STA4212",
+    "description": "Analyzing spatially correlated data."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Special Topics in Statistics",
+    "courseCode": "STA4222",
+    "description": "Emerging topics in statistical theory and application."
+  },
+  {
+    "courseImageUrl": "/images/course-cover-images/STA.webp",
+    "title": "Research Project",
+    "courseCode": "STA4996",
+    "description": "Capstone research project in statistics."
+  }
+]

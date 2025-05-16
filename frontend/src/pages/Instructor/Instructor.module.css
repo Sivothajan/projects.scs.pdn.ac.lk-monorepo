@@ -1,0 +1,91 @@
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.fullPageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    padding: 0px;
+    background-color: whitesmoke;
+}
+
+.profileImageContainer {
+    margin-bottom: 5px;
+    background-color: whitesmoke;
+}
+
+
+.profileImage {
+    width: 250px;
+    height: 250px; /* Set height equal to width for 1:1 ratio */
+    object-fit: contain; /* Show the full image while maintaining aspect ratio */
+    object-position: center; /* Center the image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.instructorDetails {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 80%;
+}
+
+.instructorName {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.department,
+.email {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #121212;
+}
+
+.email a {
+    color: darkblue; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+.email a:hover {
+    color: darkorange; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+.email a:visited {
+    color: purple; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.email a:active {
+    color: darkred;
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+.loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0px;
+    background-color: goldenrod;
+    font-weight: bolder;
+    font-size: 2rem;
+}

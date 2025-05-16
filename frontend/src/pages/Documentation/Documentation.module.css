@@ -1,0 +1,101 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 1rem auto 0;
+    max-width: 800px;
+    line-height: 1.6;
+    color: #333;
+    background-color: whitesmoke;
+    text-align: left;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  .subtitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 30px 0 0;
+    color: #34495e;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    margin: 0 0 20px;
+  }
+  
+  .text {
+    font-size: 1rem;
+    margin: 0 0 20px;
+  }
+  
+  .list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px;
+  }
+  
+  .list li {
+    margin-bottom: 10px;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: #3498db;
+    transition: color 0.3s;
+  }
+  
+  .link:hover {
+    color: #2980b9;
+  }
+  
+  .orderedList {
+    margin: 0 0 20px 20px;
+    padding: 0;
+  }
+  
+  .orderedList li {
+    margin-bottom: 10px;
+  }
+  
+.code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ecf0f1;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 0.95rem;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+  
+  .authorStamp {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: rgb(52, 52, 51);
+    margin: 0.5rem auto 0;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .authorStamp {
+      font-size: 0.6rem;
+      max-width: 90%;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .authorStamp {
+      max-width: 85%;
+    }
+  }

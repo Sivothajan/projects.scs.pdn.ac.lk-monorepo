@@ -1,0 +1,24 @@
+{
+  "name": "projects.scs.pdn.ac.lk-monorepo",
+  "version": "1.0.0",
+  "description": "SCS Projects Portal",
+  "private": true,
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "concurrently \"cd backend && npm run build\" \"cd frontend && npm run build\"",
+    "install:all": "npm install && concurrently \"cd backend && npm install\" \"cd frontend && npm install\""
+  },
+  "keywords": [
+    "scs",
+    "projects",
+    "portal"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

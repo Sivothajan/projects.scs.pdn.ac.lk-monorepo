@@ -1,0 +1,43 @@
+.errorCode {
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.errorMessage {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 8px;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.errorDescription {
+  font-size: 18px;
+  color: black;
+  margin-top: 0;
+  font-weight: 600;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;;
+}
+
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+  justify-content: center;
+  margin: 0;
+  background-color: goldenrod;
+}
+
+a:hover {
+  text-decoration: none;
+  color: darkslategray;
+}
