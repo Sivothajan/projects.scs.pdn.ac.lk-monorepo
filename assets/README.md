@@ -5,6 +5,11 @@
 
 ## Project Overview
 
+### Production
+- Frontend: [https://projects.scs.sivothajan.me](https://projects.scs.sivothajan.me)
+- Backend: [https://projects.scs.api.sivothajan.me](https://projects.scs.api.sivothajan.me)
+- Documentation: [https://gh.sivothajan.me/projects.scs.pdn.ac.lk-monorepo#readme](https://gh.sivothajan.me/projects.scs.pdn.ac.lk-monorepo)
+
 ### Group Details
 - Group Name: The Webmasters
 - Number of Members: 11
