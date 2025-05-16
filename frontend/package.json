@@ -1,7 +1,52 @@
 {
   "name": "projects.scs.pdn.ac.lk",
   "private": true,
-  "version": "0.0.0",
+  "authors": [
+    {
+      "name": "Hana",
+      "studentId": "S/21/063"
+    },
+    {
+      "name": "Ansaf",
+      "studentId": "S/21/315"
+    },
+    {
+      "name": "Arani",
+      "studentId": "S/21/317"
+    },
+    {
+      "name": "Danchika",
+      "studentId": "S/21/340"
+    },
+    {
+      "name": "Karunarathne",
+      "studentId": "S/21/413"
+    },
+    {
+      "name": "Premashalini",
+      "studentId": "S/21/466"
+    },
+    {
+      "name": "Romesh",
+      "studentId": "S/21/489"
+    },
+    {
+      "name": "Shahama",
+      "studentId": "S/21/490"
+    },
+    {
+      "name": "Samadh",
+      "studentId": "S/21/493"
+    },
+    {
+      "name": "Sivothayan",
+      "studentId": "S/21/513"
+    },
+    {
+      "name": "Thushan",
+      "studentId": "S/21/528"
+    }
+  ],
   "type": "module",
   "scripts": {
     "dev": "vite --host",

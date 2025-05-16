@@ -1,11 +1,10 @@
-
 export const checkImage = (url) => {
-    return new Promise((resolve, reject) => {
-        const img = new Image();
-        img.onload = () => resolve(true);
-        img.onerror = () => resolve(false);
-        img.src = url;
-    });
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    img.onload = () => resolve(true);
+    img.onerror = () => resolve(false);
+    img.src = url;
+  });
 };
 
 export default checkImage;

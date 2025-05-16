@@ -1,7 +1,52 @@
 {
   "name": "projects.scs.pdn.ac.lk-monorepo",
-  "version": "1.0.0",
   "description": "SCS Projects Portal",
+  "authors": [
+    {
+      "name": "Hana",
+      "studentId": "S/21/063"
+    },
+    {
+      "name": "Ansaf",
+      "studentId": "S/21/315"
+    },
+    {
+      "name": "Arani",
+      "studentId": "S/21/317"
+    },
+    {
+      "name": "Danchika",
+      "studentId": "S/21/340"
+    },
+    {
+      "name": "Karunarathne",
+      "studentId": "S/21/413"
+    },
+    {
+      "name": "Premashalini",
+      "studentId": "S/21/466"
+    },
+    {
+      "name": "Romesh",
+      "studentId": "S/21/489"
+    },
+    {
+      "name": "Shahama",
+      "studentId": "S/21/490"
+    },
+    {
+      "name": "Samadh",
+      "studentId": "S/21/493"
+    },
+    {
+      "name": "Sivothayan",
+      "studentId": "S/21/513"
+    },
+    {
+      "name": "Thushan",
+      "studentId": "S/21/528"
+    }
+  ],
   "private": true,
   "scripts": {
     "start": "npm run dev",
@@ -9,7 +54,9 @@
     "dev:backend": "cd backend && npm run dev",
     "dev:frontend": "cd frontend && npm run dev",
     "build": "concurrently \"cd backend && npm run build\" \"cd frontend && npm run build\"",
-    "install:all": "npm install && concurrently \"cd backend && npm install\" \"cd frontend && npm install\""
+    "install:all": "npm install && concurrently \"cd backend && npm install\" \"cd frontend && npm install\"",
+    "prettier": "npx prettier . --write",
+    "prettier-check": "npx prettier . --check"
   },
   "keywords": [
     "scs",
@@ -19,6 +66,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "prettier": "3.5.3"
   }
 }

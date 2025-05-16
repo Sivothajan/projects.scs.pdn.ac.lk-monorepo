@@ -1,19 +1,64 @@
 {
-    "name": "projects.api.scs.pdn.ac.lk",
-    "private": true,
-    "version": "1.0.0",
-    "main": "api/apiRouter.js",
-    "type": "module",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "dev": "node api/apiRouter.js"
+  "name": "projects.api.scs.pdn.ac.lk",
+  "private": true,
+  "authors": [
+    {
+      "name": "Hana",
+      "studentId": "S/21/063"
     },
-    "license": "MIT",
-    "description": "",
-    "dependencies": {
-      "cors": "^2.8.5",
-      "dotenv": "^16.4.7",
-      "express": "^4.21.2",
-      "node-fetch": "^3.3.2"
+    {
+      "name": "Ansaf",
+      "studentId": "S/21/315"
+    },
+    {
+      "name": "Arani",
+      "studentId": "S/21/317"
+    },
+    {
+      "name": "Danchika",
+      "studentId": "S/21/340"
+    },
+    {
+      "name": "Karunarathne",
+      "studentId": "S/21/413"
+    },
+    {
+      "name": "Premashalini",
+      "studentId": "S/21/466"
+    },
+    {
+      "name": "Romesh",
+      "studentId": "S/21/489"
+    },
+    {
+      "name": "Shahama",
+      "studentId": "S/21/490"
+    },
+    {
+      "name": "Samadh",
+      "studentId": "S/21/493"
+    },
+    {
+      "name": "Sivothayan",
+      "studentId": "S/21/513"
+    },
+    {
+      "name": "Thushan",
+      "studentId": "S/21/528"
     }
+  ],
+  "main": "api/apiRouter.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node api/apiRouter.js"
+  },
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "node-fetch": "^3.3.2"
   }
+}

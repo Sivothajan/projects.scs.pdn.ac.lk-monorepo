@@ -27,7 +27,7 @@
 }
 
 .column h3::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -0.5rem;
