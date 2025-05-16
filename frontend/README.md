@@ -1,56 +1,119 @@
-# Documentation
+# Frontend Documentation
 
-Welcome to the documentation page for this project. Here you will find all the necessary information to understand, use, and contribute to the project.
+## Technology Stack
+- React 18
+- Vite
+- TailwindCSS
+- React Router DOM
+- React Query
 
-## Table of Contents
-- [Documentation](#documentation)
-  - [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
-  - [Installation](#installation)
-  - [Test](#test)
-  - [Contributing](#contributing)
-  - [License](#license)
+## Project Structure
+```
+frontend/
+├── public/          # Static assets
+│   ├── favicon/     # Favicon files
+│   └── images/      # Image assets
+├── src/
+│   ├── components/  # Reusable UI components
+│   ├── pages/       # Page components
+│   ├── hooks/       # Custom React hooks
+│   ├── context/     # React context providers
+│   ├── services/    # API services
+│   ├── utils/       # Utility functions
+│   ├── styles/      # Global styles
+│   └── types/       # TypeScript type definitions
+```
 
-## Introduction
-This project is designed to support student projects tied to the Department of Statistics & Computer Science, Faculty of Science, University of Peradeniya. It aims to provide a robust platform for students to collaborate, document, and showcase their work in statistics and computer science, fostering innovation and academic excellence.
+## Setup and Development
 
-## Installation
-Follow these steps to set up the project locally:
-1. Clone the repository:  
-    ```bash
-    git clone https://github.com/Sivothajan/projects.scs.pdn.ac.lk.git
-    ```
-2. Navigate to the project directory:  
-    ```bash
-    cd projects.scs.pdn.ac.lk
-    ```
-3. Install dependencies:  
-    ```bash
-    npm install
-    ```
-4. Start the development server:  
-    ```bash
-    npm run dev
-    ```
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
 
-## Test
-After setting up the project, you can test it by visiting:  
-`http://localhost:xxxx` in your web browser.
+### Installation
+1. Install dependencies:
+```bash
+npm install
+```
 
-Visit the following links to check pages:
-1. [Home](http://localhost:xxxx/)
-2. [About](http://localhost:xxxx/about)
-3. [Documentation](http://localhost:xxxx/documentation)
-4. [Error Page](http://localhost:xxxx/404)
+2. Set up environment variables:
+```bash
+cp .env.example .env
+```
 
-## Contributing
-We welcome contributions! To contribute, visit:  
-[projects.scs.sivothajan.me](https://gh.sivothajan.me/projects.scs.sivothajan.me)
+Required environment variables:
+- `VITE_API_URL`: Backend API URL
+- `VITE_GA_ID`: Google Analytics ID (optional)
+
+3. Start development server:
+```bash
+npm run dev
+```
+
+4. Build for production:
+```bash
+npm run build
+```
+
+## Features
+- Responsive design
+- Dark/Light theme support
+- Advanced search and filtering
+- Project categorization
+- Course-wise project views
+- Student portfolios
+
+## Component Documentation
+
+### Page Components
+- `Home.jsx`: Landing page with featured projects
+- `Projects.jsx`: Project listing and search
+- `ProjectDetail.jsx`: Individual project view
+- `Courses.jsx`: Course listing page
+- `About.jsx`: About page
+
+### Reusable Components
+- `Navbar.jsx`: Main navigation
+- `ProjectCard.jsx`: Project preview card
+- `SearchBar.jsx`: Search functionality
+- `FilterPanel.jsx`: Advanced filtering
+- `Pagination.jsx`: Page navigation
+
+## State Management
+- React Query for server state
+- Context API for application state
+- Local storage for user preferences
+
+## Testing
+Run tests using:
+```bash
+npm test
+```
+
+## Performance Optimization
+- Code splitting
+- Lazy loading
+- Image optimization
+- Caching strategies
+
+## Deployment
+The frontend is configured for Vercel deployment:
+
+1. Install Vercel CLI:
+```bash
+npm i -g vercel
+```
+
+2. Deploy:
+```bash
+vercel
+```
+
+## Browser Support
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
 ## License
-This project is licensed under the `MIT` license. See the [LICENSE](./LICENSE) file for more details.
-
----
-
-The project is open-source, and you can find it [here](https://gh.sivothajan.me/projects.scs.pdn.ac.lk).  
-© 2025 Author: [Sivothayan](https://sivothajan.me/#from-scs.projects.site). All rights reserved.  
+This project is licensed under the MIT License - see the LICENSE file for details.
