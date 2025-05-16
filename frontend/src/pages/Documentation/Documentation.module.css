@@ -1,174 +1,92 @@
+/* Enhanced custom CSS for Documentation.module.css */
 html, body {
-    margin: 0;
-    padding: 0;
-    background-color: whitesmoke;
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    margin: 1rem auto 0;
-    max-width: 900px;
-    line-height: 1.6;
-    color: #2c3e50;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #2c3e50;
-    margin-bottom: 1rem;
-    border-bottom: 3px solid #3498db;
-    padding-bottom: 0.5rem;
-  }
-  
-  .subtitle {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin: 2rem 0 1rem;
-    color: #34495e;
-    scroll-margin-top: 2rem;
-  }
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  box-sizing: border-box;
+}
 
-  .subsubtitle {
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin: 1.5rem 0 0.5rem;
-    color: #2c3e50;
-  }
-  
-  .description {
-    font-size: 1.2rem;
-    margin: 0 0 2rem;
-    color: #576574;
-    line-height: 1.8;
-  }
-  
-  .text {
-    font-size: 1.1rem;
-    margin: 0 0 1.5rem;
-    color: #2c3e50;
-  }
-  
-  .list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0 0 1.5rem;
-  }
-  
-  .list li {
-    margin-bottom: 0.8rem;
-    padding-left: 1.5rem;
-    position: relative;
-  }
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
-  .list li::before {
-    content: "•";
-    color: #3498db;
-    position: absolute;
-    left: 0;
-    font-weight: bold;
-  }
-  
-  .link {
-    text-decoration: none;
-    color: #3498db;
-    transition: color 0.2s ease;
-  }
-  
-  .link:hover {
-    color: #2980b9;
-    text-decoration: underline;
-  }
-  
-  .orderedList {
-    padding-left: 1.2rem;
-    margin: 0 0 1.5rem;
-  }
-  
-  .orderedList li {
-    margin-bottom: 1rem;
-  }
-  
-  .code {
-    font-family: 'Consolas', 'Monaco', monospace;
-    background: #f8f9fa;
-    padding: 0.2rem 0.4rem;
-    border-radius: 4px;
-    font-size: 0.9em;
-    color: #e74c3c;
-    border: 1px solid #eee;
-    margin: 0 0.2rem;
-    display: inline-block;
-  }
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin: 1rem auto;
+  width: 90%;
+  max-width: 950px;
+  line-height: 1.7;
+  color: #333;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-  .apiEndpoints {
-    background: #f8f9fa;
-    padding: 1.5rem;
-    border-radius: 8px;
-    margin: 1rem 0;
-    border: 1px solid #e1e8ed;
-  }
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
 
-  .envTitle {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 1.5rem 0 1rem;
-    color: #2c3e50;
-    border-bottom: 1px solid #e1e8ed;
-    padding-bottom: 0.5rem;
-  }
+.subtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem;
+  color: #34495e;
+  text-align: left;
+}
 
-  .envDescription {
-    margin-left: 1rem;
-    color: #576574;
-    font-size: 0.95rem;
-  }
+.subsubtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1.5rem 0 1rem;
+  color: #2c3e50;
+  text-align: left;
+}
 
-  .list li code + .envDescription {
-    display: inline-block;
-    vertical-align: middle;
-  }
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  margin: 1rem 0;
+  text-align: justify;
+}
 
-  .footer {
-    margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 1px solid #eee;
-    text-align: center;
-    color: #7f8c8d;
-  }
-  
-  .authorStamp {
-    font-size: 0.9rem;
-    color: #95a5a6;
-    text-align: center;
-  }
-  
-  @media (max-width: 768px) {
-    .container {
-        padding: 1rem;
-        margin: 0.5rem;
-    }
+.list {
+  list-style-type: disc;
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
 
-    .title {
-        font-size: 2rem;
-    }
+.orderedList {
+  list-style-type: decimal;
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
 
-    .subtitle {
-        font-size: 1.5rem;
-    }
+.link {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+}
 
-    .description {
-        font-size: 1.1rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .authorStamp {
-      max-width: 85%;
-    }
-  }
+.link:hover {
+  text-decoration: underline;
+}
+
+.code {
+  display: block;
+  background-color: #f4f4f4;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  color: #2c3e50;
+  margin: 0.5rem 0;
+}
