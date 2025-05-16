@@ -1,4 +1,4 @@
-# Department of Computer Science Projects Portal
+# Department of Statistics & Computer Science Projects Portal
 
 ## Overview
 A centralized platform for managing and showcasing student projects from the Department of Computer Science, University of Peradeniya.
