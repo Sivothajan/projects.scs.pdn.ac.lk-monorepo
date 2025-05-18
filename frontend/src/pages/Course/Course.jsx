@@ -27,7 +27,7 @@ function Course() {
 
   useEffect(() => {
     fetchRelatedProjects(courseId);
-  }, [fetchRelatedProjects]);
+  }, [fetchRelatedProjects, courseId]);
 
   const handleRleatedProjectsClick = useCallback(
     (projectId) => {

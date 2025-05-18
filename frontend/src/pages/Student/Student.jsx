@@ -29,7 +29,7 @@ function Student() {
     };
 
     validateAndSetDetails();
-  }, [upperCaseSNumber]);
+  }, [upperCaseSNumber, isValidS21SP513Format, isValidS21513Format]);
 
   const sMail = sNumber.toLowerCase() + "@sci.pdn.ac.lk";
 
@@ -62,6 +62,7 @@ function Student() {
           setHasError(true);
         }
       } catch (error) {
+        console.error("Error fetching student details:", error);
         setHasError(true);
       } finally {
         setLoading(false);
@@ -69,7 +70,7 @@ function Student() {
     };
 
     fetchStudentDetails();
-  }, [sNumber]);
+  }, [sNumber, isValidS21SP513Format, isValidS21513Format]);
 
   if (loading) {
     return <div className={studentStyle.loading}>Loading...</div>;
