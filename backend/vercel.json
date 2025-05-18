@@ -4,15 +4,40 @@
     {
       "src": "api/apiRouter.js",
       "use": "@vercel/node"
+    },
+    {
+      "src": "api/v1/apiRouter.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "api/v2/apiRouter.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
+    {
+      "src": "/v1/(.*)",
+      "dest": "/api/v1/apiRouter.js",
+      "methods": ["GET", "POST", "OPTIONS"],
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Content-Type"
+      }
+    },
+    {
+      "src": "/v2/(.*)",
+      "dest": "/api/v2/apiRouter.js",
+      "methods": ["GET", "POST", "OPTIONS"],
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Content-Type"
+      }
+    },
     {
       "src": "/(.*)",
       "dest": "/api/apiRouter.js",
       "methods": ["GET", "POST", "OPTIONS"],
       "headers": {
-        "Content-Type": "application/json",
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Headers": "Content-Type"
       }

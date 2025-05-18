@@ -44,10 +44,10 @@ function Instructor() {
           // data.profilePictureUrl
           setProfilePictureUrl(
             /*
-                        !data.profilePictureUrl || data.profilePictureUrl === 'undefined'
-                            ? '/images/placeholder.webp'
-                            : data.profilePictureUrl
-                            */
+            !data.profilePictureUrl || data.profilePictureUrl === 'undefined'
+              ? '/images/placeholder.webp'
+              : data.profilePictureUrl
+            */
             "/images/placeholder.webp",
           );
           setSMail(data.email || "");

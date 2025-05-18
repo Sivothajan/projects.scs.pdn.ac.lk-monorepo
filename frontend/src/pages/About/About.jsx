@@ -75,7 +75,9 @@ function About() {
         <br />
         <br />
         The project is open-source and you can find it from{" "}
-        <a href="https://gh.sivothajan.me/projects.scs.pdn.ac.lk">here.</a>
+        <a href="https://github.com/sivothajan/projects.scs.pdn.ac.lk-monorepo">
+          here.
+        </a>
         <br />© 2025 Author:{" "}
         <a href="https://sivothajan.me/#from-scs.projects.site">Sivothayan</a>.
         All rights reserved.

@@ -2,7 +2,7 @@
 
 ## Overview
 
-This directory contains the structured data files for the Projects Portal, storing information about courses, projects, students, and instructors in JSON format.
+This directory contains the structured data files for the Projects Portal, storing information about courses, projects, students, and instructors in JSON format. These files are used to manage and display data on the platform.
 
 ## File Structure
 
@@ -19,91 +19,95 @@ data/
 ### projects.json
 
 ```json
-{
-  "id": "string",
-  "title": "string",
-  "description": "string",
-  "course": "string",
-  "year": "number",
-  "semester": "number",
-  "batch": "string",
-  "tags": ["string"],
-  "github": "string",
-  "demo": "string",
-  "image": "string",
-  "team": ["string"],
-  "supervisors": ["string"],
-  "status": "string"
-}
+[
+  {
+    "id": "string",
+    "name": "string",
+    "courseCode": "string",
+    "instructor": "string",
+    "instructorLink": "string",
+    "academicYear": "number",
+    "description": "string",
+    "projectLink": "string",
+    "coverImageUrl": "string",
+    "authors": [
+      {
+        "name": "string",
+        "link": "string",
+        "sNumber": "string"
+      }
+    ]
+  }
+]
 ```
 
 ### courses.json
 
 ```json
-{
-  "code": "string",
-  "name": "string",
-  "description": "string",
-  "credits": "number",
-  "semester": "number",
-  "department": "string"
-}
+[
+  {
+    "courseImageUrl": "string",
+    "title": "string",
+    "courseCode": "string",
+    "description": "string"
+  }
+]
 ```
 
 ### students.json
 
 ```json
-{
-  "id": "string",
-  "name": "string",
-  "email": "string",
-  "batch": "string",
-  "department": "string",
-  "projects": ["string"]
-}
+[
+  {
+    "sNumber": "string",
+    "name": "string",
+    "department": "string",
+    "year": "string"
+  }
+]
 ```
 
 ### instructors.json
 
 ```json
-{
-  "id": "string",
-  "name": "string",
-  "title": "string",
-  "email": "string",
-  "department": "string",
-  "projects": ["string"]
-}
+[
+  {
+    "name": "string",
+    "department": "string",
+    "profilePictureUrl": "string",
+    "email": "string"
+  }
+]
 ```
 
 ## Data Management Guidelines
 
 ### Adding New Data
 
-1. Follow the schema structures defined above
-2. Ensure all required fields are filled
-3. Validate JSON syntax before committing
-4. Use UTF-8 encoding
+1. Follow the schema structures defined above.
+2. Ensure all required fields are filled.
+3. Validate JSON syntax before committing.
+4. Use UTF-8 encoding.
 
 ### Updating Existing Data
 
-1. Maintain data consistency across related files
-2. Update related references when modifying IDs
-3. Keep historical data for completed projects
+1. Maintain data consistency across related files.
+2. Update related references when modifying IDs.
+3. Keep historical data for completed projects.
 
 ### Data Validation
 
-- All JSON files must be valid
-- Required fields cannot be null/empty
-- IDs must be unique
-- References must exist
-- Dates should follow ISO 8601 format
+- All JSON files must be valid.
+- Required fields cannot be null/empty.
+- IDs must be unique.
+- References must exist.
+- Dates should follow ISO 8601 format.
 
 ### Backup Procedures
 
-1. Regular automated backups
-2. Version control through Git
-3. Backup validation checks
+1. Regular automated backups.
+2. Version control through Git.
+3. Backup validation checks.
 
 ## Tools and Scripts
 
@@ -114,17 +118,17 @@ data/
 
 ## Best Practices
 
-1. Keep data normalized
-2. Maintain consistent formatting
-3. Use descriptive IDs
-4. Include relevant metadata
-5. Document any special cases
+1. Keep data normalized.
+2. Maintain consistent formatting.
+3. Use descriptive IDs.
+4. Include relevant metadata.
+5. Document any special cases.
 
 ## Data Privacy
 
-- No sensitive personal information
-- Follow university data policies
-- Comply with privacy regulations
+- No sensitive personal information.
+- Follow university data policies.
+- Comply with privacy regulations.
 
 ## License
 

@@ -322,7 +322,7 @@ function Documentation() {
           <br />
           Source code available on{" "}
           <a
-            href="https://gh.sivothajan.me/projects.scs.pdn.ac.lk"
+            href="https://github.com/sivothajan/projects.scs.pdn.ac.lk-monorepo"
             className={styles.link}
           >
             GitHub

@@ -47,9 +47,14 @@ function Home() {
           <br />
           Browse documentation, code, and media from academic and
           extracurricular projects done by the Students.
+          <br />
+          <br />
+          To contribute, please visit:{" "}
+          <a href="https://github.com/sivothajan/projects.scs.pdn.ac.lk-monorepo">
+            GitHub
+          </a>
         </div>
       </div>
-
       <section className={styles.coursesSection}>
         <h2 className={styles.courseSpecificProjects}>
           Course-Specific Projects
