@@ -200,7 +200,7 @@ v2Router.get("/v2/projects/cc/:courseCode", async (req, res) => {
   } catch (error) {
     console.error("Error fetching projects:", error);
     console.error(`Error details: ${error.message}`);
-    res.status(500).json({ error: "Internal Server Error!" });
+    res.status(200).json([]);
   }
 });
 
