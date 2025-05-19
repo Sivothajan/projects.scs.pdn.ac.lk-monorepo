@@ -3,16 +3,20 @@
 ## Common Development Practices
 
 ### Core Practices
+
 1. **API Versioning**
+
    - All endpoints are versioned (v1, v2)
    - Breaking changes require new API version
 
 2. **Data Handling**
+
    - Use JSON files for local development
    - Use GitHub API for production data
    - Always validate data against schemas
 
 3. **Development Flow**
+
    - Write OpenAPI specs first
    - Test locally before deployment
    - Use environment variables for configuration
@@ -68,6 +72,7 @@ cp .env.example .env
 Environment variables:
 
 Required variables:
+
 - `PORT`: Server port number (Default: 3000)
 - `USE_LOCAL_DATA`: Set to "true" to use local JSON files, "false" to use GitHub data
 - `GITHUB_TOKEN`: GitHub Personal Access Token (Required if USE_LOCAL_DATA=false)
@@ -100,6 +105,7 @@ The API is versioned (v1 and v2) with data served from JSON files.
 #### V1 Endpoints
 
 Data structure in `data/v1/`:
+
 ```
 projects.json    - Project details with course mappings
 courses.json     - Course information
@@ -108,12 +114,14 @@ students.json    - Student information
 ```
 
 Available endpoints:
+
 - `GET /v1/projects` - List all projects
 - `GET /v1/courses` - List all courses
 - `GET /v1/instructors` - List all instructors
 - `GET /v1/students` - List all students
 
 Project data format example:
+
 ```json
 {
   "id": "CSC1013-2025-001",
@@ -129,6 +137,7 @@ Project data format example:
 #### V2 Endpoints
 
 V2 API follows OpenAPI/Swagger specification. For detailed documentation:
+
 - `openapi.json` - Machine-readable API specification
 - `openapi.yaml` - Human-readable API specification
 
@@ -136,8 +145,8 @@ V2 API follows OpenAPI/Swagger specification. For detailed documentation:
 
 ```json
 {
-  "data": {},     // Response data
-  "error": null   // Error message if any
+  "data": {}, // Response data
+  "error": null // Error message if any
 }
 ```
 
@@ -158,6 +167,7 @@ npm test  # Note: Currently exits with "Error: no test specified"
 ```
 
 Testing TODO:
+
 - Add endpoint testing with Jest or Mocha
 - Add data validation tests
 - Add API integration tests
@@ -167,16 +177,19 @@ Testing TODO:
 The backend is configured for deployment on Vercel with multi-router support:
 
 1. Install Vercel CLI:
+
 ```bash
 npm i -g vercel
 ```
 
 2. Verify vercel.json configuration (already set up for):
+
    - Main API router (api/apiRouter.js)
    - V1 API router (api/v1/apiRouter.js)
    - V2 API router (api/v2/apiRouter.js)
 
 3. Deploy:
+
 ```bash
 vercel
 ```

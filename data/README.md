@@ -16,8 +16,10 @@ data/
 ## Schemas
 
 ### Project Structure (v2)
+
 - Projects: `/v2/project/{department}/{year}/{category}/{courseCode}-{year}-{projectId}.json`
   - Example: `/v2/project/csc/2025/2000/csc2012-2025-002.json`
+
 ```json
 {
   "id": "CSC2012-2025-002",
@@ -28,11 +30,12 @@ data/
   "description": "Project description",
   "projectLink": "https://github.com/...",
   "coverImageUrl": "/images/...",
-  "authors": [{"name": "Full Name", "sNumber": "S12345"}]
+  "authors": [{ "name": "Full Name", "sNumber": "S12345" }]
 }
 ```
 
 ### Data Validation Rules
+
 - Project IDs: `{COURSECODE}-{YEAR}-{###}` (e.g., CSC2012-2025-002)
 - Student IDs: `S{##}{###}` (batch number + sequence)
 - Course codes: `{DEPT}{#}{###}` (e.g., CSC2012)
@@ -41,8 +44,8 @@ data/
 - Year directories must be 4-digit format
 - Category directories must be in thousands (1000, 2000, etc.)
 
-
 ## API Endpoints (v2)
+
 - `GET /v2/courses` - List all courses
 - `GET /v2/courses/{courseCode}` - Get course by code
 - `GET /v2/projects/cc/{courseCode}` - Get projects by course
@@ -53,4 +56,5 @@ data/
 All endpoints return JSON with HTTP 200 for success or 4xx/5xx for errors.
 
 ## License
+
 MIT License - see LICENSE file for details.

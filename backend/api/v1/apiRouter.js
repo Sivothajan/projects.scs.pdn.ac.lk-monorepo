@@ -20,7 +20,9 @@ const LOCAL_PROJECTS_PATH = path.join(LOCAL_DATA_PATH, "projects.json");
 const LOCAL_STUDENTS_PATH = path.join(LOCAL_DATA_PATH, "students.json");
 
 // Environment variables for data sources
-const BASE_GITHUB_URL = process.env.BASE_GITHUB_URL_V1 || "https://raw.githubusercontent.com/Sivothajan/projects.scs.pdn.ac.lk-monorepo/master/data/v1";
+const BASE_GITHUB_URL =
+  process.env.BASE_GITHUB_URL_V1 ||
+  "https://raw.githubusercontent.com/Sivothajan/projects.scs.pdn.ac.lk-monorepo/master/data/v1";
 const COURSES_URL = `${BASE_GITHUB_URL}/courses.json`;
 const INSTRUCTORS_URL = `${BASE_GITHUB_URL}/instructors.json`;
 const PROJECTS_URL = `${BASE_GITHUB_URL}/projects.json`;
@@ -52,7 +54,9 @@ const fetchData = async (url, relative) => {
           const data = await fs.readFile(localPath, "utf8");
           return JSON.parse(data);
         } catch (localError) {
-          console.error(`Error reading local file ${localPath}: ${localError.message}`);
+          console.error(
+            `Error reading local file ${localPath}: ${localError.message}`,
+          );
           throw new Error(
             `Failed to read local data file ${localPath}: ${localError.message}`,
           );
@@ -75,27 +79,33 @@ const fetchData = async (url, relative) => {
 
       // Fallback to GitHub fetch
       if (!GITHUB_TOKEN) {
-        throw new Error("GitHub token is required for accessing private repository");
+        throw new Error(
+          "GitHub token is required for accessing private repository",
+        );
       }
 
       console.log(`Fetching data from GitHub: ${url}`);
       const response = await fetch(url, {
         headers: {
           Authorization: `token ${GITHUB_TOKEN}`,
-          Accept: "application/vnd.github.v3.raw"
-        }
+          Accept: "application/vnd.github.v3.raw",
+        },
       });
-      
+
       if (!response.ok) {
         console.error(`Failed to fetch from URL: ${url}`);
-        throw new Error(`Network error: ${response.status} - ${response.statusText}`);
+        throw new Error(
+          `Network error: ${response.status} - ${response.statusText}`,
+        );
       }
-      
+
       try {
         const data = await response.json();
         return data;
       } catch (jsonError) {
-        throw new Error(`Invalid JSON response from ${url}: ${jsonError.message}`);
+        throw new Error(
+          `Invalid JSON response from ${url}: ${jsonError.message}`,
+        );
       }
     }
   } catch (error) {
@@ -148,8 +158,7 @@ v1Router.get("/v1/instructor/:instructorUsername", async (req, res) => {
 
     const instructors = await fetchData(INSTRUCTORS_URL, "instructors.json");
     const instructor = instructors.find(
-      (i) =>
-        i.username.toLowerCase() === instructorUsername.toLowerCase(),
+      (i) => i.username.toLowerCase() === instructorUsername.toLowerCase(),
     );
     if (!instructor) {
       return res.status(404).json({ error: "Instructor not found" });

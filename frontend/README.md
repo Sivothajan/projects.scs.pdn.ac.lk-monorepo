@@ -73,10 +73,12 @@ npm run build
 - `Pagination.jsx`: Page navigation
 
 ### Linting and Type Checking
+
 ```bash
 # Run ESLint
 npm run lint
 ```
+
 ## Deployment
 
 The frontend is configured for Vercel deployment:

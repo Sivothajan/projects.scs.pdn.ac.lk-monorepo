@@ -21,7 +21,9 @@ const LOCAL_STUDENT_PATH = path.join(LOCAL_DATA_PATH, "/student");
 const LOCAL_COMMON_PATH = path.join(LOCAL_DATA_PATH, "/common");
 
 // Environment variables for data sources
-const BASE_GITHUB_URL = process.env.BASE_GITHUB_URL_V2 || "https://raw.githubusercontent.com/Sivothajan/projects.scs.pdn.ac.lk-monorepo/master/data/v2";
+const BASE_GITHUB_URL =
+  process.env.BASE_GITHUB_URL_V2 ||
+  "https://raw.githubusercontent.com/Sivothajan/projects.scs.pdn.ac.lk-monorepo/master/data/v2";
 const COURSE_URL = `${BASE_GITHUB_URL}/course`;
 const INSTRUCTOR_URL = `${BASE_GITHUB_URL}/instructor`;
 const PROJECT_URL = `${BASE_GITHUB_URL}/project`;
@@ -67,7 +69,10 @@ const fetchData = async (reqPath, filePath, jsonName, githubUrl) => {
       if (localPath) {
         try {
           console.log(`Using local data from: ${localPath}`);
-          const fileName = path.join(localPath, `${jsonName.toLowerCase() || "template"}.json`);
+          const fileName = path.join(
+            localPath,
+            `${jsonName.toLowerCase() || "template"}.json`,
+          );
           const data = await fs.readFile(fileName, "utf8");
           return JSON.parse(data);
         } catch (localError) {
@@ -82,7 +87,10 @@ const fetchData = async (reqPath, filePath, jsonName, githubUrl) => {
       if (localPath) {
         try {
           console.log(`Attempting to read data from local file: ${localPath}`);
-          const fileName = path.join(localPath, `${jsonName || "template"}.json`);
+          const fileName = path.join(
+            localPath,
+            `${jsonName || "template"}.json`,
+          );
           const data = await fs.readFile(fileName, "utf8");
           return JSON.parse(data);
         } catch (localError) {
@@ -95,26 +103,30 @@ const fetchData = async (reqPath, filePath, jsonName, githubUrl) => {
 
       // Fallback to GitHub fetch
       if (!GITHUB_TOKEN) {
-        throw new Error("GitHub token is required for accessing private repository");
+        throw new Error(
+          "GitHub token is required for accessing private repository",
+        );
       }
-      
+
       console.log(`Fetching data from GitHub: ${githubUrl}`);
       // Construct the final URL to exactly match local path structure
-      const finalUrl = filePath 
-        ? `${githubUrl}${filePath.startsWith('/') ? '' : '/'}${filePath}${jsonName ? `/${jsonName.toLowerCase()}.json` : '/template.json'}`
+      const finalUrl = filePath
+        ? `${githubUrl}${filePath.startsWith("/") ? "" : "/"}${filePath}${jsonName ? `/${jsonName.toLowerCase()}.json` : "/template.json"}`
         : `${githubUrl}/${jsonName.toLowerCase() || "template"}.json`;
-      
+
       console.log(`Final URL: ${finalUrl}`);
       const response = await fetch(finalUrl, {
         headers: {
           Authorization: `token ${GITHUB_TOKEN}`,
-          Accept: "application/vnd.github.v3.raw"
-        }
+          Accept: "application/vnd.github.v3.raw",
+        },
       });
-      
+
       if (!response.ok) {
         console.error(`Failed to fetch from URL: ${finalUrl}`);
-        throw new Error(`Network error: ${response.status} - ${response.statusText}`);
+        throw new Error(
+          `Network error: ${response.status} - ${response.statusText}`,
+        );
       }
       const data = await response.json();
       return data;
@@ -135,7 +147,12 @@ v2Router.get("/v2/courses/:courseCode", async (req, res) => {
 
     // Valid courseCode format (e.g., "CSC1013")
     const coursePrefix = courseCode.slice(0, 3).toLowerCase();
-    const course = await fetchData("/v2/course/", coursePrefix, courseCode, COURSE_URL);
+    const course = await fetchData(
+      "/v2/course/",
+      coursePrefix,
+      courseCode,
+      COURSE_URL,
+    );
     if (!course) {
       return res.status(404).json({ error: "Course not found" });
     }
@@ -166,7 +183,12 @@ v2Router.get("/v2/instructor/:instructorUsername", async (req, res) => {
       return res.status(400).json({ error: "Invalid instructor username" });
     }
 
-    const instructor = await fetchData("/v2/instructor/", null, instructorUsername, INSTRUCTOR_URL);
+    const instructor = await fetchData(
+      "/v2/instructor/",
+      null,
+      instructorUsername,
+      INSTRUCTOR_URL,
+    );
     if (!instructor) {
       return res.status(404).json({ error: "Instructor not found" });
     }
@@ -192,7 +214,12 @@ v2Router.get("/v2/projects/cc/:courseCode", async (req, res) => {
       courseCategory += "000";
     }
     const coursePath = `relatedProjects/${coursePrefix}/${courseCategory}`;
-    const projects = await fetchData("/v2/projects/cc/", coursePath, courseCode, COMMON_URL);
+    const projects = await fetchData(
+      "/v2/projects/cc/",
+      coursePath,
+      courseCode,
+      COMMON_URL,
+    );
     if (!projects || projects.length === 0) {
       return res.status(200).json([]);
     }
@@ -216,7 +243,12 @@ v2Router.get("/v2/projects/id/:projectId", async (req, res) => {
     let courseCategory = projectId.slice(3, 4).toLowerCase();
     courseCategory += "000";
     const projectUrl = `${coursePrefix}/${projectYear}/${courseCategory}`;
-    const project = await fetchData("/v2/projects/id/", projectUrl, projectId, PROJECT_URL);
+    const project = await fetchData(
+      "/v2/projects/id/",
+      projectUrl,
+      projectId,
+      PROJECT_URL,
+    );
     if (!project) {
       return res.status(404).json({ error: "Project not found" });
     }
@@ -238,7 +270,12 @@ v2Router.get("/v2/student/:studentId", async (req, res) => {
     const studentBatch = studentId.slice(0, 3).toLowerCase();
     const studentUrl = `${STUDENT_URL}/${studentBatch}`;
     console.log(`Fetching student data from: ${studentUrl}`);
-    const student = await fetchData("/v2/student/", studentBatch, studentId, STUDENT_URL);
+    const student = await fetchData(
+      "/v2/student/",
+      studentBatch,
+      studentId,
+      STUDENT_URL,
+    );
     if (!student) {
       return res.status(404).json({ error: "Student not found" });
     }

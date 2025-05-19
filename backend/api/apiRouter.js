@@ -1,6 +1,6 @@
-import express from 'express';
-import cors from 'cors';
-import { json } from 'express';
+import express from "express";
+import cors from "cors";
+import { json } from "express";
 
 const router = express();
 
@@ -9,13 +9,13 @@ router.use(cors());
 router.use(json());
 
 // Root route
-router.get('/*', (req, res) => {
+router.get("/*", (req, res) => {
   res.json({
-    message: 'Projects API',
+    message: "Projects API",
     versions: {
-      v1: '/v1',
-      v2: '/v2'
-    }
+      v1: "/v1",
+      v2: "/v2",
+    },
   });
 });
 
