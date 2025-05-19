@@ -2,29 +2,11 @@
 
 ## Technology Stack
 
-- React 18
-- Vite
-- TailwindCSS
-- React Router DOM
-- React Query
-
-## Project Structure
-
-```
-frontend/
-├── public/          # Static assets
-│   ├── favicon/     # Favicon files
-│   └── images/      # Image assets
-├── src/
-│   ├── components/  # Reusable UI components
-│   ├── pages/       # Page components
-│   ├── hooks/       # Custom React hooks
-│   ├── context/     # React context providers
-│   ├── services/    # API services
-│   ├── utils/       # Utility functions
-│   ├── styles/      # Global styles
-│   └── types/       # TypeScript type definitions
-```
+- React with JavaScript
+- Vite for build tooling
+- Module CSS for styling
+- React Router DOM for routing
+- ESLint and Prettier for code quality
 
 ## Setup and Development
 
@@ -49,10 +31,9 @@ cp .env.example .env
 
 Required environment variables:
 
-- `VITE_API_URL`: Backend API URL
-- `VITE_GA_ID`: Google Analytics ID (optional)
+- `VITE_API_URL`: Backend API URL (Default: https://api.projects.scs.pdn.ac.lk)
 
-3. Start development server:
+1. Start development server:
 
 ```bash
 npm run dev
@@ -91,27 +72,11 @@ npm run build
 - `FilterPanel.jsx`: Advanced filtering
 - `Pagination.jsx`: Page navigation
 
-## State Management
-
-- React Query for server state
-- Context API for application state
-- Local storage for user preferences
-
-## Testing
-
-Run tests using:
-
+### Linting and Type Checking
 ```bash
-npm test
+# Run ESLint
+npm run lint
 ```
-
-## Performance Optimization
-
-- Code splitting
-- Lazy loading
-- Image optimization
-- Caching strategies
-
 ## Deployment
 
 The frontend is configured for Vercel deployment:
@@ -127,13 +92,6 @@ npm i -g vercel
 ```bash
 vercel
 ```
-
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
 
 ## License
 

@@ -19,26 +19,29 @@ const LOCAL_INSTRUCTORS_PATH = path.join(LOCAL_DATA_PATH, "instructors.json");
 const LOCAL_PROJECTS_PATH = path.join(LOCAL_DATA_PATH, "projects.json");
 const LOCAL_STUDENTS_PATH = path.join(LOCAL_DATA_PATH, "students.json");
 
-// Environment variables for data sources (abstracted)
-const COURSES_URL = process.env.GITHUB_COURSES_URL;
-const INSTRUCTORS_URL = process.env.GITHUB_INSTRUCTORS_URL;
-const PROJECTS_URL = process.env.GITHUB_PROJECTS_URL;
-const STUDENTS_URL = process.env.GITHUB_STUDENTS_URL;
+// Environment variables for data sources
+const BASE_GITHUB_URL = process.env.BASE_GITHUB_URL_V1 || "https://raw.githubusercontent.com/Sivothajan/projects.scs.pdn.ac.lk-monorepo/master/data/v1";
+const COURSES_URL = `${BASE_GITHUB_URL}/courses.json`;
+const INSTRUCTORS_URL = `${BASE_GITHUB_URL}/instructors.json`;
+const PROJECTS_URL = `${BASE_GITHUB_URL}/projects.json`;
+const STUDENTS_URL = `${BASE_GITHUB_URL}/students.json`;
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 
 // Helper function to fetch data (first from local file, then from GitHub as fallback)
-const fetchData = async (url) => {
+const fetchData = async (url, relative) => {
   try {
     // Determine which local file to check based on the URL
     let localPath = null;
-    if (url === COURSES_URL) {
+    if (relative === "courses.json") {
       localPath = LOCAL_COURSES_PATH;
-    } else if (url === INSTRUCTORS_URL) {
+    } else if (relative === "instructors.json") {
       localPath = LOCAL_INSTRUCTORS_PATH;
-    } else if (url === PROJECTS_URL) {
+    } else if (relative === "projects.json") {
       localPath = LOCAL_PROJECTS_PATH;
-    } else if (url === STUDENTS_URL) {
+    } else if (relative === "students.json") {
       localPath = LOCAL_STUDENTS_PATH;
+    } else {
+      throw new Error("Unknown data source URL");
     }
 
     // If USE_LOCAL_DATA flag is set or GitHub token isn't available, prioritize local files
@@ -49,9 +52,9 @@ const fetchData = async (url) => {
           const data = await fs.readFile(localPath, "utf8");
           return JSON.parse(data);
         } catch (localError) {
-          console.error(`Error reading local file: ${localError.message}`);
+          console.error(`Error reading local file ${localPath}: ${localError.message}`);
           throw new Error(
-            `Failed to read local data file: ${localError.message}`,
+            `Failed to read local data file ${localPath}: ${localError.message}`,
           );
         }
       }
@@ -64,26 +67,36 @@ const fetchData = async (url) => {
           return JSON.parse(data);
         } catch (localError) {
           console.log(
-            `Could not read from local file (${localError.message}), falling back to GitHub`,
+            `Could not read from local file ${localPath} (${localError.message}), falling back to GitHub`,
           );
           // If local file doesn't exist or has invalid JSON, continue to GitHub fetch
         }
       }
 
       // Fallback to GitHub fetch
+      if (!GITHUB_TOKEN) {
+        throw new Error("GitHub token is required for accessing private repository");
+      }
+
       console.log(`Fetching data from GitHub: ${url}`);
       const response = await fetch(url, {
         headers: {
           Authorization: `token ${GITHUB_TOKEN}`,
-          Accept: "v1Routerlication/vnd.github.raw+json", // Required for GitHub API
-        },
+          Accept: "application/vnd.github.v3.raw"
+        }
       });
+      
       if (!response.ok) {
-        throw new Error(`Network error: ${response.status}`);
+        console.error(`Failed to fetch from URL: ${url}`);
+        throw new Error(`Network error: ${response.status} - ${response.statusText}`);
       }
-      return response.json().catch(() => {
-        throw new Error("Invalid JSON response");
-      });
+      
+      try {
+        const data = await response.json();
+        return data;
+      } catch (jsonError) {
+        throw new Error(`Invalid JSON response from ${url}: ${jsonError.message}`);
+      }
     }
   } catch (error) {
     console.error(`Error fetching data: ${error.message}`);
@@ -99,7 +112,7 @@ v1Router.get("/v1/courses/:courseId", async (req, res) => {
       return res.status(400).json({ error: "Invalid course ID" });
     }
 
-    const courses = await fetchData(COURSES_URL);
+    const courses = await fetchData(COURSES_URL, "courses.json");
     const course = courses.find(
       (c) => c.courseCode.toLowerCase() === courseId.toLowerCase(),
     );
@@ -117,7 +130,7 @@ v1Router.get("/v1/courses/:courseId", async (req, res) => {
 // Get all courses with optional filtering
 v1Router.get("/v1/courses", async (req, res) => {
   try {
-    const courses = await fetchData(COURSES_URL);
+    const courses = await fetchData(COURSES_URL, "courses.json");
     res.status(200).json(courses);
   } catch (error) {
     console.error("Error fetching courses:", error);
@@ -126,18 +139,17 @@ v1Router.get("/v1/courses", async (req, res) => {
 });
 
 // Get instructor details by name
-v1Router.get("/v1/instructor/:instructorName", async (req, res) => {
+v1Router.get("/v1/instructor/:instructorUsername", async (req, res) => {
   try {
-    const { instructorName } = req.params;
-    if (!instructorName || typeof instructorName !== "string") {
+    const { instructorUsername } = req.params;
+    if (!instructorUsername || typeof instructorUsername !== "string") {
       return res.status(400).json({ error: "Invalid instructor name" });
     }
 
-    const instructors = await fetchData(INSTRUCTORS_URL);
+    const instructors = await fetchData(INSTRUCTORS_URL, "instructors.json");
     const instructor = instructors.find(
       (i) =>
-        i.name.toLowerCase().replace(/(\s|%20)/g, "-") ===
-        instructorName.toLowerCase().replace(/(\s|%20)/g, "-"),
+        i.username.toLowerCase() === instructorUsername.toLowerCase(),
     );
     if (!instructor) {
       return res.status(404).json({ error: "Instructor not found" });
@@ -157,7 +169,7 @@ v1Router.get("/v1/projects/cc/:courseCode", async (req, res) => {
     return res.status(400).json({ error: "Invalid course code" });
   }
   try {
-    const projects = await fetchData(PROJECTS_URL);
+    const projects = await fetchData(PROJECTS_URL, "projects.json");
     const filteredProjects = projects.filter(
       (project) =>
         project.courseCode.toLowerCase() === courseCode.toLowerCase(),
@@ -177,7 +189,7 @@ v1Router.get("/v1/projects/id/:projectId", async (req, res) => {
       return res.status(400).json({ error: "Invalid project ID" });
     }
 
-    const projects = await fetchData(PROJECTS_URL);
+    const projects = await fetchData(PROJECTS_URL, "projects.json");
     const project = projects.find(
       (p) => p.id.toLowerCase() === projectId.toLowerCase(),
     );
@@ -205,7 +217,7 @@ v1Router.get("/v1/projects/id/:projectId/n/:projectName", async (req, res) => {
       return res.status(400).json({ error: "Invalid project ID or name" });
     }
 
-    const projects = await fetchData(PROJECTS_URL);
+    const projects = await fetchData(PROJECTS_URL, "projects.json");
     const normalizedProjectName = projectName
       .toLowerCase()
       .replace(/(\s|%20)/g, "-");
@@ -234,7 +246,7 @@ v1Router.get("/v1/student/:studentId", async (req, res) => {
       return res.status(400).json({ error: "Invalid student ID" });
     }
 
-    const students = await fetchData(STUDENTS_URL);
+    const students = await fetchData(STUDENTS_URL, "students.json");
     const student = students.find(
       (s) => s.sNumber.toLowerCase() === studentId.toLowerCase(),
     );
@@ -247,6 +259,14 @@ v1Router.get("/v1/student/:studentId", async (req, res) => {
     console.error("Error fetching student:", error);
     res.status(500).json({ error: error.message });
   }
+});
+
+// Catch-all for unmatched paths
+v1Router.all("*", (req, res) => {
+  res.status(404).json({
+    error: "Route not found in v1 API",
+    path: req.originalUrl,
+  });
 });
 
 const PORT = process.env.PORT || 3000;

@@ -1,0 +1,25 @@
+[
+  {
+    "id": "STA1013-2025-047",
+    "name": "Probability Simulator",
+    "courseCode": "STA1013",
+    "instructor": "S.A. Ruwan Punchi Manage",
+    "instructorLink": "/instructor/ruwanpm-sci",
+    "academicYear": 2025,
+    "description": "Simulate basic probability experiments like coin flips and dice rolls.",
+    "projectLink": "https://github.com/pdn-scs/prob-simulator",
+    "coverImageUrl": "/images/course-cover-images/STA.webp",
+    "authors": [
+      {
+        "name": "Anuruddika DKR",
+        "link": "/student/S20574",
+        "sNumber": "S20574"
+      },
+      {
+        "name": "Bandaranayake HMPD",
+        "link": "/student/S20321",
+        "sNumber": "S20321"
+      }
+    ]
+  }
+]

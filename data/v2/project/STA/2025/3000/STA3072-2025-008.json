@@ -1,0 +1,25 @@
+[
+  {
+    "id": "STA3072-2025-008",
+    "name": "Time Series Forecasting",
+    "courseCode": "STA3072",
+    "instructor": "Hemalika T.K. Abeysundara",
+    "instructorLink": "/instructor/hemalika-sci",
+    "academicYear": 2025,
+    "description": "Create a model to forecast weather patterns using time series data.",
+    "projectLink": "https://projects.sci.pdn.ac.lk/time-series",
+    "coverImageUrl": "/images/course-cover-images/STA.webp",
+    "authors": [
+      {
+        "name": "Chamika Wijethunga",
+        "link": "/student/S19393",
+        "sNumber": "S19393"
+      },
+      {
+        "name": "Chathumi Gunathilaka",
+        "link": "/student/S19564",
+        "sNumber": "S19564"
+      }
+    ]
+  }
+]

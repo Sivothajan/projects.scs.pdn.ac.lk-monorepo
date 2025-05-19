@@ -1,0 +1,8 @@
+[
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Digital Image Processing",
+    "courseCode": "DSC3182",
+    "description": "Techniques for processing and analyzing digital images in data science."
+  }
+]

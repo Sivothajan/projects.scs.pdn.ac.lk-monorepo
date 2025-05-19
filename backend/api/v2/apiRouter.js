@@ -13,36 +13,53 @@ v2Router.use(cors()); // Enable CORS for all routes
 v2Router.use(json());
 
 // Local data file paths
-const LOCAL_DATA_PATH = path.resolve(process.cwd(), "../data");
-const LOCAL_COURSES_PATH = path.join(LOCAL_DATA_PATH, "/course");
-const LOCAL_INSTRUCTORS_PATH = path.join(LOCAL_DATA_PATH, "/instructor");
-const LOCAL_PROJECTS_PATH = path.join(LOCAL_DATA_PATH, "/project");
-const LOCAL_STUDENTS_PATH = path.join(LOCAL_DATA_PATH, "/student");
+const LOCAL_DATA_PATH = path.resolve(process.cwd(), "../data/v2");
+const LOCAL_COURSE_PATH = path.join(LOCAL_DATA_PATH, "/course");
+const LOCAL_INSTRUCTOR_PATH = path.join(LOCAL_DATA_PATH, "/instructor");
+const LOCAL_PROJECT_PATH = path.join(LOCAL_DATA_PATH, "/project");
+const LOCAL_STUDENT_PATH = path.join(LOCAL_DATA_PATH, "/student");
 const LOCAL_COMMON_PATH = path.join(LOCAL_DATA_PATH, "/common");
 
-// Environment variables for data sources (abstracted)
-const COURSE_URL = process.env.GITHUB_COURSE_URL;
-const INSTRUCTOR_URL = process.env.GITHUB_INSTRUCTOR_URL;
-const PROJECT_URL = process.env.GITHUB_PROJECT_URL;
-const STUDENT_URL = process.env.GITHUB_STUDENT_URL;
-const COMMON_URL = process.env.GITHUB_COMMON_URL;
+// Environment variables for data sources
+const BASE_GITHUB_URL = process.env.BASE_GITHUB_URL_V2 || "https://raw.githubusercontent.com/Sivothajan/projects.scs.pdn.ac.lk-monorepo/master/data/v2";
+const COURSE_URL = `${BASE_GITHUB_URL}/course`;
+const INSTRUCTOR_URL = `${BASE_GITHUB_URL}/instructor`;
+const PROJECT_URL = `${BASE_GITHUB_URL}/project`;
+const STUDENT_URL = `${BASE_GITHUB_URL}/student`;
+const COMMON_URL = `${BASE_GITHUB_URL}/common`;
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 
 // Helper function to fetch data (first from local file, then from GitHub as fallback)
-const fetchData = async (url, jsonName) => {
+const fetchData = async (reqPath, filePath, jsonName, githubUrl) => {
   try {
     // Determine which local file to check based on the URL
     let localPath = null;
-    if (url === COURSE_URL) {
-      localPath = LOCAL_COURSES_PATH;
-    } else if (url === INSTRUCTOR_URL) {
-      localPath = LOCAL_INSTRUCTORS_PATH;
-    } else if (url === PROJECT_URL) {
-      localPath = LOCAL_PROJECTS_PATH;
-    } else if (url === STUDENT_URL) {
-      localPath = LOCAL_STUDENTS_PATH;
-    } else if (url === COMMON_URL) {
+    // Map reqPath to the correct local file path
+    if (reqPath.startsWith("/v2/course/")) {
+      // Single course by courseCode
+      localPath = LOCAL_COURSE_PATH + `/${filePath.toLowerCase()}`;
+    } else if (reqPath.startsWith("/v2/courses")) {
+      // All courses
       localPath = LOCAL_COMMON_PATH;
+    } else if (reqPath.startsWith("/v2/instructor/")) {
+      // Instructor by ID
+      localPath = LOCAL_INSTRUCTOR_PATH;
+    } else if (reqPath.startsWith("/v2/projects/cc/")) {
+      // Related projects by course code
+      localPath = LOCAL_COMMON_PATH + `/${filePath.toLowerCase()}`;
+    } else if (reqPath.startsWith("/v2/projects/id/")) {
+      // Project by ID
+      localPath = LOCAL_PROJECT_PATH + `/${filePath.toLowerCase()}`;
+    } else if (reqPath.startsWith("/v2/student/")) {
+      // Student by ID
+      localPath = LOCAL_STUDENT_PATH + `/${filePath.toLowerCase()}`;
+    } else if (reqPath.startsWith("/v2/projects")) {
+      // All projects (if needed)
+      localPath = LOCAL_COMMON_PATH;
+    } else if (reqPath.startsWith("/v2/relatedProjects/")) {
+      localPath = LOCAL_COMMON_PATH + "/relatedProjects";
+    } else {
+      throw new Error("Unknown data source URL");
     }
 
     // If USE_LOCAL_DATA flag is set or GitHub token isn't available, prioritize local files
@@ -50,7 +67,7 @@ const fetchData = async (url, jsonName) => {
       if (localPath) {
         try {
           console.log(`Using local data from: ${localPath}`);
-          const fileName = path.join(localPath, `${jsonName || "template"}.json`);
+          const fileName = path.join(localPath, `${jsonName.toLowerCase() || "template"}.json`);
           const data = await fs.readFile(fileName, "utf8");
           return JSON.parse(data);
         } catch (localError) {
@@ -77,20 +94,30 @@ const fetchData = async (url, jsonName) => {
       }
 
       // Fallback to GitHub fetch
-      console.log(`Fetching data from GitHub: ${url}`);
-      const githubUrl = url + `${jsonName.toLowerCase() || "template"}.json`;
-      const response = await fetch(githubUrl, {
+      if (!GITHUB_TOKEN) {
+        throw new Error("GitHub token is required for accessing private repository");
+      }
+      
+      console.log(`Fetching data from GitHub: ${githubUrl}`);
+      // Construct the final URL to exactly match local path structure
+      const finalUrl = filePath 
+        ? `${githubUrl}${filePath.startsWith('/') ? '' : '/'}${filePath}${jsonName ? `/${jsonName.toLowerCase()}.json` : '/template.json'}`
+        : `${githubUrl}/${jsonName.toLowerCase() || "template"}.json`;
+      
+      console.log(`Final URL: ${finalUrl}`);
+      const response = await fetch(finalUrl, {
         headers: {
           Authorization: `token ${GITHUB_TOKEN}`,
-          Accept: "v2Routerlication/vnd.github.raw+json", // Required for GitHub API
-        },
+          Accept: "application/vnd.github.v3.raw"
+        }
       });
+      
       if (!response.ok) {
-        throw new Error(`Network error: ${response.status}`);
+        console.error(`Failed to fetch from URL: ${finalUrl}`);
+        throw new Error(`Network error: ${response.status} - ${response.statusText}`);
       }
-      return response.json().catch(() => {
-        throw new Error("Invalid JSON response");
-      });
+      const data = await response.json();
+      return data;
     }
   } catch (error) {
     console.error(`Error fetching data: ${error.message}`);
@@ -99,19 +126,21 @@ const fetchData = async (url, jsonName) => {
 };
 
 // Get single course by courseCode
-v2Router.get("/v2/courses/:courseId", async (req, res) => {
+v2Router.get("/v2/courses/:courseCode", async (req, res) => {
   try {
-    const { courseId } = req.params;
-    if (!courseId || typeof courseId !== "string") {
-      return res.status(400).json({ error: "Invalid course ID" });
+    const { courseCode } = req.params;
+    if (!courseCode || typeof courseCode !== "string") {
+      return res.status(400).json({ error: "Invalid course Code" });
     }
 
-    const course = await fetchData(COURSE_URL, courseId);
+    // Valid courseCode format (e.g., "CSC1013")
+    const coursePrefix = courseCode.slice(0, 3).toLowerCase();
+    const course = await fetchData("/v2/course/", coursePrefix, courseCode, COURSE_URL);
     if (!course) {
       return res.status(404).json({ error: "Course not found" });
     }
 
-    res.status(200).json(course);
+    res.status(200).json(course[0]);
   } catch (error) {
     console.error("Error fetching course:", error);
     res.status(500).json({ error: error.message });
@@ -121,7 +150,7 @@ v2Router.get("/v2/courses/:courseId", async (req, res) => {
 // Get all courses
 v2Router.get("/v2/courses", async (req, res) => {
   try {
-    const courses = await fetchData(COMMON_URL, "courses");
+    const courses = await fetchData("/v2/courses", null, "courses", COMMON_URL);
     res.status(200).json(courses);
   } catch (error) {
     console.error("Error fetching courses:", error);
@@ -130,19 +159,19 @@ v2Router.get("/v2/courses", async (req, res) => {
 });
 
 // Get instructor details by username
-v2Router.get("/v2/instructor/:instructorId", async (req, res) => {
+v2Router.get("/v2/instructor/:instructorUsername", async (req, res) => {
   try {
-    const { instructorId } = req.params;
-    if (!instructorId || typeof instructorId !== "string") {
+    const { instructorUsername } = req.params;
+    if (!instructorUsername || typeof instructorUsername !== "string") {
       return res.status(400).json({ error: "Invalid instructor username" });
     }
 
-    const instructor = await fetchData(INSTRUCTOR_URL, instructorId);
+    const instructor = await fetchData("/v2/instructor/", null, instructorUsername, INSTRUCTOR_URL);
     if (!instructor) {
       return res.status(404).json({ error: "Instructor not found" });
     }
 
-    res.status(200).json(instructor);
+    res.status(200).json(instructor[0]);
   } catch (error) {
     console.error("Error fetching instructor:", error);
     res.status(500).json({ error: error.message });
@@ -156,15 +185,22 @@ v2Router.get("/v2/projects/cc/:courseCode", async (req, res) => {
     return res.status(400).json({ error: "Invalid course code" });
   }
   try {
-    const githubUrl = COMMON_URL + "/relatedProjects";
-    const projects = await fetchData(githubUrl, courseCode);
+    const coursePrefix = courseCode.slice(0, 3).toLowerCase();
+    let courseCategory = courseCode.slice(3, 4).toLocaleLowerCase();
+    // Normalize courseCategory: if it's a single digit (0-9), pad with '000'
+    if (/^[0-9]$/.test(courseCategory)) {
+      courseCategory += "000";
+    }
+    const coursePath = `relatedProjects/${coursePrefix}/${courseCategory}`;
+    const projects = await fetchData("/v2/projects/cc/", coursePath, courseCode, COMMON_URL);
     if (!projects || projects.length === 0) {
-      return res.status(404).json({ error: "No projects found for this course" });
+      return res.status(200).json([]);
     }
     res.status(200).json(projects);
   } catch (error) {
     console.error("Error fetching projects:", error);
-    res.status(500).json({ error: error.message });
+    console.error(`Error details: ${error.message}`);
+    res.status(500).json({ error: "Internal Server Error!" });
   }
 });
 
@@ -175,12 +211,16 @@ v2Router.get("/v2/projects/id/:projectId", async (req, res) => {
     if (!projectId || typeof projectId !== "string") {
       return res.status(400).json({ error: "Invalid project ID" });
     }
-
-    const project = await fetchData(PROJECT_URL, projectId);
+    const coursePrefix = projectId.slice(0, 3).toLowerCase();
+    const projectYear = projectId.slice(8, 12);
+    let courseCategory = projectId.slice(3, 4).toLowerCase();
+    courseCategory += "000";
+    const projectUrl = `${coursePrefix}/${projectYear}/${courseCategory}`;
+    const project = await fetchData("/v2/projects/id/", projectUrl, projectId, PROJECT_URL);
     if (!project) {
       return res.status(404).json({ error: "Project not found" });
     }
-    res.status(200).json(project);
+    res.status(200).json(project[0]);
   } catch (error) {
     console.error("Error fetching project:", error);
     res.status(500).json({ error: error.message });
@@ -195,15 +235,26 @@ v2Router.get("/v2/student/:studentId", async (req, res) => {
       return res.status(400).json({ error: "Invalid student ID" });
     }
 
-    const student = await fetchData(STUDENT_URL, studentId);
+    const studentBatch = studentId.slice(0, 3).toLowerCase();
+    const studentUrl = `${STUDENT_URL}/${studentBatch}`;
+    console.log(`Fetching student data from: ${studentUrl}`);
+    const student = await fetchData("/v2/student/", studentBatch, studentId, STUDENT_URL);
     if (!student) {
       return res.status(404).json({ error: "Student not found" });
     }
-    res.status(200).json(student);
+    res.status(200).json(student[0]);
   } catch (error) {
     console.error("Error fetching student:", error);
     res.status(500).json({ error: error.message });
   }
+});
+
+// Catch-all for unmatched paths
+v2Router.all("*", (req, res) => {
+  res.status(404).json({
+    error: "Route not found in v2 API",
+    path: req.originalUrl,
+  });
 });
 
 const PORT = process.env.PORT || 3000;

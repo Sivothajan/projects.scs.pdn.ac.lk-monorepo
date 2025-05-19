@@ -1,0 +1,25 @@
+[
+  {
+    "id": "CSC2102-2025-003",
+    "name": "Personal Portfolio Website",
+    "courseCode": "CSC2102",
+    "instructor": "Roshan D. Yapa",
+    "instructorLink": "/instructor/roshand-sci",
+    "academicYear": 2025,
+    "description": "Create a responsive portfolio website using HTML, CSS, and JavaScript.",
+    "projectLink": "https://projects.sci.pdn.ac.lk/web-portfolio",
+    "coverImageUrl": "/images/course-cover-images/CSC.webp",
+    "authors": [
+      {
+        "name": "Anuji Weragoda",
+        "link": "/student/S19172",
+        "sNumber": "S19172"
+      },
+      {
+        "name": "Chamudi De Silva",
+        "link": "/student/S19346",
+        "sNumber": "S19346"
+      }
+    ]
+  }
+]

@@ -31,7 +31,7 @@ function App() {
         />
         <Route
           caseSensitive={false}
-          path="/instructor/:instructorNameFromUrl"
+          path="/instructor/:instructorUsername"
           element={<Instructor />}
         />
         <Route

@@ -1,81 +1,69 @@
-# Department of Statistics & Computer Science Projects Portal
-
-## Overview
+# SCS Projects Portal
 
 A centralized platform for managing and showcasing student projects from the Department of Statistics & Computer Science, University of Peradeniya.
-
-## Repository Structure
-
-```
-.
-├── backend/     # Node.js/Express backend application
-├── data/        # Project data storage (JSON)
-└── frontend/    # React/Vite frontend application
-```
 
 ## Quick Start
 
 ### Prerequisites
 
-- Node.js (v16 or higher)
-- npm or yarn package manager
+- Node.js (v18.16 or higher)
+- npm (v9.5 or higher)
 - Git
 
 ### Installation
 
-1. Clone the repository:
-
+1. Clone and setup:
 ```bash
-git clone https://github.com/cepdnaclk/projects.scs.pdn.ac.lk-monorepo.git
+git clone https://github.com/pdn-scs/projects.scs.pdn.ac.lk-monorepo.git
 cd projects.scs.pdn.ac.lk-monorepo
-```
-
-2. Install all dependencies (backend, frontend, and root):
-
-```bash
 npm run install:all
 ```
 
-3. Environment Setup:
+2. Environment Setup:
+```bash
+# Setup frontend environment
+cd frontend
+cp .env.example .env
 
-- Copy `.env.example` to `.env` in both frontend and backend directories
-- Configure the environment variables as needed
+# Setup backend environment
+cd ../backend
+cp .env.example .env
+```
 
-4. Start Development Servers:
+Required environment variables:
 
-To start both frontend and backend servers simultaneously:
+Frontend (.env):
+- `VITE_API_URL` - Backend API URL (Default: http://localhost:3000)
 
+Backend (.env):
+- `PORT` - Server port (Default: 3000)
+- `USE_LOCAL_DATA` - Use local JSON files (Default: false)
+- `GITHUB_TOKEN` - GitHub Personal Access Token (Only if USE_LOCAL_DATA=false)
+
+### Development
+
+Start all services:
 ```bash
 npm run dev
 ```
 
-Alternatively, you can start servers individually:
+Or individual services:
+```bash
+npm run dev:frontend  # Frontend only
+npm run dev:backend   # Backend only
+```
 
-- Backend only: `npm run dev:backend`
-- Frontend only: `npm run dev:frontend`
-
-## Features
-
-- Project showcase and management
-- Course information management
-- Student project portfolio
-- Search and filter capabilities
-- Responsive design
+Access your local instance:
+- Frontend: http://localhost:5173
+- Backend API: http://localhost:3000
+- API Docs: http://localhost:3000/docs
 
 ## Documentation
 
-- [Backend Documentation](./backend/README.md)
-- [Frontend Documentation](./frontend/README.md)
-- [Data Structure Documentation](./data/README.md)
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
+- [Backend API Documentation](./backend/README.md)
+- [Frontend Development](./frontend/README.md)
+- [Data Structure](./data/README.md)
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+MIT License - See [LICENSE](./LICENSE) file

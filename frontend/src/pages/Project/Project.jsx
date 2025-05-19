@@ -46,7 +46,7 @@ function Project() {
           <li className={projectStyle.detailItem}>
             {Array.isArray(projectDetails.instructor) ? (
               <>
-                <strong>Instructor:</strong>{" "}
+                <strong>Instructors:</strong>{" "}
                 {projectDetails.instructor.map((instructor, index) => (
                   <span key={index} className={projectStyle.instructor}>
                     <a
@@ -62,7 +62,7 @@ function Project() {
               </>
             ) : (
               <>
-                <strong>Instructors:</strong>
+                <strong>Instructor:</strong>
                 {"\n"}
                 <a
                   href={projectDetails.instructorLink}

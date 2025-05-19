@@ -51,7 +51,9 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node api/apiRouter.js"
+    "dev:v1": "set PORT=3001 && nodemon api/v1/apiRouter.js",
+    "dev:v2": "set PORT=3002 && nodemon api/v2/apiRouter.js",
+    "dev": "set PORT=3000 && nodemon api/apiRouter.js"
   },
   "license": "MIT",
   "description": "",
@@ -60,5 +62,8 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }

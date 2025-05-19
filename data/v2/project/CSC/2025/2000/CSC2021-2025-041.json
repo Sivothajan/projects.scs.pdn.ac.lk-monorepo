@@ -1,0 +1,25 @@
+[
+  {
+    "id": "CSC2021-2025-041",
+    "name": "Priority Queue Simulator",
+    "courseCode": "CSC2021",
+    "instructor": "Sachith P. Abeysundara",
+    "instructorLink": "/instructor/sachith-sci",
+    "academicYear": 2025,
+    "description": "Implement and test a priority queue for task scheduling.",
+    "projectLink": "https://github.com/pdn-scs/priority-queue",
+    "coverImageUrl": "/images/course-cover-images/CSC.webp",
+    "authors": [
+      {
+        "name": "Dassanayake D.K.Y.Y.",
+        "link": "/student/S20335",
+        "sNumber": "S20335"
+      },
+      {
+        "name": "Heshan D.M.M.S",
+        "link": "/student/S20380",
+        "sNumber": "S20380"
+      }
+    ]
+  }
+]

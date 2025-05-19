@@ -16,6 +16,15 @@
   ],
   "routes": [
     {
+      "src": "/(.*)",
+      "dest": "/api/apiRouter.js",
+      "methods": ["GET", "POST", "OPTIONS"],
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Content-Type"
+      }
+    },
+    {
       "src": "/v1/(.*)",
       "dest": "/api/v1/apiRouter.js",
       "methods": ["GET", "POST", "OPTIONS"],
@@ -27,15 +36,6 @@
     {
       "src": "/v2/(.*)",
       "dest": "/api/v2/apiRouter.js",
-      "methods": ["GET", "POST", "OPTIONS"],
-      "headers": {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Headers": "Content-Type"
-      }
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/api/apiRouter.js",
       "methods": ["GET", "POST", "OPTIONS"],
       "headers": {
         "Access-Control-Allow-Origin": "*",

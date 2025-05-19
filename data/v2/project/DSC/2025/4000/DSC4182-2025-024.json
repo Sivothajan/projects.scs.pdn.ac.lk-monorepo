@@ -1,0 +1,25 @@
+[
+  {
+    "id": "DSC4182-2025-024",
+    "name": "Text Summarization App",
+    "courseCode": "DSC4182",
+    "instructor": "Isuru Madugalla",
+    "instructorLink": "/instructor/isuru-sci",
+    "academicYear": 2025,
+    "description": "Develop an app to summarize text using natural language processing.",
+    "projectLink": "https://github.com/pdn-scs/text-summarizer",
+    "coverImageUrl": "/images/course-cover-images/DSC.webp",
+    "authors": [
+      {
+        "name": "Saubhagya Aryarathna",
+        "link": "/student/S19313",
+        "sNumber": "S19313"
+      },
+      {
+        "name": "Tajith Wijesooriya",
+        "link": "/student/S19552",
+        "sNumber": "S19552"
+      }
+    ]
+  }
+]

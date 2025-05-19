@@ -1,0 +1,8 @@
+[
+  {
+    "courseImageUrl": "/images/course-cover-images/DSC.webp",
+    "title": "Distributed Computing",
+    "courseCode": "DSC4243",
+    "description": "Distributed systems for large-scale data processing."
+  }
+]

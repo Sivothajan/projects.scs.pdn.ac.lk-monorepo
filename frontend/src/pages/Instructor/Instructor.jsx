@@ -5,7 +5,7 @@ import Error404 from "../Errors/Error404";
 import getInstructorDetails from "../../scripts/getInstructorDetails.jsx";
 
 function Instructor() {
-  const { instructorNameFromUrl } = useParams();
+  const { instructorUsername } = useParams();
   const [instructorName, setInstructorName] = useState("");
   const [department, setDepartment] = useState("Unknown");
   const [sMail, setSMail] = useState("");
@@ -15,10 +15,10 @@ function Instructor() {
 
   useEffect(() => {
     const validateAndSetDetails = () => {
-      if (!instructorNameFromUrl || instructorNameFromUrl.trim() === "") {
+      if (!instructorUsername || instructorUsername.trim() === "") {
         setHasError(true);
       } else {
-        const sanitizedInstructorName = instructorNameFromUrl.replace(
+        const sanitizedInstructorName = instructorUsername.replace(
           /(\s|%20)/g,
           "-",
         );
@@ -28,12 +28,12 @@ function Instructor() {
     };
 
     validateAndSetDetails();
-  }, [instructorNameFromUrl]);
+  }, [instructorUsername]);
 
   useEffect(() => {
     const fetchInstructorDetails = async () => {
       try {
-        const sanitizedInstructorName = instructorNameFromUrl.replace(
+        const sanitizedInstructorName = instructorUsername.replace(
           /(\s|%20)/g,
           "-",
         );
@@ -64,7 +64,7 @@ function Instructor() {
     };
 
     fetchInstructorDetails();
-  }, [instructorNameFromUrl]);
+  }, [instructorUsername]);
 
   if (loading) {
     return <div className={instructorStyle.loading}>Loading...</div>;

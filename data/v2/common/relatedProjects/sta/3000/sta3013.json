@@ -1,0 +1,48 @@
+[
+  {
+    "id": "STA3013-2025-007",
+    "name": "Regression Analysis Tool",
+    "courseCode": "STA3013",
+    "instructor": "S.A. Ruwan Punchi Manage",
+    "instructorLink": "/instructor/ruwanpm-sci",
+    "academicYear": 2025,
+    "description": "Develop a tool to perform and visualize regression analysis.",
+    "projectLink": "https://github.com/pdn-scs/regression-tool",
+    "coverImageUrl": "/images/course-cover-images/STA.webp",
+    "authors": [
+      {
+        "name": "Anuruddika DKR",
+        "link": "/student/S20574",
+        "sNumber": "S20574"
+      },
+      {
+        "name": "Bandaranayake HMPD",
+        "link": "/student/S20321",
+        "sNumber": "S20321"
+      }
+    ]
+  },
+  {
+    "id": "STA3013-2025-038",
+    "name": "Sales Prediction Tool",
+    "courseCode": "STA3013",
+    "instructor": "B. R. Pavithra M. Basnayake",
+    "instructorLink": "/instructor/pavithra-sci",
+    "academicYear": 2025,
+    "description": "Develop a regression-based tool to predict sales trends.",
+    "projectLink": "https://github.com/pdn-scs/sales-predictor",
+    "coverImageUrl": "/images/course-cover-images/STA.webp",
+    "authors": [
+      {
+        "name": "Chamika Wijethunga",
+        "link": "/student/S19393",
+        "sNumber": "S19393"
+      },
+      {
+        "name": "Chathumi Gunathilaka",
+        "link": "/student/S19564",
+        "sNumber": "S19564"
+      }
+    ]
+  }
+]

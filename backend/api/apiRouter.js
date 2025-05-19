@@ -9,7 +9,7 @@ router.use(cors());
 router.use(json());
 
 // Root route
-router.get('/', (req, res) => {
+router.get('/*', (req, res) => {
   res.json({
     message: 'Projects API',
     versions: {

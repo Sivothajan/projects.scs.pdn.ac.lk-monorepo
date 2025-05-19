@@ -1,0 +1,25 @@
+[
+  {
+    "id": "STA4023-2025-018",
+    "name": "Data Mining Exploration",
+    "courseCode": "STA4023",
+    "instructor": "Ruwanthini Siyambalapitiya",
+    "instructorLink": "/instructor/ruwanthini-sci",
+    "academicYear": 2025,
+    "description": "Explore patterns in a dataset using statistical data mining techniques.",
+    "projectLink": "https://github.com/pdn-scs/data-mining",
+    "coverImageUrl": "/images/course-cover-images/STA.webp",
+    "authors": [
+      {
+        "name": "Induwara Senarathna",
+        "link": "/student/S19519",
+        "sNumber": "S19519"
+      },
+      {
+        "name": "Karunairaja Jathukulan",
+        "link": "/student/S19589",
+        "sNumber": "S19589"
+      }
+    ]
+  }
+]

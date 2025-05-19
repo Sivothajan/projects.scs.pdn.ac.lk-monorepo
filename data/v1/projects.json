@@ -1,10 +1,10 @@
 [
   {
-    "id": "CSC1013-001",
+    "id": "CSC1013-2025-001",
     "name": "Basic Programming Challenges",
     "courseCode": "CSC1013",
     "instructor": "Sachith P. Abeysundara",
-    "instructorLink": "/instructor/Sachith-P.-Abeysundara",
+    "instructorLink": "/instructor/sachith-sci",
     "academicYear": 2025,
     "description": "Solve a series of programming challenges using Python to master basic concepts.",
     "projectLink": "https://github.com/pdn-scs/basic-programming",
@@ -23,11 +23,11 @@
     ]
   },
   {
-    "id": "CSC2012-002",
+    "id": "CSC2012-2025-002",
     "name": "Data Structure Visualizer",
     "courseCode": "CSC2012",
     "instructor": "Saluka R. Kodituwakku",
-    "instructorLink": "/instructor/Saluka-R.-Kodituwakku",
+    "instructorLink": "/instructor/saluka-sci",
     "academicYear": 2025,
     "description": "Build a tool to visualize common data structures like stacks and queues.",
     "projectLink": "https://github.com/pdn-scs/data-structure-viz",
@@ -46,11 +46,11 @@
     ]
   },
   {
-    "id": "CSC2102-003",
+    "id": "CSC2102-2025-003",
     "name": "Personal Portfolio Website",
     "courseCode": "CSC2102",
     "instructor": "Roshan D. Yapa",
-    "instructorLink": "/instructor/Roshan-D.-Yapa",
+    "instructorLink": "/instructor/roshand-sci",
     "academicYear": 2025,
     "description": "Create a responsive portfolio website using HTML, CSS, and JavaScript.",
     "projectLink": "https://projects.sci.pdn.ac.lk/web-portfolio",
@@ -69,11 +69,11 @@
     ]
   },
   {
-    "id": "CSC4173-004",
+    "id": "CSC4173-2025-004",
     "name": "Machine Learning Classifier",
     "courseCode": "CSC4173",
     "instructor": "Amalka J. Pinidiyaarachchi",
-    "instructorLink": "/instructor/Amalka-J.-Pinidiyaarachchi",
+    "instructorLink": "/instructor/amalka-sci",
     "academicYear": 2025,
     "description": "Develop a machine learning model to classify handwritten digits.",
     "projectLink": "https://github.com/pdn-scs/ml-classifier",
@@ -92,11 +92,11 @@
     ]
   },
   {
-    "id": "DSC3023-005",
+    "id": "DSC3023-2025-005",
     "name": "Big Data Dashboard",
     "courseCode": "DSC3023",
     "instructor": "Ruwan D. Nawarathna",
-    "instructorLink": "/instructor/Ruwan-D.-Nawarathna",
+    "instructorLink": "/instructor/ruwandn-sci",
     "academicYear": 2025,
     "description": "Design a dashboard to analyze and visualize large datasets.",
     "projectLink": "https://projects.sci.pdn.ac.lk/big-data-dash",
@@ -115,11 +115,11 @@
     ]
   },
   {
-    "id": "DSC4173-006",
+    "id": "DSC4173-2025-006",
     "name": "Predictive Analytics Model",
     "courseCode": "DSC4173",
     "instructor": "Hakim A. Usoof",
-    "instructorLink": "/instructor/Hakim-A.-Usoof",
+    "instructorLink": "/instructor/hakimu-sci",
     "academicYear": 2025,
     "description": "Build a predictive model for stock price trends using machine learning.",
     "projectLink": "https://github.com/pdn-scs/predictive-analytics",
@@ -138,11 +138,11 @@
     ]
   },
   {
-    "id": "STA3013-007",
+    "id": "STA3013-2025-007",
     "name": "Regression Analysis Tool",
     "courseCode": "STA3013",
     "instructor": "S.A. Ruwan Punchi Manage",
-    "instructorLink": "/instructor/S.A.-Ruwan-Punchi-Manage",
+    "instructorLink": "/instructor/ruwanpm-sci",
     "academicYear": 2025,
     "description": "Develop a tool to perform and visualize regression analysis.",
     "projectLink": "https://github.com/pdn-scs/regression-tool",
@@ -161,11 +161,11 @@
     ]
   },
   {
-    "id": "STA3072-008",
+    "id": "STA3072-2025-008",
     "name": "Time Series Forecasting",
     "courseCode": "STA3072",
     "instructor": "Hemalika T.K. Abeysundara",
-    "instructorLink": "/instructor/Hemalika-T.K.-Abeysundara",
+    "instructorLink": "/instructor/hemalika-sci",
     "academicYear": 2025,
     "description": "Create a model to forecast weather patterns using time series data.",
     "projectLink": "https://projects.sci.pdn.ac.lk/time-series",
@@ -184,11 +184,11 @@
     ]
   },
   {
-    "id": "CSC4996-009",
+    "id": "CSC4996-2025-009",
     "name": "AI-Powered Chatbot",
     "courseCode": "CSC4996",
     "instructor": "Lakshika S. Nawarathna",
-    "instructorLink": "/instructor/Lakshika-S.-Nawarathna",
+    "instructorLink": "/instructor/lakshikan-sci",
     "academicYear": 2025,
     "description": "Design and implement a chatbot using natural language processing.",
     "projectLink": "https://github.com/pdn-scs/ai-chatbot",
@@ -207,11 +207,11 @@
     ]
   },
   {
-    "id": "DSC4996-010",
+    "id": "DSC4996-2025-010",
     "name": "Social Media Sentiment Analysis",
     "courseCode": "DSC4996",
     "instructor": "Ruwanthini Siyambalapitiya",
-    "instructorLink": "/instructor/Ruwanthini-Siyambalapitiya",
+    "instructorLink": "/instructor/ruwanthini-sci",
     "academicYear": 2025,
     "description": "Analyze sentiment in social media posts using data science techniques.",
     "projectLink": "https://github.com/pdn-scs/sentiment-analysis",
@@ -230,11 +230,11 @@
     ]
   },
   {
-    "id": "STA4996-011",
+    "id": "STA4996-2025-011",
     "name": "Survival Analysis Study",
     "courseCode": "STA4996",
     "instructor": "Mahasen Dehideniya",
-    "instructorLink": "/instructor/Mahasen-Dehideniya",
+    "instructorLink": "/instructor/mahasend-sci",
     "academicYear": 2025,
     "description": "Conduct a survival analysis on medical patient data.",
     "projectLink": "https://projects.sci.pdn.ac.lk/survival-analysis",
@@ -253,11 +253,11 @@
     ]
   },
   {
-    "id": "CSC3033-012",
+    "id": "CSC3033-2025-012",
     "name": "OS Process Simulator",
     "courseCode": "CSC3033",
     "instructor": "Erunika O. Dayartna",
-    "instructorLink": "/instructor/Erunika-O.-Dayartna",
+    "instructorLink": "/instructor/erunika-sci",
     "academicYear": 2025,
     "description": "Simulate operating system processes and scheduling algorithms.",
     "projectLink": "https://github.com/pdn-scs/os-simulator",
@@ -276,11 +276,11 @@
     ]
   },
   {
-    "id": "CSC1023-013",
+    "id": "CSC1023-2025-013",
     "name": "OOP-Based Calculator",
     "courseCode": "CSC1023",
     "instructor": "Jagath Senarathne",
-    "instructorLink": "/instructor/Jagath-Senarathne",
+    "instructorLink": "/instructor/jagath-sci",
     "academicYear": 2025,
     "description": "Develop a scientific calculator using object-oriented programming in Java.",
     "projectLink": "https://github.com/pdn-scs/oop-calculator",
@@ -299,11 +299,11 @@
     ]
   },
   {
-    "id": "CSC3152-014",
+    "id": "CSC3152-2025-014",
     "name": "Algorithm Benchmarking Tool",
     "courseCode": "CSC3152",
     "instructor": "Pramuka Weerasinghe",
-    "instructorLink": "/instructor/Pramuka-Weerasinghe",
+    "instructorLink": "/instructor/pramuka-sci",
     "academicYear": 2025,
     "description": "Create a tool to benchmark sorting algorithms for performance analysis.",
     "projectLink": "https://github.com/pdn-scs/algo-benchmark",
@@ -322,11 +322,11 @@
     ]
   },
   {
-    "id": "DSC3052-015",
+    "id": "DSC3052-2025-015",
     "name": "Interactive Data Visualizer",
     "courseCode": "DSC3052",
     "instructor": "B. R. Pavithra M. Basnayake",
-    "instructorLink": "/instructor/B.-R.-Pavithra-M.-Basnayake",
+    "instructorLink": "/instructor/pavithra-sci",
     "academicYear": 2025,
     "description": "Build an interactive tool to visualize datasets with filters and charts.",
     "projectLink": "https://projects.sci.pdn.ac.lk/data-visualizer",
@@ -345,11 +345,11 @@
     ]
   },
   {
-    "id": "DSC4093-016",
+    "id": "DSC4093-2025-016",
     "name": "Deep Learning Image Classifier",
     "courseCode": "DSC4093",
     "instructor": "Malima Atapattu",
-    "instructorLink": "/instructor/Malima-Atapattu",
+    "instructorLink": "/instructor/malima-sci",
     "academicYear": 2025,
     "description": "Train a deep learning model to classify images from a custom dataset.",
     "projectLink": "https://github.com/pdn-scs/dl-image-classifier",
@@ -368,11 +368,11 @@
     ]
   },
   {
-    "id": "STA1013-017",
+    "id": "STA1013-2025-017",
     "name": "Basic Statistics Calculator",
     "courseCode": "STA1013",
     "instructor": "Isuru Madugalla",
-    "instructorLink": "/instructor/Isuru-Madugalla",
+    "instructorLink": "/instructor/isuru-sci",
     "academicYear": 2025,
     "description": "Develop a tool to compute basic statistical measures like mean and variance.",
     "projectLink": "https://github.com/pdn-scs/stats-calculator",
@@ -391,11 +391,11 @@
     ]
   },
   {
-    "id": "STA4023-018",
+    "id": "STA4023-2025-018",
     "name": "Data Mining Exploration",
     "courseCode": "STA4023",
     "instructor": "Ruwanthini Siyambalapitiya",
-    "instructorLink": "/instructor/Ruwanthini-Siyambalapitiya",
+    "instructorLink": "/instructor/ruwanthini-sci",
     "academicYear": 2025,
     "description": "Explore patterns in a dataset using statistical data mining techniques.",
     "projectLink": "https://github.com/pdn-scs/data-mining",
@@ -414,11 +414,11 @@
     ]
   },
   {
-    "id": "CSC2032-019",
+    "id": "CSC2032-2025-019",
     "name": "Student Database System",
     "courseCode": "CSC2032",
     "instructor": "Sachith P. Abeysundara",
-    "instructorLink": "/instructor/Sachith-P.-Abeysundara",
+    "instructorLink": "/instructor/sachith-sci",
     "academicYear": 2025,
     "description": "Design a database system to manage student records with SQL.",
     "projectLink": "https://github.com/pdn-scs/student-db",
@@ -437,11 +437,11 @@
     ]
   },
   {
-    "id": "CSC4082-020",
+    "id": "CSC4082-2025-020",
     "name": "Face Detection System",
     "courseCode": "CSC4082",
     "instructor": "Amalka J. Pinidiyaarachchi",
-    "instructorLink": "/instructor/Amalka-J.-Pinidiyaarachchi",
+    "instructorLink": "/instructor/amalka-sci",
     "academicYear": 2025,
     "description": "Implement a real-time face detection system using computer vision.",
     "projectLink": "https://github.com/pdn-scs/face-detection",
@@ -460,11 +460,11 @@
     ]
   },
   {
-    "id": "DSC3042-021",
+    "id": "DSC3042-2025-021",
     "name": "Retail Sales Forecasting",
     "courseCode": "DSC3042",
     "instructor": "Ruwan D. Nawarathna",
-    "instructorLink": "/instructor/Ruwan-D.-Nawarathna",
+    "instructorLink": "/instructor/ruwandn-sci",
     "academicYear": 2025,
     "description": "Forecast retail sales using time series analysis techniques.",
     "projectLink": "https://projects.sci.pdn.ac.lk/sales-forecast",
@@ -483,11 +483,11 @@
     ]
   },
   {
-    "id": "STA3033-022",
+    "id": "STA3033-2025-022",
     "name": "Experimental Design Simulator",
     "courseCode": "STA3033",
     "instructor": "Hemalika T.K. Abeysundara",
-    "instructorLink": "/instructor/Hemalika-T.K.-Abeysundara",
+    "instructorLink": "/instructor/hemalika-sci",
     "academicYear": 2025,
     "description": "Simulate experimental designs to analyze statistical outcomes.",
     "projectLink": "https://github.com/pdn-scs/experiment-simulator",
@@ -506,11 +506,11 @@
     ]
   },
   {
-    "id": "CSC3132-023",
+    "id": "CSC3132-2025-023",
     "name": "Image Enhancement Tool",
     "courseCode": "CSC3132",
     "instructor": "Jagath Senarathne",
-    "instructorLink": "/instructor/Jagath-Senarathne",
+    "instructorLink": "/instructor/jagath-sci",
     "academicYear": 2025,
     "description": "Build a tool to enhance image quality using digital image processing.",
     "projectLink": "https://github.com/pdn-scs/image-enhancer",
@@ -529,11 +529,11 @@
     ]
   },
   {
-    "id": "DSC4182-024",
+    "id": "DSC4182-2025-024",
     "name": "Text Summarization App",
     "courseCode": "DSC4182",
     "instructor": "Isuru Madugalla",
-    "instructorLink": "/instructor/Isuru-Madugalla",
+    "instructorLink": "/instructor/isuru-sci",
     "academicYear": 2025,
     "description": "Develop an app to summarize text using natural language processing.",
     "projectLink": "https://github.com/pdn-scs/text-summarizer",
@@ -552,11 +552,11 @@
     ]
   },
   {
-    "id": "CSC1013-025",
+    "id": "CSC1013-2025-025",
     "name": "Simple Game Development",
     "courseCode": "CSC1013",
     "instructor": "Saluka R. Kodituwakku",
-    "instructorLink": "/instructor/Saluka-R.-Kodituwakku",
+    "instructorLink": "/instructor/saluka-sci",
     "academicYear": 2025,
     "description": "Create a basic 2D game using Python and Pygame to practice programming fundamentals.",
     "projectLink": "https://github.com/pdn-scs/simple-game-dev",
@@ -575,11 +575,11 @@
     ]
   },
   {
-    "id": "CSC1023-026",
+    "id": "CSC1023-2025-026",
     "name": "Inventory Management System",
     "courseCode": "CSC1023",
     "instructor": "Roshan D. Yapa",
-    "instructorLink": "/instructor/Roshan-D.-Yapa",
+    "instructorLink": "/instructor/roshand-sci",
     "academicYear": 2025,
     "description": "Build an object-oriented inventory tracker using C++ with classes and objects.",
     "projectLink": "https://github.com/pdn-scs/inventory-oop",
@@ -598,11 +598,11 @@
     ]
   },
   {
-    "id": "CSC2012-027",
+    "id": "CSC2012-2025-027",
     "name": "Binary Tree Explorer",
     "courseCode": "CSC2012",
     "instructor": "Amalka J. Pinidiyaarachchi",
-    "instructorLink": "/instructor/Amalka-J.-Pinidiyaarachchi",
+    "instructorLink": "/instructor/amalka-sci",
     "academicYear": 2025,
     "description": "Develop a tool to visualize binary tree operations like insertion and traversal.",
     "projectLink": "https://github.com/pdn-scs/binary-tree-explorer",
@@ -621,11 +621,11 @@
     ]
   },
   {
-    "id": "CSC2032-028",
+    "id": "CSC2032-2025-028",
     "name": "Library Management Database",
     "courseCode": "CSC2032",
     "instructor": "Ruwan D. Nawarathna",
-    "instructorLink": "/instructor/Ruwan-D.-Nawarathna",
+    "instructorLink": "/instructor/ruwandn-sci",
     "academicYear": 2025,
     "description": "Design a relational database for tracking library books and borrowers using SQL.",
     "projectLink": "https://github.com/pdn-scs/library-db",
@@ -644,11 +644,11 @@
     ]
   },
   {
-    "id": "CSC2102-029",
+    "id": "CSC2102-2025-029",
     "name": "Interactive Blog Platform",
     "courseCode": "CSC2102",
     "instructor": "Hakim A. Usoof",
-    "instructorLink": "/instructor/Hakim-A.-Usoof",
+    "instructorLink": "/instructor/hakimu-sci",
     "academicYear": 2025,
     "description": "Create a dynamic blog site with user comments using HTML, CSS, and JavaScript.",
     "projectLink": "https://github.com/pdn-scs/interactive-blog",
@@ -667,11 +667,11 @@
     ]
   },
   {
-    "id": "CSC3033-030",
+    "id": "CSC3033-2025-030",
     "name": "Memory Management Simulator",
     "courseCode": "CSC3033",
     "instructor": "S.A. Ruwan Punchi Manage",
-    "instructorLink": "/instructor/S.A.-Ruwan-Punchi-Manage",
+    "instructorLink": "/instructor/ruwanpm-sci",
     "academicYear": 2025,
     "description": "Simulate memory allocation techniques like paging and segmentation.",
     "projectLink": "https://github.com/pdn-scs/memory-simulator",
@@ -690,11 +690,11 @@
     ]
   },
   {
-    "id": "CSC3152-031",
+    "id": "CSC3152-2025-031",
     "name": "Graph Algorithm Visualizer",
     "courseCode": "CSC3152",
     "instructor": "Hemalika T.K. Abeysundara",
-    "instructorLink": "/instructor/Hemalika-T.K.-Abeysundara",
+    "instructorLink": "/instructor/hemalika-sci",
     "academicYear": 2025,
     "description": "Build a tool to visualize graph algorithms like Dijkstra’s and BFS.",
     "projectLink": "https://github.com/pdn-scs/graph-viz",
@@ -713,13 +713,13 @@
     ]
   },
   {
-    "id": "CSC3173-032",
+    "id": "CSC3173-2025-032",
     "name": "AI Tic-Tac-Toe",
     "courseCode": "CSC3173",
     "instructor": "Lakshika S. Nawarathna",
-    "instructorLink": "/instructor/Lakshika-S.-Nawarathna",
+    "instructorLink": "/instructor/lakshikan-sci",
     "academicYear": 2025,
-    "description": "Implement an unbeatable Tic-Tac-Toe AI using minimax algorithm.",
+    "description": "Implement an unbeatable Tic-Tac-ToeAI using minimax algorithm.",
     "projectLink": "https://github.com/pdn-scs/ai-tictactoe",
     "coverImageUrl": "/images/course-cover-images/CSC.webp",
     "authors": [
@@ -736,11 +736,11 @@
     ]
   },
   {
-    "id": "CSC4082-033",
+    "id": "CSC4082-2025-033",
     "name": "Object Recognition System",
     "courseCode": "CSC4082",
     "instructor": "Ruwanthini Siyambalapitiya",
-    "instructorLink": "/instructor/Ruwanthini-Siyambalapitiya",
+    "instructorLink": "/instructor/ruwanthini-sci",
     "academicYear": 2025,
     "description": "Develop a system to identify objects in images using OpenCV.",
     "projectLink": "https://github.com/pdn-scs/object-recognition",
@@ -759,11 +759,11 @@
     ]
   },
   {
-    "id": "CSC4996-034",
+    "id": "CSC4996-2025-034",
     "name": "Smart Home Automation",
     "courseCode": "CSC4996",
     "instructor": "Mahasen Dehideniya",
-    "instructorLink": "/instructor/Mahasen-Dehideniya",
+    "instructorLink": "/instructor/mahasend-sci",
     "academicYear": 2025,
     "description": "Design a system to control home devices using IoT and AI.",
     "projectLink": "https://github.com/pdn-scs/smart-home",
@@ -782,11 +782,11 @@
     ]
   },
   {
-    "id": "DSC3023-035",
+    "id": "DSC3023-2025-035",
     "name": "Traffic Data Analyzer",
     "courseCode": "DSC3023",
     "instructor": "Erunika O. Dayartna",
-    "instructorLink": "/instructor/Erunika-O.-Dayartna",
+    "instructorLink": "/instructor/erunika-sci",
     "academicYear": 2025,
     "description": "Analyze traffic patterns from large datasets with visualizations.",
     "projectLink": "https://github.com/pdn-scs/traffic-analyzer",
@@ -805,11 +805,11 @@
     ]
   },
   {
-    "id": "DSC4173-036",
+    "id": "DSC4173-2025-036",
     "name": "Customer Segmentation Model",
     "courseCode": "DSC4173",
     "instructor": "Jagath Senarathne",
-    "instructorLink": "/instructor/Jagath-Senarathne",
+    "instructorLink": "/instructor/jagath-sci",
     "academicYear": 2025,
     "description": "Build a clustering model to segment customers based on purchase data.",
     "projectLink": "https://github.com/pdn-scs/customer-segmentation",
@@ -828,11 +828,11 @@
     ]
   },
   {
-    "id": "DSC3052-037",
+    "id": "DSC3052-2025-037",
     "name": "Climate Data Dashboard",
     "courseCode": "DSC3052",
     "instructor": "Pramuka Weerasinghe",
-    "instructorLink": "/instructor/Pramuka-Weerasinghe",
+    "instructorLink": "/instructor/pramuka-sci",
     "academicYear": 2025,
     "description": "Create an interactive dashboard to visualize climate change data.",
     "projectLink": "https://github.com/pdn-scs/climate-dashboard",
@@ -851,11 +851,11 @@
     ]
   },
   {
-    "id": "STA3013-038",
+    "id": "STA3013-2025-038",
     "name": "Sales Prediction Tool",
     "courseCode": "STA3013",
     "instructor": "B. R. Pavithra M. Basnayake",
-    "instructorLink": "/instructor/B.-R.-Pavithra-M.-Basnayake",
+    "instructorLink": "/instructor/pavithra-sci",
     "academicYear": 2025,
     "description": "Develop a regression-based tool to predict sales trends.",
     "projectLink": "https://github.com/pdn-scs/sales-predictor",
@@ -874,11 +874,11 @@
     ]
   },
   {
-    "id": "STA4996-039",
+    "id": "STA4996-2025-039",
     "name": "Risk Assessment Model",
     "courseCode": "STA4996",
     "instructor": "Malima Atapattu",
-    "instructorLink": "/instructor/Malima-Atapattu",
+    "instructorLink": "/instructor/malima-sci",
     "academicYear": 2025,
     "description": "Build a statistical model to assess financial risk in investments.",
     "projectLink": "https://github.com/pdn-scs/risk-assessment",
@@ -897,11 +897,11 @@
     ]
   },
   {
-    "id": "CSC1041-040",
+    "id": "CSC1041-2025-040",
     "name": "Code Debugging Challenge",
     "courseCode": "CSC1041",
     "instructor": "Isuru Madugalla",
-    "instructorLink": "/instructor/Isuru-Madugalla",
+    "instructorLink": "/instructor/isuru-sci",
     "academicYear": 2025,
     "description": "Solve a set of buggy programs to improve debugging skills.",
     "projectLink": "https://github.com/pdn-scs/debug-challenge",
@@ -920,11 +920,11 @@
     ]
   },
   {
-    "id": "CSC2021-041",
+    "id": "CSC2021-2025-041",
     "name": "Priority Queue Simulator",
     "courseCode": "CSC2021",
     "instructor": "Sachith P. Abeysundara",
-    "instructorLink": "/instructor/Sachith-P.-Abeysundara",
+    "instructorLink": "/instructor/sachith-sci",
     "academicYear": 2025,
     "description": "Implement and test a priority queue for task scheduling.",
     "projectLink": "https://github.com/pdn-scs/priority-queue",
@@ -943,11 +943,11 @@
     ]
   },
   {
-    "id": "CSC2112-042",
+    "id": "CSC2112-2025-042",
     "name": "Network Packet Sniffer",
     "courseCode": "CSC2112",
     "instructor": "Saluka R. Kodituwakku",
-    "instructorLink": "/instructor/Saluka-R.-Kodituwakku",
+    "instructorLink": "/instructor/saluka-sci",
     "academicYear": 2025,
     "description": "Create a tool to capture and analyze network packets.",
     "projectLink": "https://github.com/pdn-scs/packet-sniffer",
@@ -966,11 +966,11 @@
     ]
   },
   {
-    "id": "CSC3073-043",
+    "id": "CSC3073-2025-043",
     "name": "3D Shape Renderer",
     "courseCode": "CSC3073",
     "instructor": "Roshan D. Yapa",
-    "instructorLink": "/instructor/Roshan-D.-Yapa",
+    "instructorLink": "/instructor/roshand-sci",
     "academicYear": 2025,
     "description": "Build a program to render basic 3D shapes using OpenGL.",
     "projectLink": "https://github.com/pdn-scs/3d-renderer",
@@ -989,11 +989,11 @@
     ]
   },
   {
-    "id": "CSC4093-044",
+    "id": "CSC4093-2025-044",
     "name": "Handwritten Text Recognizer",
     "courseCode": "CSC4093",
     "instructor": "Amalka J. Pinidiyaarachchi",
-    "instructorLink": "/instructor/Amalka-J.-Pinidiyaarachchi",
+    "instructorLink": "/instructor/amalka-sci",
     "academicYear": 2025,
     "description": "Train a neural network to recognize handwritten text from images.",
     "projectLink": "https://github.com/pdn-scs/handwritten-recognizer",
@@ -1012,11 +1012,11 @@
     ]
   },
   {
-    "id": "DSC3013-045",
+    "id": "DSC3013-2025-045",
     "name": "Health Data Regression",
     "courseCode": "DSC3013",
     "instructor": "Ruwan D. Nawarathna",
-    "instructorLink": "/instructor/Ruwan-D.-Nawarathna",
+    "instructorLink": "/instructor/ruwandn-sci",
     "academicYear": 2025,
     "description": "Analyze health data to predict outcomes using regression techniques.",
     "projectLink": "https://github.com/pdn-scs/health-regression",
@@ -1035,11 +1035,11 @@
     ]
   },
   {
-    "id": "DSC4182-046",
+    "id": "DSC4182-2025-046",
     "name": "Chatbot Sentiment Analyzer",
     "courseCode": "DSC4182",
     "instructor": "Hakim A. Usoof",
-    "instructorLink": "/instructor/Hakim-A.-Usoof",
+    "instructorLink": "/instructor/hakimu-sci",
     "academicYear": 2025,
     "description": "Develop a tool to analyze sentiment in chatbot conversations.",
     "projectLink": "https://github.com/pdn-scs/sentiment-chatbot",
@@ -1058,11 +1058,11 @@
     ]
   },
   {
-    "id": "STA1013-047",
+    "id": "STA1013-2025-047",
     "name": "Probability Simulator",
     "courseCode": "STA1013",
     "instructor": "S.A. Ruwan Punchi Manage",
-    "instructorLink": "/instructor/S.A.-Ruwan-Punchi-Manage",
+    "instructorLink": "/instructor/ruwanpm-sci",
     "academicYear": 2025,
     "description": "Simulate basic probability experiments like coin flips and dice rolls.",
     "projectLink": "https://github.com/pdn-scs/prob-simulator",
@@ -1081,11 +1081,11 @@
     ]
   },
   {
-    "id": "STA3072-048",
+    "id": "STA3072-2025-048",
     "name": "Stock Price Predictor",
     "courseCode": "STA3072",
     "instructor": "Hemalika T.K. Abeysundara",
-    "instructorLink": "/instructor/Hemalika-T.K.-Abeysundara",
+    "instructorLink": "/instructor/hemalika-sci",
     "academicYear": 2025,
     "description": "Forecast stock prices using time series analysis methods.",
     "projectLink": "https://github.com/pdn-scs/stock-predictor",
@@ -1104,11 +1104,11 @@
     ]
   },
   {
-    "id": "CSC3103-049",
+    "id": "CSC3103-2025-049",
     "name": "E-commerce Backend",
     "courseCode": "CSC3103",
     "instructor": "Lakshika S. Nawarathna",
-    "instructorLink": "/instructor/Lakshika-S.-Nawarathna",
+    "instructorLink": "/instructor/lakshikan-sci",
     "academicYear": 2025,
     "description": "Develop a server-side system for an e-commerce platform with Node.js.",
     "projectLink": "https://github.com/pdn-scs/ecommerce-backend",
@@ -1127,11 +1127,11 @@
     ]
   },
   {
-    "id": "DSC4996-050",
+    "id": "DSC4996-2025-050",
     "name": "Fraud Detection System",
     "courseCode": "DSC4996",
     "instructor": "Ruwanthini Siyambalapitiya",
-    "instructorLink": "/instructor/Ruwanthini-Siyambalapitiya",
+    "instructorLink": "/instructor/ruwanthini-sci",
     "academicYear": 2025,
     "description": "Build a system to detect fraudulent transactions using machine learning.",
     "projectLink": "https://github.com/pdn-scs/fraud-detection",

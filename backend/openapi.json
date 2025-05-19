@@ -1,0 +1,510 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "SCS Projects API",
+    "description": "API for accessing SCS project information, courses, instructors, and students",
+    "version": "2.0.0",
+    "contact": {
+      "name": "Sivothajan",
+      "url": "https://github.com/Sivothajan/projects.scs.pdn.ac.lk-monorepo"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://api.projects.scs.pdn.ac.lk/v1",
+      "description": "Version 1 Production server"
+    },
+    {
+      "url": "https://api.projects.scs.pdn.ac.lk/v2",
+      "description": "Version 2 Production server"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "githubAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT",
+        "description": "GitHub token for accessing private repository data"
+      }
+    },
+    "schemas": {
+      "Error": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "string",
+            "description": "Error message",
+            "example": "Course not found"
+          }
+        }
+      },
+      "Course": {
+        "type": "object",
+        "properties": {
+          "courseCode": {
+            "type": "string",
+            "example": "CSC1013"
+          },
+          "name": {
+            "type": "string",
+            "example": "Programming Concepts"
+          },
+          "description": {
+            "type": "string"
+          },
+          "coordinator": {
+            "type": "string",
+            "example": "instructor123"
+          }
+        }
+      },
+      "Instructor": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "example": "instructor123"
+          },
+          "name": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "department": {
+            "type": "string"
+          }
+        }
+      },
+      "Project": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "example": "CSC2012-2025-002"
+          },
+          "name": {
+            "type": "string",
+            "example": "Data Structure Visualizer"
+          },
+          "description": {
+            "type": "string"
+          },
+          "courseCode": {
+            "type": "string",
+            "example": "CSC2012"
+          },
+          "instructor": {
+            "type": "string",
+            "example": "saluka-sci"
+          },
+          "instructorLink": {
+            "type": "string",
+            "example": "/instructor/saluka-sci"
+          },
+          "academicYear": {
+            "type": "number",
+            "example": 2025
+          },
+          "projectLink": {
+            "type": "string",
+            "example": "https://github.com/pdn-scs/data-structure-viz"
+          },
+          "coverImageUrl": {
+            "type": "string",
+            "example": "/images/course-cover-images/CSC.webp"
+          },
+          "authors": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "example": "Dassanayake D.K.Y.Y."
+                },
+                "link": {
+                  "type": "string",
+                  "example": "/student/S20335"
+                },
+                "sNumber": {
+                  "type": "string",
+                  "example": "S20335"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Student": {
+        "type": "object",
+        "properties": {
+          "sNumber": {
+            "type": "string",
+            "example": "S20335",
+            "description": "Student registration number in format SYYNNN where YY is year and NNN is sequence number"
+          },
+          "name": {
+            "type": "string",
+            "example": "Dassanayake D.K.Y.Y."
+          },
+          "email": {
+            "type": "string"
+          },
+          "department": {
+            "type": "string",
+            "example": "Data Science"
+          },
+          "year": {
+            "type": "string",
+            "example": "20"
+          }
+        }
+      }
+    }
+  },
+  "paths": {
+    "/v1/courses": {
+      "get": {
+        "summary": "Get all courses",
+        "description": "Retrieve a list of all available courses",
+        "responses": {
+          "200": {
+            "description": "List of courses",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Course"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/courses/{courseId}": {
+      "get": {
+        "summary": "Get course by ID",
+        "parameters": [
+          {
+            "name": "courseId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Course details",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Course"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Course not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/instructor/{instructorUsername}": {
+      "get": {
+        "summary": "Get instructor details",
+        "parameters": [
+          {
+            "name": "instructorUsername",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Instructor details",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Instructor"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Instructor not found"
+          }
+        }
+      }
+    },
+    "/v1/projects/cc/{courseCode}": {
+      "get": {
+        "summary": "Get projects by course code",
+        "parameters": [
+          {
+            "name": "courseCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of projects for the course",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Project"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/projects/id/{projectId}": {
+      "get": {
+        "summary": "Get project by ID",
+        "parameters": [
+          {
+            "name": "projectId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Project details",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Project"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/student/{studentId}": {
+      "get": {
+        "summary": "Get student details",
+        "parameters": [
+          {
+            "name": "studentId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Student details",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Student"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v2/courses": {
+      "get": {
+        "summary": "Get all courses (V2)",
+        "description": "Retrieve a list of all available courses with enhanced details",
+        "responses": {
+          "200": {
+            "description": "List of courses",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Course"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v2/courses/{courseCode}": {
+      "get": {
+        "summary": "Get course by code (V2)",
+        "parameters": [
+          {
+            "name": "courseCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Course details",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Course"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v2/instructor/{instructorUsername}": {
+      "get": {
+        "summary": "Get instructor details (V2)",
+        "parameters": [
+          {
+            "name": "instructorUsername",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Instructor details",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Instructor"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v2/projects/cc/{courseCode}": {
+      "get": {
+        "summary": "Get projects by course code (V2)",
+        "parameters": [
+          {
+            "name": "courseCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of projects for the course",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Project"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v2/projects/id/{projectId}": {
+      "get": {
+        "summary": "Get project by ID (V2)",
+        "parameters": [
+          {
+            "name": "projectId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Project details",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Project"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v2/student/{studentId}": {
+      "get": {
+        "summary": "Get student details (V2)",
+        "parameters": [
+          {
+            "name": "studentId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Student details",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Student"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

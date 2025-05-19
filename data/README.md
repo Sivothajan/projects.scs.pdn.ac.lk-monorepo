@@ -1,135 +1,56 @@
-# Data Structure Documentation
-
-## Overview
-
-This directory contains the structured data files for the Projects Portal, storing information about courses, projects, students, and instructors in JSON format. These files are used to manage and display data on the platform.
+# Project Portal Data Structure
 
 ## File Structure
 
 ```
 data/
-├── courses.json     # Course information
-├── instructors.json # Instructor details
-├── projects.json    # Project details
-└── students.json    # Student information
+├── v1/                  # Legacy data structure (flat JSON files)
+└── v2/                  # Current data structure (hierarchical)
+    ├── common/          # Shared resources
+    ├── course/         # Course data
+    ├── instructor/     # Instructor data
+    ├── project/        # Project data
+    └── student/        # Student data
 ```
 
-## Data Schemas
+## Schemas
 
-### projects.json
-
+### Project Structure (v2)
+- Projects: `/v2/project/{department}/{year}/{category}/{courseCode}-{year}-{projectId}.json`
+  - Example: `/v2/project/csc/2025/2000/csc2012-2025-002.json`
 ```json
-[
-  {
-    "id": "string",
-    "name": "string",
-    "courseCode": "string",
-    "instructor": "string",
-    "instructorLink": "string",
-    "academicYear": "number",
-    "description": "string",
-    "projectLink": "string",
-    "coverImageUrl": "string",
-    "authors": [
-      {
-        "name": "string",
-        "link": "string",
-        "sNumber": "string"
-      }
-    ]
-  }
-]
+{
+  "id": "CSC2012-2025-002",
+  "name": "Project Name",
+  "courseCode": "CSC2012",
+  "instructor": "instructor-username",
+  "academicYear": 2025,
+  "description": "Project description",
+  "projectLink": "https://github.com/...",
+  "coverImageUrl": "/images/...",
+  "authors": [{"name": "Full Name", "sNumber": "S12345"}]
+}
 ```
 
-### courses.json
+### Data Validation Rules
+- Project IDs: `{COURSECODE}-{YEAR}-{###}` (e.g., CSC2012-2025-002)
+- Student IDs: `S{##}{###}` (batch number + sequence)
+- Course codes: `{DEPT}{#}{###}` (e.g., CSC2012)
+- File extensions must be lowercase (.json)
+- Directory codes must be lowercase
+- Year directories must be 4-digit format
+- Category directories must be in thousands (1000, 2000, etc.)
 
-```json
-[
-  {
-    "courseImageUrl": "string",
-    "title": "string",
-    "courseCode": "string",
-    "description": "string"
-  }
-]
-```
 
-### students.json
+## API Endpoints (v2)
+- `GET /v2/courses` - List all courses
+- `GET /v2/courses/{courseCode}` - Get course by code
+- `GET /v2/projects/cc/{courseCode}` - Get projects by course
+- `GET /v2/projects/id/{projectId}` - Get project by ID
+- `GET /v2/student/{studentId}` - Get student details
+- `GET /v2/instructor/{instructorId}` - Get instructor details
 
-```json
-[
-  {
-    "sNumber": "string",
-    "name": "string",
-    "department": "string",
-    "year": "string"
-  }
-]
-```
-
-### instructors.json
-
-```json
-[
-  {
-    "name": "string",
-    "department": "string",
-    "profilePictureUrl": "string",
-    "email": "string"
-  }
-]
-```
-
-## Data Management Guidelines
-
-### Adding New Data
-
-1. Follow the schema structures defined above.
-2. Ensure all required fields are filled.
-3. Validate JSON syntax before committing.
-4. Use UTF-8 encoding.
-
-### Updating Existing Data
-
-1. Maintain data consistency across related files.
-2. Update related references when modifying IDs.
-3. Keep historical data for completed projects.
-
-### Data Validation
-
-- All JSON files must be valid.
-- Required fields cannot be null/empty.
-- IDs must be unique.
-- References must exist.
-- Dates should follow ISO 8601 format.
-
-### Backup Procedures
-
-1. Regular automated backups.
-2. Version control through Git.
-3. Backup validation checks.
-
-## Tools and Scripts
-
-- JSON validators
-- Data migration scripts
-- Backup utilities
-- Schema validation tools
-
-## Best Practices
-
-1. Keep data normalized.
-2. Maintain consistent formatting.
-3. Use descriptive IDs.
-4. Include relevant metadata.
-5. Document any special cases.
-
-## Data Privacy
-
-- No sensitive personal information.
-- Follow university data policies.
-- Comply with privacy regulations.
+All endpoints return JSON with HTTP 200 for success or 4xx/5xx for errors.
 
 ## License
-
-This data is licensed under the MIT License - see the LICENSE file for details.
+MIT License - see LICENSE file for details.
