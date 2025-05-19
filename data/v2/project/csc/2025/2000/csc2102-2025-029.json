@@ -1,0 +1,25 @@
+[
+  {
+    "id": "CSC2102-2025-029",
+    "name": "Interactive Blog Platform",
+    "courseCode": "CSC2102",
+    "instructor": "Hakim A. Usoof",
+    "instructorLink": "/instructor/hakimu-sci",
+    "academicYear": 2025,
+    "description": "Create a dynamic blog site with user comments using HTML, CSS, and JavaScript.",
+    "projectLink": "https://github.com/pdn-scs/interactive-blog",
+    "coverImageUrl": "/images/course-cover-images/CSC.webp",
+    "authors": [
+      {
+        "name": "Susara Weerarathna",
+        "link": "/student/S19540",
+        "sNumber": "S19540"
+      },
+      {
+        "name": "Tharaka Dilshan",
+        "link": "/student/S19355",
+        "sNumber": "S19355"
+      }
+    ]
+  }
+]

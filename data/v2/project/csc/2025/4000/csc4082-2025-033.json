@@ -1,0 +1,25 @@
+[
+  {
+    "id": "CSC4082-2025-033",
+    "name": "Object Recognition System",
+    "courseCode": "CSC4082",
+    "instructor": "Ruwanthini Siyambalapitiya",
+    "instructorLink": "/instructor/ruwanthini-sci",
+    "academicYear": 2025,
+    "description": "Develop a system to identify objects in images using OpenCV.",
+    "projectLink": "https://github.com/pdn-scs/object-recognition",
+    "coverImageUrl": "/images/course-cover-images/CSC.webp",
+    "authors": [
+      {
+        "name": "Chamudi De Silva",
+        "link": "/student/S19346",
+        "sNumber": "S19346"
+      },
+      {
+        "name": "Harindra Dilshan",
+        "link": "/student/S19588",
+        "sNumber": "S19588"
+      }
+    ]
+  }
+]

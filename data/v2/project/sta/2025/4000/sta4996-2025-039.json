@@ -1,0 +1,25 @@
+[
+  {
+    "id": "STA4996-2025-039",
+    "name": "Risk Assessment Model",
+    "courseCode": "STA4996",
+    "instructor": "Malima Atapattu",
+    "instructorLink": "/instructor/malima-sci",
+    "academicYear": 2025,
+    "description": "Build a statistical model to assess financial risk in investments.",
+    "projectLink": "https://github.com/pdn-scs/risk-assessment",
+    "coverImageUrl": "/images/course-cover-images/STA.webp",
+    "authors": [
+      {
+        "name": "Dayapoorani Vajiya",
+        "link": "/student/S19585",
+        "sNumber": "S19585"
+      },
+      {
+        "name": "Gayan Bandara",
+        "link": "/student/S19325",
+        "sNumber": "S19325"
+      }
+    ]
+  }
+]

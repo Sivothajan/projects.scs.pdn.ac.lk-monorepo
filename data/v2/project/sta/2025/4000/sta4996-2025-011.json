@@ -1,0 +1,25 @@
+[
+  {
+    "id": "STA4996-2025-011",
+    "name": "Survival Analysis Study",
+    "courseCode": "STA4996",
+    "instructor": "Mahasen Dehideniya",
+    "instructorLink": "/instructor/mahasend-sci",
+    "academicYear": 2025,
+    "description": "Conduct a survival analysis on medical patient data.",
+    "projectLink": "https://projects.sci.pdn.ac.lk/survival-analysis",
+    "coverImageUrl": "/images/course-cover-images/STA.webp",
+    "authors": [
+      {
+        "name": "Dayapoorani Vajiya",
+        "link": "/student/S19585",
+        "sNumber": "S19585"
+      },
+      {
+        "name": "Gayan Bandara",
+        "link": "/student/S19325",
+        "sNumber": "S19325"
+      }
+    ]
+  }
+]

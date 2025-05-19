@@ -1,0 +1,542 @@
+[
+  {
+    "courseCode": "CSC1013",
+    "title": "Introduction to Computer Science and Programming",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC1023",
+    "title": "Object-oriented Programming",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC1041",
+    "title": "Programming Laboratory I",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC1051",
+    "title": "Programming Laboratory II",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC2012",
+    "title": "Data Structures",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC2021",
+    "title": "Programming using Data Structures",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC2032",
+    "title": "Database Management Systems",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC2041",
+    "title": "Programming using Database Management Systems",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC2052",
+    "title": "Computer Architecture",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC2102",
+    "title": "Web Programming I",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC2112",
+    "title": "Introduction to Computer Networks",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC2312",
+    "title": "Computing for Science I",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC2321",
+    "title": "Computing for Science Programming Laboratory I",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC3033",
+    "title": "Operating Systems Concepts",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC3073",
+    "title": "Computer Graphics",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC3081",
+    "title": "Computer Graphics Programming",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC3093",
+    "title": "Object Oriented Analysis and Design",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC3103",
+    "title": "Server Side Web Programming",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC3112",
+    "title": "Software Engineering",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC3122",
+    "title": "Human Computer Interaction Design",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC3132",
+    "title": "Digital Image Processing",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC3141",
+    "title": "Image Processing Laboratory",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC3152",
+    "title": "Design and Analysis of Algorithms",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC3173",
+    "title": "Artificial Intelligence",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC3182",
+    "title": "Advanced Computer Networks",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC3213",
+    "title": "Project in Computer Science I",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC3252",
+    "title": "Scientific Writing and Presentation",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC3312",
+    "title": "Computing for Science II",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC3321",
+    "title": "Computing for Science Programming Laboratory II",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC4043",
+    "title": "Parallel Processing",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC4063",
+    "title": "Distributed Computing",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC4082",
+    "title": "Computer Vision",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC4093",
+    "title": "Neural Networks and Deep Learning",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC4103",
+    "title": "Internet and Multimedia Systems",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC4122",
+    "title": "Internet of Things",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC4132",
+    "title": "Information and Network Security",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC4142",
+    "title": "Software Project Management",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC4162",
+    "title": "Special Topics in Computer Science",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC4173",
+    "title": "Machine Learning",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC4182",
+    "title": "Natural Language Processing",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "CSC4996",
+    "title": "Project in Computer Science II – Research Project",
+    "courseImageUrl": "/images/course-cover-images/CSC.webp"
+  },
+  {
+    "courseCode": "SCI4003",
+    "title": "Industrial Training",
+    "courseImageUrl": "/images/course-cover-images/SCI.webp"
+  },
+  {
+    "courseCode": "DSC3013",
+    "title": "Regression Analysis",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC3023",
+    "title": "Big Data Analytics I",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC3032",
+    "title": "Multivariate Methods I",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC3042",
+    "title": "Time Series Analysis",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC3052",
+    "title": "Data Visualization",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC3063",
+    "title": "Decision and Game Theory",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC3073",
+    "title": "Non-parametric and Categorical Data Analysis",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC3083",
+    "title": "Statistical Simulation",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC3091",
+    "title": "Advanced Statistics Applications I",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC3101",
+    "title": "Advanced Statistics Applications II",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC3152",
+    "title": "Design and Analysis of Algorithms",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC3163",
+    "title": "Advanced Database Management Systems",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC3173",
+    "title": "Artificial Intelligence",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC3182",
+    "title": "Digital Image Processing",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC3192",
+    "title": "Computing for Data Science",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC3252",
+    "title": "Scientific Writing and Presentation",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC3263",
+    "title": "Independent Study in Data Science",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC4013",
+    "title": "Big Data Analytics II",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC4023",
+    "title": "Data Mining Techniques",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC4033",
+    "title": "Multivariate Methods II",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC4043",
+    "title": "Bayesian Statistics",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC4052",
+    "title": "Advanced Time Series Analysis",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC4063",
+    "title": "Reliability Theory and Survival Analysis",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC4162",
+    "title": "Advanced Topics in Algorithms and Optimization",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC4173",
+    "title": "Machine Learning",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC4182",
+    "title": "Natural Language Processing",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC4193",
+    "title": "Internet of Things",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC4202",
+    "title": "Information Retrieval",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC4213",
+    "title": "Neural Networks and Deep Learning",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC4222",
+    "title": "Special Topics in Data Science",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC4243",
+    "title": "Distributed Computing",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC4252",
+    "title": "Computer Vision",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "DSC4996",
+    "title": "Project in Data Science",
+    "courseImageUrl": "/images/course-cover-images/DSC.webp"
+  },
+  {
+    "courseCode": "STA1013",
+    "title": "Introduction to Statistics",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA1023",
+    "title": "Introduction to Probability Theory",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA1031",
+    "title": "Statistics Applications I",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA1041",
+    "title": "Statistics Applications II",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA1073",
+    "title": "Mathematics for Operations Research",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA2013",
+    "title": "Probability Theory",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA2033",
+    "title": "Theory of Statistics",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA2042",
+    "title": "Sampling Techniques",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA2102",
+    "title": "Statistical Quality Control",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA3013",
+    "title": "Regression Analysis",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA3033",
+    "title": "Design and Analysis of Experiments",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA3052",
+    "title": "Multivariate Methods I",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA3072",
+    "title": "Time Series Analysis",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA3093",
+    "title": "Non-Parametric & Categorical Data Analysis",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA3113",
+    "title": "Statistical Simulation",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA3131",
+    "title": "Advanced Statistical Applications I",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA3141",
+    "title": "Advanced Statistical Applications II",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA3213",
+    "title": "Statistics for Scientists",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA3252",
+    "title": "Scientific Writing and Presentation",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA4012",
+    "title": "Actuarial Statistics",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA4023",
+    "title": "Statistical Data Mining",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA4033",
+    "title": "Statistics for Bioinformatics",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA4043",
+    "title": "Stochastic Processes",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA4053",
+    "title": "Multivariate Methods II",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA4063",
+    "title": "Bayesian Statistics",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA4073",
+    "title": "Linear Models",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA4083",
+    "title": "Reliability Theory and Survival Analysis",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA4112",
+    "title": "Advanced Probability Theory",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA4122",
+    "title": "Asymptotic Theory",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA4203",
+    "title": "Medical Statistics",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA4212",
+    "title": "Spatial Statistics",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA4222",
+    "title": "Special Topics in Statistics",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  },
+  {
+    "courseCode": "STA4996",
+    "title": "Research Project",
+    "courseImageUrl": "/images/course-cover-images/STA.webp"
+  }
+]

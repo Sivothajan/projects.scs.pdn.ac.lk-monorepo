@@ -1,0 +1,25 @@
+[
+  {
+    "id": "CSC4082-2025-020",
+    "name": "Face Detection System",
+    "courseCode": "CSC4082",
+    "instructor": "Amalka J. Pinidiyaarachchi",
+    "instructorLink": "/instructor/amalka-sci",
+    "academicYear": 2025,
+    "description": "Implement a real-time face detection system using computer vision.",
+    "projectLink": "https://github.com/pdn-scs/face-detection",
+    "coverImageUrl": "/images/course-cover-images/CSC.webp",
+    "authors": [
+      {
+        "name": "Rashmika Abeyrathna",
+        "link": "/student/S19003",
+        "sNumber": "S19003"
+      },
+      {
+        "name": "Sathija Bhanuka",
+        "link": "/student/S19350",
+        "sNumber": "S19350"
+      }
+    ]
+  }
+]

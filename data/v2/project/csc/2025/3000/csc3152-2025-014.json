@@ -1,0 +1,25 @@
+[
+  {
+    "id": "CSC3152-2025-014",
+    "name": "Algorithm Benchmarking Tool",
+    "courseCode": "CSC3152",
+    "instructor": "Pramuka Weerasinghe",
+    "instructorLink": "/instructor/pramuka-sci",
+    "academicYear": 2025,
+    "description": "Create a tool to benchmark sorting algorithms for performance analysis.",
+    "projectLink": "https://github.com/pdn-scs/algo-benchmark",
+    "coverImageUrl": "/images/course-cover-images/CSC.webp",
+    "authors": [
+      {
+        "name": "Dilukshi Kumari",
+        "link": "/student/S19420",
+        "sNumber": "S19420"
+      },
+      {
+        "name": "Nuwantha Karunarathna",
+        "link": "/student/S19408",
+        "sNumber": "S19408"
+      }
+    ]
+  }
+]

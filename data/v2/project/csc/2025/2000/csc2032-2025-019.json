@@ -1,0 +1,25 @@
+[
+  {
+    "id": "CSC2032-2025-019",
+    "name": "Student Database System",
+    "courseCode": "CSC2032",
+    "instructor": "Sachith P. Abeysundara",
+    "instructorLink": "/instructor/sachith-sci",
+    "academicYear": 2025,
+    "description": "Design a database system to manage student records with SQL.",
+    "projectLink": "https://github.com/pdn-scs/student-db",
+    "coverImageUrl": "/images/course-cover-images/CSC.webp",
+    "authors": [
+      {
+        "name": "Liyanaarachchi L.K.S.",
+        "link": "/student/S20570",
+        "sNumber": "S20570"
+      },
+      {
+        "name": "Manoj Dilshan Rathnayaka R.M.",
+        "link": "/student/S20140",
+        "sNumber": "S20140"
+      }
+    ]
+  }
+]
