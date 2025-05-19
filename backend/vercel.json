@@ -16,8 +16,8 @@
   ],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "/api/apiRouter.js",
+      "src": "/v2/(.*)",
+      "dest": "/api/v2/apiRouter.js",
       "methods": ["GET", "POST", "OPTIONS"],
       "headers": {
         "Access-Control-Allow-Origin": "*",
@@ -34,8 +34,8 @@
       }
     },
     {
-      "src": "/v2/(.*)",
-      "dest": "/api/v2/apiRouter.js",
+      "src": "/(.*)",
+      "dest": "/api/apiRouter.js",
       "methods": ["GET", "POST", "OPTIONS"],
       "headers": {
         "Access-Control-Allow-Origin": "*",
