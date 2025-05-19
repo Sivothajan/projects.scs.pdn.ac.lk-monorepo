@@ -4,7 +4,7 @@
     "name": "Simple Game Development",
     "courseCode": "CSC1013",
     "instructor": "Saluka R. Kodituwakku",
-    "instructorLink": "/instructor/saluka-sci",
+    "instructorLink": "/instructor/salukak-sci",
     "academicYear": 2025,
     "description": "Create a basic 2D game using Python and Pygame to practice programming fundamentals.",
     "projectLink": "https://github.com/pdn-scs/simple-game-dev",

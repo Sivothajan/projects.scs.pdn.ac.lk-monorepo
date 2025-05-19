@@ -4,7 +4,7 @@
     "name": "Data Structure Visualizer",
     "courseCode": "CSC2012",
     "instructor": "Saluka R. Kodituwakku",
-    "instructorLink": "/instructor/saluka-sci",
+    "instructorLink": "/instructor/salukak-sci",
     "academicYear": 2025,
     "description": "Build a tool to visualize common data structures like stacks and queues.",
     "projectLink": "https://github.com/pdn-scs/data-structure-viz",

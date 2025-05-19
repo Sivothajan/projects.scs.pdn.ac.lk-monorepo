@@ -4,7 +4,7 @@
     "name": "Network Packet Sniffer",
     "courseCode": "CSC2112",
     "instructor": "Saluka R. Kodituwakku",
-    "instructorLink": "/instructor/saluka-sci",
+    "instructorLink": "/instructor/salukak-sci",
     "academicYear": 2025,
     "description": "Create a tool to capture and analyze network packets.",
     "projectLink": "https://github.com/pdn-scs/packet-sniffer",
