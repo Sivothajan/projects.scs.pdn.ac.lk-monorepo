@@ -3,20 +3,20 @@
     "id": "STA3072-2025-048",
     "name": "Stock Price Predictor",
     "courseCode": "STA3072",
-    "instructor": "Hemalika T.K. Abeysundara",
-    "instructorLink": "/instructor/hemalika-sci",
+    "instructor": "Michael Thompson",
+    "instructorLink": "/instructor/michael-sci",
     "academicYear": 2025,
     "description": "Forecast stock prices using time series analysis methods.",
     "projectLink": "https://github.com/pdn-scs/stock-predictor",
     "coverImageUrl": "/images/course-cover-images/STA.webp",
     "authors": [
       {
-        "name": "Chandrasena GVYK",
+        "name": "Peter Collins",
         "link": "/student/S20326",
         "sNumber": "S20326"
       },
       {
-        "name": "Dharmadasa PDSN",
+        "name": "Grace Edwards",
         "link": "/student/S20345",
         "sNumber": "S20345"
       }

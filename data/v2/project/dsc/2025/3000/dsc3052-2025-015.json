@@ -3,20 +3,20 @@
     "id": "DSC3052-2025-015",
     "name": "Interactive Data Visualizer",
     "courseCode": "DSC3052",
-    "instructor": "B. R. Pavithra M. Basnayake",
-    "instructorLink": "/instructor/pavithra-sci",
+    "instructor": "Sarah Anderson",
+    "instructorLink": "/instructor/sarah-sci",
     "academicYear": 2025,
     "description": "Build an interactive tool to visualize datasets with filters and charts.",
     "projectLink": "https://projects.sci.pdn.ac.lk/data-visualizer",
     "coverImageUrl": "/images/course-cover-images/DSC.webp",
     "authors": [
       {
-        "name": "Gunasekara G.W.N.T.",
+        "name": "Emma Davis",
         "link": "/student/S20373",
         "sNumber": "S20373"
       },
       {
-        "name": "Hitibandara H.M.N.R.Y.",
+        "name": "Oliver Brown",
         "link": "/student/S20385",
         "sNumber": "S20385"
       }

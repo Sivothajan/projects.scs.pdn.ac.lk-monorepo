@@ -3,20 +3,20 @@
     "id": "DSC4182-2025-024",
     "name": "Text Summarization App",
     "courseCode": "DSC4182",
-    "instructor": "Isuru Madugalla",
-    "instructorLink": "/instructor/isuru-sci",
+    "instructor": "Ian Campbell",
+    "instructorLink": "/instructor/ian-sci",
     "academicYear": 2025,
     "description": "Develop an app to summarize text using natural language processing.",
     "projectLink": "https://github.com/pdn-scs/text-summarizer",
     "coverImageUrl": "/images/course-cover-images/DSC.webp",
     "authors": [
       {
-        "name": "Saubhagya Aryarathna",
+        "name": "Stephen Armstrong",
         "link": "/student/S19313",
         "sNumber": "S19313"
       },
       {
-        "name": "Tajith Wijesooriya",
+        "name": "Timothy Wilson",
         "link": "/student/S19552",
         "sNumber": "S19552"
       }
@@ -26,22 +26,22 @@
     "id": "DSC4182-2025-046",
     "name": "Chatbot Sentiment Analyzer",
     "courseCode": "DSC4182",
-    "instructor": "Hakim A. Usoof",
-    "instructorLink": "/instructor/hakimu-sci",
+    "instructor": "Jennifer Mitchell",
+    "instructorLink": "/instructor/jennifer-sci",
     "academicYear": 2025,
-    "description": "Develop a tool to analyze sentiment in chatbot conversations.",
-    "projectLink": "https://github.com/pdn-scs/sentiment-chatbot",
+    "description": "Build a sentiment analysis system for chatbot conversations.",
+    "projectLink": "https://github.com/pdn-scs/chatbot-sentiment",
     "coverImageUrl": "/images/course-cover-images/DSC.webp",
     "authors": [
       {
-        "name": "Gunasekara G.W.N.T.",
-        "link": "/student/S20373",
-        "sNumber": "S20373"
+        "name": "Kenneth King",
+        "link": "/student/S19413",
+        "sNumber": "S19413"
       },
       {
-        "name": "Hitibandara H.M.N.R.Y.",
-        "link": "/student/S20385",
-        "sNumber": "S20385"
+        "name": "Trevor Scott",
+        "link": "/student/S19582",
+        "sNumber": "S19582"
       }
     ]
   }

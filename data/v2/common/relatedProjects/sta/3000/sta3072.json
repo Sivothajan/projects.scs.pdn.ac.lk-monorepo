@@ -1,24 +1,24 @@
 [
   {
     "id": "STA3072-2025-008",
-    "name": "Time Series Forecasting",
+    "name": "Weather Forecasting Model",
     "courseCode": "STA3072",
-    "instructor": "Hemalika T.K. Abeysundara",
-    "instructorLink": "/instructor/hemalika-sci",
+    "instructor": "Rachel Stevens",
+    "instructorLink": "/instructor/rachel-sci",
     "academicYear": 2025,
     "description": "Create a model to forecast weather patterns using time series data.",
-    "projectLink": "https://projects.sci.pdn.ac.lk/time-series",
+    "projectLink": "https://projects.sci.pdn.ac.lk/weather-forecast",
     "coverImageUrl": "/images/course-cover-images/STA.webp",
     "authors": [
       {
-        "name": "Chamika Wijethunga",
-        "link": "/student/S19393",
-        "sNumber": "S19393"
+        "name": "Emma Phillips",
+        "link": "/student/S20364",
+        "sNumber": "S20364"
       },
       {
-        "name": "Chathumi Gunathilaka",
-        "link": "/student/S19564",
-        "sNumber": "S19564"
+        "name": "Diana Nelson",
+        "link": "/student/S20375",
+        "sNumber": "S20375"
       }
     ]
   },
@@ -26,20 +26,20 @@
     "id": "STA3072-2025-048",
     "name": "Stock Price Predictor",
     "courseCode": "STA3072",
-    "instructor": "Hemalika T.K. Abeysundara",
-    "instructorLink": "/instructor/hemalika-sci",
+    "instructor": "Rachel Stevens",
+    "instructorLink": "/instructor/rachel-sci",
     "academicYear": 2025,
     "description": "Forecast stock prices using time series analysis methods.",
-    "projectLink": "https://github.com/pdn-scs/stock-predictor",
+    "projectLink": "https://projects.sci.pdn.ac.lk/stock-predictor",
     "coverImageUrl": "/images/course-cover-images/STA.webp",
     "authors": [
       {
-        "name": "Chandrasena GVYK",
+        "name": "Peter Collins",
         "link": "/student/S20326",
         "sNumber": "S20326"
       },
       {
-        "name": "Dharmadasa PDSN",
+        "name": "Grace Edwards",
         "link": "/student/S20345",
         "sNumber": "S20345"
       }

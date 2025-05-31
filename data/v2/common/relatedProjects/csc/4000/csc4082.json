@@ -3,20 +3,20 @@
     "id": "CSC4082-2025-020",
     "name": "Face Detection System",
     "courseCode": "CSC4082",
-    "instructor": "Amalka J. Pinidiyaarachchi",
-    "instructorLink": "/instructor/amalka-sci",
+    "instructor": "Elizabeth Parker",
+    "instructorLink": "/instructor/elizabeth-sci",
     "academicYear": 2025,
     "description": "Implement a real-time face detection system using computer vision.",
     "projectLink": "https://github.com/pdn-scs/face-detection",
     "coverImageUrl": "/images/course-cover-images/CSC.webp",
     "authors": [
       {
-        "name": "Rashmika Abeyrathna",
+        "name": "Rachel Adams",
         "link": "/student/S19003",
         "sNumber": "S19003"
       },
       {
-        "name": "Sathija Bhanuka",
+        "name": "Simon Brooks",
         "link": "/student/S19350",
         "sNumber": "S19350"
       }
@@ -26,20 +26,20 @@
     "id": "CSC4082-2025-033",
     "name": "Object Recognition System",
     "courseCode": "CSC4082",
-    "instructor": "Ruwanthini Siyambalapitiya",
-    "instructorLink": "/instructor/ruwanthini-sci",
+    "instructor": "Rebecca Wilson",
+    "instructorLink": "/instructor/rebecca-sci",
     "academicYear": 2025,
     "description": "Develop a system to identify objects in images using OpenCV.",
     "projectLink": "https://github.com/pdn-scs/object-recognition",
     "coverImageUrl": "/images/course-cover-images/CSC.webp",
     "authors": [
       {
-        "name": "Chamudi De Silva",
+        "name": "Charlotte Davis",
         "link": "/student/S19346",
         "sNumber": "S19346"
       },
       {
-        "name": "Harindra Dilshan",
+        "name": "Henry Dixon",
         "link": "/student/S19588",
         "sNumber": "S19588"
       }

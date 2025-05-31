@@ -3,7 +3,7 @@
     "id": "DSC3042-2025-021",
     "name": "Retail Sales Forecasting",
     "courseCode": "DSC3042",
-    "instructor": "Ruwan D. Nawarathna",
+    "instructor": "William Hughes",
     "instructorLink": "/instructor/ruwandn-sci",
     "academicYear": 2025,
     "description": "Forecast retail sales using time series analysis techniques.",
@@ -11,12 +11,12 @@
     "coverImageUrl": "/images/course-cover-images/DSC.webp",
     "authors": [
       {
-        "name": "Imashi Kavishka R.G.",
+        "name": "Isabella Knight",
         "link": "/student/S20485",
         "sNumber": "S20485"
       },
       {
-        "name": "Kumarasiri P.K.I.S.",
+        "name": "Katherine Stewart",
         "link": "/student/S20426",
         "sNumber": "S20426"
       }

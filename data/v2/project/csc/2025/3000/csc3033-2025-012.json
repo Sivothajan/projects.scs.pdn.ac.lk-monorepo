@@ -3,20 +3,20 @@
     "id": "CSC3033-2025-012",
     "name": "OS Process Simulator",
     "courseCode": "CSC3033",
-    "instructor": "Erunika O. Dayartna",
-    "instructorLink": "/instructor/erunika-sci",
+    "instructor": "Jennifer Mitchell",
+    "instructorLink": "/instructor/jennifer-sci",
     "academicYear": 2025,
     "description": "Simulate operating system processes and scheduling algorithms.",
     "projectLink": "https://github.com/pdn-scs/os-simulator",
     "coverImageUrl": "/images/course-cover-images/CSC.webp",
     "authors": [
       {
-        "name": "Kulathunge K.A.V.I.",
+        "name": "Edward Phillips",
         "link": "/student/S20421",
         "sNumber": "S20421"
       },
       {
-        "name": "Kumara K.M.N.A.",
+        "name": "Alice Cooper",
         "link": "/student/S20422",
         "sNumber": "S20422"
       }

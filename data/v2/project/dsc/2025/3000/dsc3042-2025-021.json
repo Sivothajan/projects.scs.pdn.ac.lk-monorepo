@@ -3,20 +3,20 @@
     "id": "DSC3042-2025-021",
     "name": "Retail Sales Forecasting",
     "courseCode": "DSC3042",
-    "instructor": "Ruwan D. Nawarathna",
-    "instructorLink": "/instructor/ruwandn-sci",
+    "instructor": "Daniel Roberts",
+    "instructorLink": "/instructor/daniel-sci",
     "academicYear": 2025,
     "description": "Forecast retail sales using time series analysis techniques.",
     "projectLink": "https://projects.sci.pdn.ac.lk/sales-forecast",
     "coverImageUrl": "/images/course-cover-images/DSC.webp",
     "authors": [
       {
-        "name": "Imashi Kavishka R.G.",
+        "name": "Hannah Foster",
         "link": "/student/S20485",
         "sNumber": "S20485"
       },
       {
-        "name": "Kumarasiri P.K.I.S.",
+        "name": "Thomas Green",
         "link": "/student/S20426",
         "sNumber": "S20426"
       }

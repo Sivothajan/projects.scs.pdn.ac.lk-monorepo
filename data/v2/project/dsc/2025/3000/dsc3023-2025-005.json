@@ -3,20 +3,20 @@
     "id": "DSC3023-2025-005",
     "name": "Big Data Dashboard",
     "courseCode": "DSC3023",
-    "instructor": "Ruwan D. Nawarathna",
-    "instructorLink": "/instructor/ruwandn-sci",
+    "instructor": "Michael Thompson",
+    "instructorLink": "/instructor/michael-sci",
     "academicYear": 2025,
     "description": "Design a dashboard to analyze and visualize large datasets.",
     "projectLink": "https://projects.sci.pdn.ac.lk/big-data-dash",
     "coverImageUrl": "/images/course-cover-images/DSC.webp",
     "authors": [
       {
-        "name": "Dassanayake W.M.S.D.B.",
+        "name": "Nathan Phillips",
         "link": "/student/S20337",
         "sNumber": "S20337"
       },
       {
-        "name": "Dharmasena B.A.G.V.",
+        "name": "Emma Richardson",
         "link": "/student/S20346",
         "sNumber": "S20346"
       }

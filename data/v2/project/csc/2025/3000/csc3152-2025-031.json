@@ -3,20 +3,20 @@
     "id": "CSC3152-2025-031",
     "name": "Graph Algorithm Visualizer",
     "courseCode": "CSC3152",
-    "instructor": "Hemalika T.K. Abeysundara",
-    "instructorLink": "/instructor/hemalika-sci",
+    "instructor": "Sarah Anderson",
+    "instructorLink": "/instructor/sarah-sci",
     "academicYear": 2025,
-    "description": "Build a tool to visualize graph algorithms like Dijkstra’s and BFS.",
+    "description": "Build a tool to visualize graph algorithms like Dijkstra's and BFS.",
     "projectLink": "https://github.com/pdn-scs/graph-viz",
     "coverImageUrl": "/images/course-cover-images/CSC.webp",
     "authors": [
       {
-        "name": "Sanjaya G.Gihan",
+        "name": "Gabriel Stewart",
         "link": "/student/S20369",
         "sNumber": "S20369"
       },
       {
-        "name": "Umair N.M.",
+        "name": "Nicholas Miller",
         "link": "/student/S20534",
         "sNumber": "S20534"
       }

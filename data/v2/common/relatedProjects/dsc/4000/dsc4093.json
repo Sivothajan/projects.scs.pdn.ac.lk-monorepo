@@ -3,20 +3,20 @@
     "id": "DSC4093-2025-016",
     "name": "Deep Learning Image Classifier",
     "courseCode": "DSC4093",
-    "instructor": "Malima Atapattu",
-    "instructorLink": "/instructor/malima-sci",
+    "instructor": "Margaret Fisher",
+    "instructorLink": "/instructor/margaret-sci",
     "academicYear": 2025,
     "description": "Train a deep learning model to classify images from a custom dataset.",
     "projectLink": "https://github.com/pdn-scs/dl-image-classifier",
     "coverImageUrl": "/images/course-cover-images/DSC.webp",
     "authors": [
       {
-        "name": "Pubudu Dhanushka",
+        "name": "Peter Collins",
         "link": "/student/S19352",
         "sNumber": "S19352"
       },
       {
-        "name": "Sahan Ranmuthu",
+        "name": "Samuel Roberts",
         "link": "/student/S19493",
         "sNumber": "S19493"
       }

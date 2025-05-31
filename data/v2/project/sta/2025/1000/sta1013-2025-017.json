@@ -3,20 +3,20 @@
     "id": "STA1013-2025-017",
     "name": "Basic Statistics Calculator",
     "courseCode": "STA1013",
-    "instructor": "Isuru Madugalla",
-    "instructorLink": "/instructor/isuru-sci",
+    "instructor": "Elizabeth Parker",
+    "instructorLink": "/instructor/elizabeth-sci",
     "academicYear": 2025,
     "description": "Develop a tool to compute basic statistical measures like mean and variance.",
     "projectLink": "https://github.com/pdn-scs/stats-calculator",
     "coverImageUrl": "/images/course-cover-images/STA.webp",
     "authors": [
       {
-        "name": "Chandrasena GVYK",
+        "name": "Alice Bennett",
         "link": "/student/S20326",
         "sNumber": "S20326"
       },
       {
-        "name": "Dharmadasa PDSN",
+        "name": "George Harrison",
         "link": "/student/S20345",
         "sNumber": "S20345"
       }

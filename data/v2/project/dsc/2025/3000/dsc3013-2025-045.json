@@ -3,20 +3,20 @@
     "id": "DSC3013-2025-045",
     "name": "Health Data Regression",
     "courseCode": "DSC3013",
-    "instructor": "Ruwan D. Nawarathna",
-    "instructorLink": "/instructor/ruwandn-sci",
+    "instructor": "Sarah Anderson",
+    "instructorLink": "/instructor/sarah-sci",
     "academicYear": 2025,
     "description": "Analyze health data to predict outcomes using regression techniques.",
     "projectLink": "https://github.com/pdn-scs/health-regression",
     "coverImageUrl": "/images/course-cover-images/DSC.webp",
     "authors": [
       {
-        "name": "Dassanayake W.M.S.D.B.",
+        "name": "Isaac Rogers",
         "link": "/student/S20337",
         "sNumber": "S20337"
       },
       {
-        "name": "Dharmasena B.A.G.V.",
+        "name": "Sophia Hayes",
         "link": "/student/S20346",
         "sNumber": "S20346"
       }

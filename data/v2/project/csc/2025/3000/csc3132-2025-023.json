@@ -3,20 +3,20 @@
     "id": "CSC3132-2025-023",
     "name": "Image Enhancement Tool",
     "courseCode": "CSC3132",
-    "instructor": "Jagath Senarathne",
-    "instructorLink": "/instructor/jagath-sci",
+    "instructor": "William Hughes",
+    "instructorLink": "/instructor/william-sci",
     "academicYear": 2025,
     "description": "Build a tool to enhance image quality using digital image processing.",
     "projectLink": "https://github.com/pdn-scs/image-enhancer",
     "coverImageUrl": "/images/course-cover-images/CSC.webp",
     "authors": [
       {
-        "name": "Matheesha K.W.S.",
+        "name": "Matthew Kennedy",
         "link": "/student/S20455",
         "sNumber": "S20455"
       },
       {
-        "name": "Nambuwasam B.J.",
+        "name": "Benjamin Jackson",
         "link": "/student/S20109",
         "sNumber": "S20109"
       }

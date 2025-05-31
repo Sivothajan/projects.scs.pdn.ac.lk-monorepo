@@ -3,20 +3,20 @@
     "id": "CSC3152-2025-014",
     "name": "Algorithm Benchmarking Tool",
     "courseCode": "CSC3152",
-    "instructor": "Pramuka Weerasinghe",
-    "instructorLink": "/instructor/pramuka-sci",
+    "instructor": "Peter Walker",
+    "instructorLink": "/instructor/peter-sci",
     "academicYear": 2025,
     "description": "Create a tool to benchmark sorting algorithms for performance analysis.",
     "projectLink": "https://github.com/pdn-scs/algo-benchmark",
     "coverImageUrl": "/images/course-cover-images/CSC.webp",
     "authors": [
       {
-        "name": "Dilukshi Kumari",
+        "name": "Emily Parker",
         "link": "/student/S19420",
         "sNumber": "S19420"
       },
       {
-        "name": "Nuwantha Karunarathna",
+        "name": "Nathan Wilson",
         "link": "/student/S19408",
         "sNumber": "S19408"
       }
@@ -26,20 +26,20 @@
     "id": "CSC3152-2025-031",
     "name": "Graph Algorithm Visualizer",
     "courseCode": "CSC3152",
-    "instructor": "Hemalika T.K. Abeysundara",
-    "instructorLink": "/instructor/hemalika-sci",
+    "instructor": "Rachel Stevens",
+    "instructorLink": "/instructor/rachel-sci",
     "academicYear": 2025,
-    "description": "Build a tool to visualize graph algorithms like Dijkstra’s and BFS.",
+    "description": "Build a tool to visualize graph algorithms like Dijkstra's and BFS.",
     "projectLink": "https://github.com/pdn-scs/graph-viz",
     "coverImageUrl": "/images/course-cover-images/CSC.webp",
     "authors": [
       {
-        "name": "Sanjaya G.Gihan",
+        "name": "Gabriel Stewart",
         "link": "/student/S20369",
         "sNumber": "S20369"
       },
       {
-        "name": "Umair N.M.",
+        "name": "Nicholas Miller",
         "link": "/student/S20534",
         "sNumber": "S20534"
       }

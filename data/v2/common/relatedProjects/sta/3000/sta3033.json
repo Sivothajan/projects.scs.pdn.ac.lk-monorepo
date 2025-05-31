@@ -3,7 +3,7 @@
     "id": "STA3033-2025-022",
     "name": "Experimental Design Simulator",
     "courseCode": "STA3033",
-    "instructor": "Hemalika T.K. Abeysundara",
+    "instructor": "Rachel Stevens",
     "instructorLink": "/instructor/hemalika-sci",
     "academicYear": 2025,
     "description": "Simulate experimental designs to analyze statistical outcomes.",
@@ -11,12 +11,12 @@
     "coverImageUrl": "/images/course-cover-images/STA.webp",
     "authors": [
       {
-        "name": "Maheema Meeriyagalla",
+        "name": "Maria Harrison",
         "link": "/student/S19444",
         "sNumber": "S19444"
       },
       {
-        "name": "Maleen Pelpola",
+        "name": "Martin Phillips",
         "link": "/student/S19468",
         "sNumber": "S19468"
       }

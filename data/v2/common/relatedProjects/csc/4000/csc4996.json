@@ -3,20 +3,20 @@
     "id": "CSC4996-2025-009",
     "name": "AI-Powered Chatbot",
     "courseCode": "CSC4996",
-    "instructor": "Lakshika S. Nawarathna",
-    "instructorLink": "/instructor/lakshikan-sci",
+    "instructor": "Laura Bennett",
+    "instructorLink": "/instructor/laura-sci",
     "academicYear": 2025,
     "description": "Design and implement a chatbot using natural language processing.",
     "projectLink": "https://github.com/pdn-scs/ai-chatbot",
     "coverImageUrl": "/images/course-cover-images/CSC.webp",
     "authors": [
       {
-        "name": "Madhawa Welikumbura",
+        "name": "James Anderson",
         "link": "/student/S19543",
         "sNumber": "S19543"
       },
       {
-        "name": "Malinga Samarakoon",
+        "name": "Rachel Cooper",
         "link": "/student/S19146",
         "sNumber": "S19146"
       }
@@ -26,22 +26,22 @@
     "id": "CSC4996-2025-034",
     "name": "Smart Home Automation",
     "courseCode": "CSC4996",
-    "instructor": "Mahasen Dehideniya",
-    "instructorLink": "/instructor/mahasend-sci",
+    "instructor": "Matthew Davis",
+    "instructorLink": "/instructor/matthew-sci",
     "academicYear": 2025,
-    "description": "Design a system to control home devices using IoT and AI.",
+    "description": "Create a home automation system using IoT devices and machine learning.",
     "projectLink": "https://github.com/pdn-scs/smart-home",
     "coverImageUrl": "/images/course-cover-images/CSC.webp",
     "authors": [
       {
-        "name": "Lakshitha Eranga",
-        "link": "/student/S19378",
-        "sNumber": "S19378"
+        "name": "Oliver Hughes",
+        "link": "/student/S19588",
+        "sNumber": "S19588"
       },
       {
-        "name": "Madhawa Welikumbura",
-        "link": "/student/S19543",
-        "sNumber": "S19543"
+        "name": "Sophia Mitchell",
+        "link": "/student/S19378",
+        "sNumber": "S19378"
       }
     ]
   }

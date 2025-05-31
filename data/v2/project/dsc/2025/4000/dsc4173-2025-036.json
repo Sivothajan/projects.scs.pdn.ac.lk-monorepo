@@ -3,20 +3,20 @@
     "id": "DSC4173-2025-036",
     "name": "Customer Segmentation Model",
     "courseCode": "DSC4173",
-    "instructor": "Jagath Senarathne",
-    "instructorLink": "/instructor/jagath-sci",
+    "instructor": "William Hughes",
+    "instructorLink": "/instructor/william-sci",
     "academicYear": 2025,
     "description": "Build a clustering model to segment customers based on purchase data.",
     "projectLink": "https://github.com/pdn-scs/customer-segmentation",
     "coverImageUrl": "/images/course-cover-images/DSC.webp",
     "authors": [
       {
-        "name": "Neshika Ridimahaliyadda",
+        "name": "Emily Wilson",
         "link": "/student/S19500",
         "sNumber": "S19500"
       },
       {
-        "name": "Pasindu Kurukulasuriya",
+        "name": "Jack Thompson",
         "link": "/student/S19421",
         "sNumber": "S19421"
       }

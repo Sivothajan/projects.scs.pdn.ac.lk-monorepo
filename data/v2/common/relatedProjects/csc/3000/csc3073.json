@@ -3,20 +3,20 @@
     "id": "CSC3073-2025-043",
     "name": "3D Shape Renderer",
     "courseCode": "CSC3073",
-    "instructor": "Roshan D. Yapa",
-    "instructorLink": "/instructor/roshand-sci",
+    "instructor": "Daniel Roberts",
+    "instructorLink": "/instructor/daniel-sci",
     "academicYear": 2025,
     "description": "Build a program to render basic 3D shapes using OpenGL.",
     "projectLink": "https://github.com/pdn-scs/3d-renderer",
     "coverImageUrl": "/images/course-cover-images/CSC.webp",
     "authors": [
       {
-        "name": "Kulathunge K.A.V.I.",
+        "name": "Kyle Henderson",
         "link": "/student/S20421",
         "sNumber": "S20421"
       },
       {
-        "name": "Kumara K.M.N.A.",
+        "name": "Nathan Adams",
         "link": "/student/S20422",
         "sNumber": "S20422"
       }

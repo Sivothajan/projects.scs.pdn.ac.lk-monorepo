@@ -3,20 +3,20 @@
     "id": "CSC1023-2025-013",
     "name": "OOP-Based Calculator",
     "courseCode": "CSC1023",
-    "instructor": "Jagath Senarathne",
-    "instructorLink": "/instructor/jagath-sci",
+    "instructor": "William Hughes",
+    "instructorLink": "/instructor/william-sci",
     "academicYear": 2025,
     "description": "Develop a scientific calculator using object-oriented programming in Java.",
     "projectLink": "https://github.com/pdn-scs/oop-calculator",
     "coverImageUrl": "/images/course-cover-images/CSC.webp",
     "authors": [
       {
-        "name": "Hettiarachchi A.D.",
+        "name": "Adrian Davis",
         "link": "/student/S20381",
         "sNumber": "S20381"
       },
       {
-        "name": "Jayasekara H.M.S.V.",
+        "name": "Henry Smith",
         "link": "/student/S20196",
         "sNumber": "S20196"
       }

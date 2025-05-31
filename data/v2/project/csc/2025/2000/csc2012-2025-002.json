@@ -3,20 +3,20 @@
     "id": "CSC2012-2025-002",
     "name": "Data Structure Visualizer",
     "courseCode": "CSC2012",
-    "instructor": "Saluka R. Kodituwakku",
-    "instructorLink": "/instructor/salukak-sci",
+    "instructor": "Daniel Roberts",
+    "instructorLink": "/instructor/daniel-sci",
     "academicYear": 2025,
     "description": "Build a tool to visualize common data structures like stacks and queues.",
     "projectLink": "https://github.com/pdn-scs/data-structure-viz",
     "coverImageUrl": "/images/course-cover-images/CSC.webp",
     "authors": [
       {
-        "name": "Dassanayake D.K.Y.Y.",
+        "name": "David Young",
         "link": "/student/S20335",
         "sNumber": "S20335"
       },
       {
-        "name": "Heshan D.M.M.S",
+        "name": "Marcus Scott",
         "link": "/student/S20380",
         "sNumber": "S20380"
       }

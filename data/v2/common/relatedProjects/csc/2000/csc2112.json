@@ -3,7 +3,7 @@
     "id": "CSC2112-2025-042",
     "name": "Network Packet Sniffer",
     "courseCode": "CSC2112",
-    "instructor": "Saluka R. Kodituwakku",
+    "instructor": "Sarah Anderson",
     "instructorLink": "/instructor/salukak-sci",
     "academicYear": 2025,
     "description": "Create a tool to capture and analyze network packets.",
@@ -11,12 +11,12 @@
     "coverImageUrl": "/images/course-cover-images/CSC.webp",
     "authors": [
       {
-        "name": "Hettiarachchi A.D.",
+        "name": "Andrew Davis",
         "link": "/student/S20381",
         "sNumber": "S20381"
       },
       {
-        "name": "Jayasekara H.M.S.V.",
+        "name": "Henry Stevens",
         "link": "/student/S20196",
         "sNumber": "S20196"
       }

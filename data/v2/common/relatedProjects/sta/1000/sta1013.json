@@ -3,20 +3,20 @@
     "id": "STA1013-2025-017",
     "name": "Basic Statistics Calculator",
     "courseCode": "STA1013",
-    "instructor": "Isuru Madugalla",
-    "instructorLink": "/instructor/isuru-sci",
+    "instructor": "Ian Campbell",
+    "instructorLink": "/instructor/ian-sci",
     "academicYear": 2025,
     "description": "Develop a tool to compute basic statistical measures like mean and variance.",
     "projectLink": "https://github.com/pdn-scs/stats-calculator",
     "coverImageUrl": "/images/course-cover-images/STA.webp",
     "authors": [
       {
-        "name": "Chandrasena GVYK",
+        "name": "George Williams",
         "link": "/student/S20326",
         "sNumber": "S20326"
       },
       {
-        "name": "Dharmadasa PDSN",
+        "name": "David Scott",
         "link": "/student/S20345",
         "sNumber": "S20345"
       }
@@ -26,20 +26,20 @@
     "id": "STA1013-2025-047",
     "name": "Probability Simulator",
     "courseCode": "STA1013",
-    "instructor": "S.A. Ruwan Punchi Manage",
-    "instructorLink": "/instructor/ruwanpm-sci",
+    "instructor": "Christopher Lee",
+    "instructorLink": "/instructor/christopher-sci",
     "academicYear": 2025,
     "description": "Simulate basic probability experiments like coin flips and dice rolls.",
     "projectLink": "https://github.com/pdn-scs/prob-simulator",
     "coverImageUrl": "/images/course-cover-images/STA.webp",
     "authors": [
       {
-        "name": "Anuruddika DKR",
+        "name": "Alexander Reed",
         "link": "/student/S20574",
         "sNumber": "S20574"
       },
       {
-        "name": "Bandaranayake HMPD",
+        "name": "Henry Phillips",
         "link": "/student/S20321",
         "sNumber": "S20321"
       }

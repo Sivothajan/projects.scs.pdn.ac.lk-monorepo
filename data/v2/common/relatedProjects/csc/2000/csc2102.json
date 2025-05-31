@@ -3,7 +3,7 @@
     "id": "CSC2102-2025-003",
     "name": "Personal Portfolio Website",
     "courseCode": "CSC2102",
-    "instructor": "Roshan D. Yapa",
+    "instructor": "Daniel Roberts",
     "instructorLink": "/instructor/roshand-sci",
     "academicYear": 2025,
     "description": "Create a responsive portfolio website using HTML, CSS, and JavaScript.",
@@ -11,12 +11,12 @@
     "coverImageUrl": "/images/course-cover-images/CSC.webp",
     "authors": [
       {
-        "name": "Anuji Weragoda",
+        "name": "Alice Wilson",
         "link": "/student/S19172",
         "sNumber": "S19172"
       },
       {
-        "name": "Chamudi De Silva",
+        "name": "Charlotte Davis",
         "link": "/student/S19346",
         "sNumber": "S19346"
       }
@@ -26,7 +26,7 @@
     "id": "CSC2102-2025-029",
     "name": "Interactive Blog Platform",
     "courseCode": "CSC2102",
-    "instructor": "Hakim A. Usoof",
+    "instructor": "Jennifer Mitchell",
     "instructorLink": "/instructor/hakimu-sci",
     "academicYear": 2025,
     "description": "Create a dynamic blog site with user comments using HTML, CSS, and JavaScript.",
@@ -34,12 +34,12 @@
     "coverImageUrl": "/images/course-cover-images/CSC.webp",
     "authors": [
       {
-        "name": "Susara Weerarathna",
+        "name": "Sarah Walker",
         "link": "/student/S19540",
         "sNumber": "S19540"
       },
       {
-        "name": "Tharaka Dilshan",
+        "name": "Thomas Duncan",
         "link": "/student/S19355",
         "sNumber": "S19355"
       }

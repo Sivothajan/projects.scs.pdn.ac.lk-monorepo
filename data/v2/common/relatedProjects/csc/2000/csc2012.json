@@ -3,7 +3,7 @@
     "id": "CSC2012-2025-002",
     "name": "Data Structure Visualizer",
     "courseCode": "CSC2012",
-    "instructor": "Saluka R. Kodituwakku",
+    "instructor": "Sarah Anderson",
     "instructorLink": "/instructor/salukak-sci",
     "academicYear": 2025,
     "description": "Build a tool to visualize common data structures like stacks and queues.",
@@ -11,12 +11,12 @@
     "coverImageUrl": "/images/course-cover-images/CSC.webp",
     "authors": [
       {
-        "name": "Dassanayake D.K.Y.Y.",
+        "name": "David Young",
         "link": "/student/S20335",
         "sNumber": "S20335"
       },
       {
-        "name": "Heshan D.M.M.S",
+        "name": "Michael Scott",
         "link": "/student/S20380",
         "sNumber": "S20380"
       }
@@ -26,7 +26,7 @@
     "id": "CSC2012-2025-027",
     "name": "Binary Tree Explorer",
     "courseCode": "CSC2012",
-    "instructor": "Amalka J. Pinidiyaarachchi",
+    "instructor": "Elizabeth Parker",
     "instructorLink": "/instructor/amalka-sci",
     "academicYear": 2025,
     "description": "Develop a tool to visualize binary tree operations like insertion and traversal.",
@@ -34,12 +34,12 @@
     "coverImageUrl": "/images/course-cover-images/CSC.webp",
     "authors": [
       {
-        "name": "Waruni Kekulandara",
+        "name": "Wendy Clark",
         "link": "/student/S19205",
         "sNumber": "S19205"
       },
       {
-        "name": "Yasela Dissanayake",
+        "name": "Yvette Dawson",
         "link": "/student/S19357",
         "sNumber": "S19357"
       }

@@ -3,20 +3,20 @@
     "id": "CSC4093-2025-044",
     "name": "Handwritten Text Recognizer",
     "courseCode": "CSC4093",
-    "instructor": "Amalka J. Pinidiyaarachchi",
-    "instructorLink": "/instructor/amalka-sci",
+    "instructor": "William Hughes",
+    "instructorLink": "/instructor/william-sci",
     "academicYear": 2025,
     "description": "Train a neural network to recognize handwritten text from images.",
     "projectLink": "https://github.com/pdn-scs/handwritten-recognizer",
     "coverImageUrl": "/images/course-cover-images/CSC.webp",
     "authors": [
       {
-        "name": "Liyanaarachchi L.K.S.",
+        "name": "Leo Bennett",
         "link": "/student/S20570",
         "sNumber": "S20570"
       },
       {
-        "name": "Manoj Dilshan Rathnayaka R.M.",
+        "name": "Ruby Marshall",
         "link": "/student/S20140",
         "sNumber": "S20140"
       }

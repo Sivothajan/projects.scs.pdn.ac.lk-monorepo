@@ -3,7 +3,7 @@
     "id": "CSC1013-2025-001",
     "name": "Basic Programming Challenges",
     "courseCode": "CSC1013",
-    "instructor": "Sachith P. Abeysundara",
+    "instructor": "Michael Thompson",
     "instructorLink": "/instructor/sachith-sci",
     "academicYear": 2025,
     "description": "Solve a series of programming challenges using Python to master basic concepts.",
@@ -11,12 +11,12 @@
     "coverImageUrl": "/images/course-cover-images/CSC.webp",
     "authors": [
       {
-        "name": "Abeywickrame A.A.",
+        "name": "Andrew Armstrong",
         "link": "/student/S20302",
         "sNumber": "S20302"
       },
       {
-        "name": "Bandara B.W.D.U.",
+        "name": "Brandon Warren",
         "link": "/student/S20314",
         "sNumber": "S20314"
       }

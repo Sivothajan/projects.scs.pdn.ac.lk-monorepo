@@ -3,20 +3,20 @@
     "id": "CSC3033-2025-012",
     "name": "OS Process Simulator",
     "courseCode": "CSC3033",
-    "instructor": "Erunika O. Dayartna",
-    "instructorLink": "/instructor/erunika-sci",
+    "instructor": "Emma Richardson",
+    "instructorLink": "/instructor/emma-sci",
     "academicYear": 2025,
     "description": "Simulate operating system processes and scheduling algorithms.",
     "projectLink": "https://github.com/pdn-scs/os-simulator",
     "coverImageUrl": "/images/course-cover-images/CSC.webp",
     "authors": [
       {
-        "name": "Kulathunge K.A.V.I.",
+        "name": "Kyle Henderson",
         "link": "/student/S20421",
         "sNumber": "S20421"
       },
       {
-        "name": "Kumara K.M.N.A.",
+        "name": "Nathan Adams",
         "link": "/student/S20422",
         "sNumber": "S20422"
       }
@@ -26,20 +26,20 @@
     "id": "CSC3033-2025-030",
     "name": "Memory Management Simulator",
     "courseCode": "CSC3033",
-    "instructor": "S.A. Ruwan Punchi Manage",
-    "instructorLink": "/instructor/ruwanpm-sci",
+    "instructor": "Christopher Lee",
+    "instructorLink": "/instructor/christopher-sci",
     "academicYear": 2025,
     "description": "Simulate memory allocation techniques like paging and segmentation.",
     "projectLink": "https://github.com/pdn-scs/memory-simulator",
     "coverImageUrl": "/images/course-cover-images/CSC.webp",
     "authors": [
       {
-        "name": "Madhushan Pradeep Kumara",
+        "name": "Mark Peterson",
         "link": "/student/S19093",
         "sNumber": "S19093"
       },
       {
-        "name": "Rathnayake W.M.I.U.",
+        "name": "Ian Wilson",
         "link": "/student/S20594",
         "sNumber": "S20594"
       }

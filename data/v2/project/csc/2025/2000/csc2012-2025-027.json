@@ -3,20 +3,20 @@
     "id": "CSC2012-2025-027",
     "name": "Binary Tree Explorer",
     "courseCode": "CSC2012",
-    "instructor": "Amalka J. Pinidiyaarachchi",
-    "instructorLink": "/instructor/amalka-sci",
+    "instructor": "Jennifer Mitchell",
+    "instructorLink": "/instructor/jennifer-sci",
     "academicYear": 2025,
     "description": "Develop a tool to visualize binary tree operations like insertion and traversal.",
     "projectLink": "https://github.com/pdn-scs/binary-tree-explorer",
     "coverImageUrl": "/images/course-cover-images/CSC.webp",
     "authors": [
       {
-        "name": "Waruni Kekulandara",
+        "name": "Wendy Kelly",
         "link": "/student/S19205",
         "sNumber": "S19205"
       },
       {
-        "name": "Yasela Dissanayake",
+        "name": "Yasmine Davis",
         "link": "/student/S19357",
         "sNumber": "S19357"
       }

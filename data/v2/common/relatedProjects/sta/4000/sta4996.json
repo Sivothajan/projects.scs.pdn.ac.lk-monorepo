@@ -3,20 +3,20 @@
     "id": "STA4996-2025-011",
     "name": "Survival Analysis Study",
     "courseCode": "STA4996",
-    "instructor": "Mahasen Dehideniya",
-    "instructorLink": "/instructor/mahasend-sci",
+    "instructor": "Matthew Davis",
+    "instructorLink": "/instructor/matthew-sci",
     "academicYear": 2025,
     "description": "Conduct a survival analysis on medical patient data.",
     "projectLink": "https://projects.sci.pdn.ac.lk/survival-analysis",
     "coverImageUrl": "/images/course-cover-images/STA.webp",
     "authors": [
       {
-        "name": "Dayapoorani Vajiya",
+        "name": "Diana Young",
         "link": "/student/S19585",
         "sNumber": "S19585"
       },
       {
-        "name": "Gayan Bandara",
+        "name": "Gregory Bennett",
         "link": "/student/S19325",
         "sNumber": "S19325"
       }
@@ -26,22 +26,68 @@
     "id": "STA4996-2025-039",
     "name": "Risk Assessment Model",
     "courseCode": "STA4996",
-    "instructor": "Malima Atapattu",
-    "instructorLink": "/instructor/malima-sci",
+    "instructor": "Margaret Fisher",
+    "instructorLink": "/instructor/margaret-sci",
     "academicYear": 2025,
     "description": "Build a statistical model to assess financial risk in investments.",
-    "projectLink": "https://github.com/pdn-scs/risk-assessment",
+    "projectLink": "https://projects.sci.pdn.ac.lk/risk-assessment",
     "coverImageUrl": "/images/course-cover-images/STA.webp",
     "authors": [
       {
-        "name": "Dayapoorani Vajiya",
-        "link": "/student/S19585",
-        "sNumber": "S19585"
+        "name": "Ethan Harris",
+        "link": "/student/S19519",
+        "sNumber": "S19519"
       },
       {
-        "name": "Gayan Bandara",
-        "link": "/student/S19325",
-        "sNumber": "S19325"
+        "name": "Isabella White",
+        "link": "/student/S19589",
+        "sNumber": "S19589"
+      }
+    ]
+  },
+  {
+    "id": "STA4996-2025-010",
+    "name": "Statistical Analysis Package",
+    "courseCode": "STA4996",
+    "instructor": "Matthew Davis",
+    "instructorLink": "/instructor/matthew-sci",
+    "academicYear": 2025,
+    "description": "Develop a comprehensive statistical analysis package in R.",
+    "projectLink": "https://github.com/pdn-scs/stats-package",
+    "coverImageUrl": "/images/course-cover-images/STA.webp",
+    "authors": [
+      {
+        "name": "George Turner",
+        "link": "/student/S19521",
+        "sNumber": "S19521"
+      },
+      {
+        "name": "Oliver Hall",
+        "link": "/student/S19578",
+        "sNumber": "S19578"
+      }
+    ]
+  },
+  {
+    "id": "STA4996-2025-034",
+    "name": "Time Series Analyzer",
+    "courseCode": "STA4996",
+    "instructor": "Margaret Fisher",
+    "instructorLink": "/instructor/margaret-sci",
+    "academicYear": 2025,
+    "description": "Build a tool for analyzing and visualizing time series data.",
+    "projectLink": "https://github.com/pdn-scs/timeseries-analyzer",
+    "coverImageUrl": "/images/course-cover-images/STA.webp",
+    "authors": [
+      {
+        "name": "Ryan Morris",
+        "link": "/student/S19456",
+        "sNumber": "S19456"
+      },
+      {
+        "name": "Sophie Thompson",
+        "link": "/student/S19567",
+        "sNumber": "S19567"
       }
     ]
   }

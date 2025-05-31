@@ -3,20 +3,20 @@
     "id": "DSC4996-2025-010",
     "name": "Social Media Sentiment Analysis",
     "courseCode": "DSC4996",
-    "instructor": "Ruwanthini Siyambalapitiya",
-    "instructorLink": "/instructor/ruwanthini-sci",
+    "instructor": "Daniel Roberts",
+    "instructorLink": "/instructor/daniel-sci",
     "academicYear": 2025,
     "description": "Analyze sentiment in social media posts using data science techniques.",
     "projectLink": "https://github.com/pdn-scs/sentiment-analysis",
     "coverImageUrl": "/images/course-cover-images/DSC.webp",
     "authors": [
       {
-        "name": "Neshika Ridimahaliyadda",
+        "name": "Victoria Adams",
         "link": "https://projects.scs.sivothajankeley.me/student/S19500",
         "sNumber": "S19500"
       },
       {
-        "name": "Pasindu Kurukulasuriya",
+        "name": "Alexander Scott",
         "link": "/student/S19421",
         "sNumber": "S19421"
       }

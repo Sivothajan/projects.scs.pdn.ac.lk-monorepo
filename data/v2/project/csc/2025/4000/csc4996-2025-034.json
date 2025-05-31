@@ -3,20 +3,20 @@
     "id": "CSC4996-2025-034",
     "name": "Smart Home Automation",
     "courseCode": "CSC4996",
-    "instructor": "Mahasen Dehideniya",
-    "instructorLink": "/instructor/mahasend-sci",
+    "instructor": "Michael Thompson",
+    "instructorLink": "/instructor/michael-sci",
     "academicYear": 2025,
     "description": "Design a system to control home devices using IoT and AI.",
     "projectLink": "https://github.com/pdn-scs/smart-home",
     "coverImageUrl": "/images/course-cover-images/CSC.webp",
     "authors": [
       {
-        "name": "Lakshitha Eranga",
+        "name": "James Wilson",
         "link": "/student/S19378",
         "sNumber": "S19378"
       },
       {
-        "name": "Madhawa Welikumbura",
+        "name": "David Miller",
         "link": "/student/S19543",
         "sNumber": "S19543"
       }
