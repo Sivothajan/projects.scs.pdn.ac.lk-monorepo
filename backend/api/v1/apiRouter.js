@@ -271,7 +271,7 @@ v1Router.get("/v1/student/:studentId", async (req, res) => {
 });
 
 // Catch-all for unmatched paths
-v1Router.all("/.*/", (req, res) => {
+v1Router.all(/.*/, (req, res) => {
   res.status(404).json({
     error: "Route not found in v1 API",
     path: req.originalUrl,
