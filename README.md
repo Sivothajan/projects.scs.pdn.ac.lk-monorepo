@@ -12,31 +12,31 @@ A centralized platform for managing and showcasing student projects from the Dep
 
 ### Installation
 
-1. Clone and setup:
+1. Clone and Install Dependencies:
 
-```bash
-git clone https://github.com/pdn-scs/projects.scs.pdn.ac.lk-monorepo.git
-cd projects.scs.pdn.ac.lk-monorepo
-npm run install:all
-```
+   ```bash
+   git clone https://github.com/pdn-scs/projects.scs.pdn.ac.lk-monorepo.git
+   cd projects.scs.pdn.ac.lk-monorepo
+   npm run install:all
+   ```
 
 2. Environment Setup:
 
-```bash
-# Setup frontend environment
-cd frontend
-cp .env.example .env
+   ```bash
+   # Setup frontend environment
+   cd frontend
+   cp .env.example .env
 
-# Setup backend environment
-cd ../backend
-cp .env.example .env
-```
+   # Setup backend environment
+   cd ../backend
+   cp .env.example .env
+   ```
 
 Required environment variables:
 
 Frontend (.env):
 
-- `VITE_API_URL` - Backend API URL (Default: http://localhost:3000)
+- `VITE_API_URL` - Backend API URL (Default: <http://localhost:3000>)
 
 Backend (.env):
 
@@ -61,9 +61,9 @@ npm run dev:backend   # Backend only
 
 Access your local instance:
 
-- Frontend: http://localhost:5173
-- Backend API: http://localhost:3000
-- API Docs: http://localhost:3000/docs
+- Frontend: <http://localhost:5173>
+- Backend API: <http://localhost:3000>
+- API Docs: <http://localhost:3000/docs>
 
 ## Documentation
 

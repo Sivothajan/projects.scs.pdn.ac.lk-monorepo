@@ -57,8 +57,8 @@
     "dev:frontend": "cd frontend && npm run dev",
     "build": "concurrently \"cd backend && npm run build\" \"cd frontend && npm run build\"",
     "install:all": "npm install && concurrently \"cd backend && npm install\" \"cd frontend && npm install\"",
-    "prettier": "npx prettier . --write",
-    "prettier-check": "npx prettier . --check"
+    "format": "npx prettier . --write",
+    "format:check": "npx prettier . --check"
   },
   "keywords": [
     "scs",
@@ -67,7 +67,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "concurrently": "^8.2.2",
-    "prettier": "3.5.3"
+    "concurrently": "^9.2.0",
+    "prettier": "3.6.1"
   }
 }
