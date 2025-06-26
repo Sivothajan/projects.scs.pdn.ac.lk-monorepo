@@ -12,6 +12,18 @@ const v1Router = express();
 v1Router.use(cors()); // Enable CORS for all routes
 v1Router.use(json());
 
+const linkHeaderValue =
+  '/favicon.ico; rel="icon", ' +
+  '/favicon/apple-touch-icon.webp; rel="apple-touch-icon" sizes="180x180", ' +
+  '/favicon/favicon-32x32.webp; rel="icon" type="image/webp" sizes="32x32", ' +
+  '/favicon/favicon-16x16.webp; rel="icon" type="image/webp" sizes="16x16", ' +
+  '/favicon/site.webmanifest; rel="manifest"';
+
+router.use((_req, res, next) => {
+  res.setHeader("Link", linkHeaderValue);
+  next();
+});
+
 // Local data file paths
 const LOCAL_DATA_PATH = path.resolve(process.cwd(), "../data/v1");
 const LOCAL_COURSES_PATH = path.join(LOCAL_DATA_PATH, "courses.json");
