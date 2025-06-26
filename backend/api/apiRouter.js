@@ -23,7 +23,7 @@ router.use((_req, res, next) => {
 // Root route
 router.get(/.*/, (req, res) => {
   res.setHeader("Link", linkHeaderValue);
-  if (request.method === "OPTIONS") {
+  if (req.method === "OPTIONS") {
     return new Response(null, {
       status: 204,
       Link: linkHeaderValue,
