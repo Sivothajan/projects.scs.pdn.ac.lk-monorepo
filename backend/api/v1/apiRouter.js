@@ -19,7 +19,7 @@ const linkHeaderValue =
   '/favicon/favicon-16x16.webp; rel="icon" type="image/webp" sizes="16x16", ' +
   '/favicon/site.webmanifest; rel="manifest"';
 
-router.use((_req, res, next) => {
+v1Router.use((_req, res, next) => {
   res.setHeader("Link", linkHeaderValue);
   next();
 });
@@ -128,6 +128,7 @@ const fetchData = async (url, relative) => {
 
 // Get single course by courseCode
 v1Router.get("/v1/courses/:courseId", async (req, res) => {
+  res.setHeader("Link", linkHeaderValue);
   try {
     const { courseId } = req.params;
     if (!courseId || typeof courseId !== "string") {
@@ -151,6 +152,7 @@ v1Router.get("/v1/courses/:courseId", async (req, res) => {
 
 // Get all courses with optional filtering
 v1Router.get("/v1/courses", async (req, res) => {
+  res.setHeader("Link", linkHeaderValue);
   try {
     const courses = await fetchData(COURSES_URL, "courses.json");
     res.status(200).json(courses);
@@ -162,6 +164,7 @@ v1Router.get("/v1/courses", async (req, res) => {
 
 // Get instructor details by name
 v1Router.get("/v1/instructor/:instructorUsername", async (req, res) => {
+  res.setHeader("Link", linkHeaderValue);
   try {
     const { instructorUsername } = req.params;
     if (!instructorUsername || typeof instructorUsername !== "string") {
@@ -185,6 +188,7 @@ v1Router.get("/v1/instructor/:instructorUsername", async (req, res) => {
 
 // Get all related projects with optional filtering
 v1Router.get("/v1/projects/cc/:courseCode", async (req, res) => {
+  res.setHeader("Link", linkHeaderValue);
   const { courseCode } = req.params;
   if (!courseCode || typeof courseCode !== "string") {
     return res.status(400).json({ error: "Invalid course code" });
@@ -204,6 +208,7 @@ v1Router.get("/v1/projects/cc/:courseCode", async (req, res) => {
 
 // Get project details by ID
 v1Router.get("/v1/projects/id/:projectId", async (req, res) => {
+  res.setHeader("Link", linkHeaderValue);
   try {
     const { projectId } = req.params;
     if (!projectId || typeof projectId !== "string") {
@@ -227,6 +232,7 @@ v1Router.get("/v1/projects/id/:projectId", async (req, res) => {
 
 // Get project details with ID and name
 v1Router.get("/v1/projects/id/:projectId/n/:projectName", async (req, res) => {
+  res.setHeader("Link", linkHeaderValue);
   try {
     const { projectId, projectName } = req.params;
     if (
@@ -261,6 +267,7 @@ v1Router.get("/v1/projects/id/:projectId/n/:projectName", async (req, res) => {
 
 // Get student details by sNumber
 v1Router.get("/v1/student/:studentId", async (req, res) => {
+  res.setHeader("Link", linkHeaderValue);
   try {
     const { studentId } = req.params;
     if (!studentId || typeof studentId !== "string") {
@@ -284,6 +291,7 @@ v1Router.get("/v1/student/:studentId", async (req, res) => {
 
 // Catch-all for unmatched paths
 v1Router.all(/.*/, (req, res) => {
+  res.setHeader("Link", linkHeaderValue);
   res.status(404).json({
     error: "Route not found in v1 API",
     path: req.originalUrl,

@@ -22,6 +22,7 @@ router.use((_req, res, next) => {
 
 // Root route
 router.get(/.*/, (req, res) => {
+  res.setHeader("Link", linkHeaderValue);
   res.json({
     message: "Projects API",
     versions: {
