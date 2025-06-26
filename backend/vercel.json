@@ -2,6 +2,14 @@
   "version": 2,
   "builds": [
     {
+      "src": "public/favicon/(.*)",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "/public/(.*)",
+      "use": "@vercel/static"
+    },
+    {
       "src": "api/apiRouter.js",
       "use": "@vercel/node"
     },
