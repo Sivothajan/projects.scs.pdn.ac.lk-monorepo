@@ -12,18 +12,6 @@ const v2Router = express();
 v2Router.use(cors()); // Enable CORS for all routes
 v2Router.use(json());
 
-const linkHeaderValue =
-  '/favicon.ico; rel="icon", ' +
-  '/favicon/apple-touch-icon.webp; rel="apple-touch-icon" sizes="180x180", ' +
-  '/favicon/favicon-32x32.webp; rel="icon" type="image/webp" sizes="32x32", ' +
-  '/favicon/favicon-16x16.webp; rel="icon" type="image/webp" sizes="16x16", ' +
-  '/favicon/site.webmanifest; rel="manifest"';
-
-v2Router.use((_req, res, next) => {
-  res.setHeader("Link", linkHeaderValue);
-  next();
-});
-
 // Local data file paths
 const LOCAL_DATA_PATH = path.resolve(process.cwd(), "../data/v2");
 const LOCAL_COURSE_PATH = path.join(LOCAL_DATA_PATH, "/course");
@@ -151,7 +139,6 @@ const fetchData = async (reqPath, filePath, jsonName, githubUrl) => {
 
 // Get single course by courseCode
 v2Router.get("/v2/courses/:courseCode", async (req, res) => {
-  res.setHeader("Link", linkHeaderValue);
   try {
     const { courseCode } = req.params;
     if (!courseCode || typeof courseCode !== "string") {
@@ -179,7 +166,6 @@ v2Router.get("/v2/courses/:courseCode", async (req, res) => {
 
 // Get all courses
 v2Router.get("/v2/courses", async (req, res) => {
-  res.setHeader("Link", linkHeaderValue);
   try {
     const courses = await fetchData("/v2/courses", null, "courses", COMMON_URL);
     res.status(200).json(courses);
@@ -191,7 +177,6 @@ v2Router.get("/v2/courses", async (req, res) => {
 
 // Get instructor details by username
 v2Router.get("/v2/instructor/:instructorUsername", async (req, res) => {
-  res.setHeader("Link", linkHeaderValue);
   try {
     const { instructorUsername } = req.params;
     if (!instructorUsername || typeof instructorUsername !== "string") {
@@ -217,7 +202,6 @@ v2Router.get("/v2/instructor/:instructorUsername", async (req, res) => {
 
 // Get all related projects by course code
 v2Router.get("/v2/projects/cc/:courseCode", async (req, res) => {
-  res.setHeader("Link", linkHeaderValue);
   const { courseCode } = req.params;
   if (!courseCode || typeof courseCode !== "string") {
     return res.status(400).json({ error: "Invalid course code" });
@@ -249,7 +233,6 @@ v2Router.get("/v2/projects/cc/:courseCode", async (req, res) => {
 
 // Get project details by ID
 v2Router.get("/v2/projects/id/:projectId", async (req, res) => {
-  res.setHeader("Link", linkHeaderValue);
   try {
     const { projectId } = req.params;
     if (!projectId || typeof projectId !== "string") {
@@ -278,7 +261,6 @@ v2Router.get("/v2/projects/id/:projectId", async (req, res) => {
 
 // Get student details by sNumber
 v2Router.get("/v2/student/:studentId", async (req, res) => {
-  res.setHeader("Link", linkHeaderValue);
   try {
     const { studentId } = req.params;
     if (!studentId || typeof studentId !== "string") {
@@ -306,7 +288,6 @@ v2Router.get("/v2/student/:studentId", async (req, res) => {
 
 // Catch-all for unmatched paths
 v2Router.all(/.*/, (req, res) => {
-  res.setHeader("Link", linkHeaderValue);
   res.status(404).json({
     error: "Route not found in v2 API",
     path: req.originalUrl,
